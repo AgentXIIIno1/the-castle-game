@@ -14,8 +14,8 @@ Type commands at the prompt as in the original, or walk around with the arrow ke
 
 Requires Python 3.10+.
 
-    git clone https://github.com/AgentXIIIno1/the-castle
-    cd the-castle
+    git clone https://github.com/AgentXIIIno1/the-castle-game
+    cd the-castle-game
     python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
     pip install -r requirements.txt
     python game/main.py
