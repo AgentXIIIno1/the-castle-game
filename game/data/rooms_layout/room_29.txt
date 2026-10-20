@@ -1,0 +1,25 @@
+Room 29 GUEST_ROOM
+You are In a Guest Room.
+Exits: {'west': 28}
++------------------------+
+|                        |
+|                        |
+|                        |
+|   ##################   |
+|   #                #   |
+|   #                #   |
+|   #                #   |
+|####                #   |
+|#                   #   |
+|                    #   |
+|####                #   |
+|   #                #   |
+|   #                #   |
+|   #                #   |
+|   ##################   |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Jade Figurine', 10, 13)]
+Monsters(M): []

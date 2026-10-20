@@ -1,0 +1,430 @@
+{
+  "room": 9,
+  "room_name": "Kitchen (interior x4-20, y3-14; table '%' x8-16 y8-9; exits N x11-12, E y4, S x5-6 and x17-18)",
+  "sheets": {
+    "stone_table.png": {
+      "frame_size": [
+        144,
+        46
+      ],
+      "anchor": {
+        "px": [
+          72,
+          45
+        ],
+        "note": "bottom-centre of the 9x2 '%' block -> world (8*16+72, 10*16)"
+      },
+      "footprint_tiles": [
+        9,
+        2
+      ],
+      "blocking": true,
+      "depth_sort_y": "(8+2)*16 = 160",
+      "shadow_baked": true,
+      "content": "two worn limestone slabs on three squat trestles: chipped edges and corners, hairline cracks, wine/grease stains, crumbs, flour drift, bread crust, cracked wooden bowl, rusty knife"
+    },
+    "hearth.png": {
+      "frame_size": [
+        48,
+        54
+      ],
+      "frames": 4,
+      "fps": 6,
+      "loop": true,
+      "anchor": {
+        "px": [
+          24,
+          53
+        ]
+      },
+      "footprint_tiles": [
+        3,
+        1
+      ],
+      "blocking": true,
+      "shadow_baked": true,
+      "content": "fieldstone fireplace built against the north wall: soot-streaked hood rising over the wall face and top, oak mantel with jars, arched opening, logs, animated flames and embers, iron crane with a bubbling stew cauldron, wisps of steam (translucent)",
+      "light": {
+        "px": [
+          24,
+          36
+        ],
+        "color": [
+          255,
+          150,
+          70
+        ],
+        "radius_hint": 64,
+        "flicker": "0.8-1.0 synced to the frame"
+      },
+      "outline_crossing": true
+    },
+    "pot_rack.png": {
+      "frame_size": [
+        32,
+        30
+      ],
+      "layer": "wall decal, north face, hangs down from the face top (like banner_royal)",
+      "blocking": false,
+      "spans_cells": 2
+    },
+    "herbs_hanging.png": {
+      "frame_size": [
+        16,
+        26
+      ],
+      "variants": 2,
+      "layer": "wall decal, north face, hangs from the face top",
+      "blocking": false,
+      "content": "v0 dried herb bundle, v1 garlic braid with bay"
+    },
+    "kitchen_barrel.png": {
+      "frame_size": [
+        16,
+        24
+      ],
+      "anchor": {
+        "px": [
+          8,
+          23
+        ]
+      },
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "blocking": true,
+      "shadow_baked": true
+    },
+    "sack.png": {
+      "frame_size": [
+        16,
+        20
+      ],
+      "variants": 2,
+      "anchor": {
+        "px": [
+          8,
+          19
+        ]
+      },
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "blocking": true,
+      "shadow_baked": true,
+      "content": "v0 torn flour sack with a spill, v1 potato sack"
+    },
+    "chopping_block.png": {
+      "frame_size": [
+        16,
+        24
+      ],
+      "anchor": {
+        "px": [
+          8,
+          23
+        ]
+      },
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "blocking": true,
+      "shadow_baked": true,
+      "content": "stump block with a cleaver bitten in, old blood, bone chips"
+    },
+    "crockery_broken.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "layer": "floor decal",
+      "blocking": false,
+      "content": "v0 smashed plate, v1 broken jug + dried stain"
+    },
+    "cobweb.png": {
+      "same_as": "decor/cobweb.png",
+      "layer": "wall-top-corner (floor decal at the inner corner cell)"
+    }
+  },
+  "wall_post_cells_room9": [
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      3,
+      15
+    ],
+    [
+      4,
+      15
+    ],
+    [
+      4,
+      17
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      15
+    ],
+    [
+      7,
+      17
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      16,
+      15
+    ],
+    [
+      16,
+      17
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      19,
+      15
+    ],
+    [
+      19,
+      17
+    ],
+    [
+      21,
+      2
+    ],
+    [
+      21,
+      3
+    ],
+    [
+      21,
+      5
+    ],
+    [
+      21,
+      7
+    ],
+    [
+      21,
+      12
+    ],
+    [
+      21,
+      15
+    ],
+    [
+      22,
+      3
+    ],
+    [
+      22,
+      5
+    ],
+    [
+      23,
+      3
+    ],
+    [
+      23,
+      5
+    ]
+  ],
+  "placements_room9": {
+    "HOOKS[9]": [
+      "%",
+      "kitchen/stone_table.png",
+      "table"
+    ],
+    "HOOK_ANCHOR[9]": [
+      72,
+      45
+    ],
+    "KITCHEN_OBJ": [
+      [
+        "kitchen/hearth.png",
+        48,
+        null,
+        14,
+        3,
+        3,
+        6,
+        [
+          24,
+          36
+        ]
+      ],
+      [
+        "kitchen/kitchen_barrel.png",
+        16,
+        0,
+        4,
+        3,
+        1,
+        0,
+        null
+      ],
+      [
+        "kitchen/sack.png",
+        16,
+        0,
+        5,
+        3,
+        1,
+        0,
+        null
+      ],
+      [
+        "kitchen/sack.png",
+        16,
+        1,
+        4,
+        4,
+        1,
+        0,
+        null
+      ],
+      [
+        "kitchen/chopping_block.png",
+        16,
+        0,
+        19,
+        9,
+        1,
+        0,
+        null
+      ]
+    ],
+    "KITCHEN_WALL": [
+      [
+        "kitchen/pot_rack.png",
+        32,
+        0,
+        8,
+        2
+      ],
+      [
+        "kitchen/herbs_hanging.png",
+        16,
+        1,
+        6,
+        2
+      ],
+      [
+        "kitchen/herbs_hanging.png",
+        16,
+        0,
+        18,
+        2
+      ],
+      [
+        "kitchen/herbs_hanging.png",
+        16,
+        1,
+        19,
+        2
+      ]
+    ],
+    "KITCHEN_FLOOR": [
+      [
+        "kitchen/crockery_broken.png",
+        16,
+        0,
+        6,
+        11
+      ],
+      [
+        "kitchen/crockery_broken.png",
+        16,
+        1,
+        12,
+        11
+      ],
+      [
+        "kitchen/cobweb.png",
+        16,
+        0,
+        20,
+        3,
+        true
+      ],
+      [
+        "kitchen/cobweb.png",
+        16,
+        0,
+        4,
+        14
+      ]
+    ],
+    "blocking_cells": [
+      [
+        14,
+        3
+      ],
+      [
+        15,
+        3
+      ],
+      [
+        16,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        19,
+        9
+      ]
+    ],
+    "reachability": "BFS from the north exit reaches every exit cell (N x11-12, E y4, S x5-6, x17-18); doorway mouths kept clear; room 9 has no items or monsters",
+    "setpiece_py": "HOOKS[9] = (\"%\", \"kitchen/stone_table.png\", \"table\"); HOOK_ANCHOR[9] = (72, 45)\nKITCHEN_OBJ = [('kitchen/hearth.png', 48, None, 14, 3, 3, 6, (24, 36)), ('kitchen/kitchen_barrel.png', 16, 0, 4, 3, 1, 0, None), ('kitchen/sack.png', 16, 0, 5, 3, 1, 0, None), ('kitchen/sack.png', 16, 1, 4, 4, 1, 0, None), ('kitchen/chopping_block.png', 16, 0, 19, 9, 1, 0, None)]\nKITCHEN_WALL = [('kitchen/pot_rack.png', 32, 0, 8, 2), ('kitchen/herbs_hanging.png', 16, 1, 6, 2), ('kitchen/herbs_hanging.png', 16, 0, 18, 2), ('kitchen/herbs_hanging.png', 16, 1, 19, 2)]\nKITCHEN_FLOOR = [('kitchen/crockery_broken.png', 16, 0, 6, 11), ('kitchen/crockery_broken.png', 16, 1, 12, 11), ('kitchen/cobweb.png', 16, 0, 20, 3, True), ('kitchen/cobweb.png', 16, 0, 4, 14)]"
+  }
+}

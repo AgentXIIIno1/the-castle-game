@@ -1,0 +1,25 @@
+Room 50 
+You are at the Bottom of the East Tower.
+Exits: {'north': 49, 'south': 51, 'up': 63}
++------------------------+
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|              ##      ##|
+|              #        #|
+|              #   UU   #|
+|              #   UU   #|
+|              #        #|
+|              ##      ##|
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

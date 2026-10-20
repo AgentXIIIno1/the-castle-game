@@ -1,0 +1,42 @@
+{
+  "room": 68,
+  "room_name": "Royal Wine Cellar",
+  "glyphs": "'@' 4x2 blocks (issue says 2x2/3x2; the layout has seven 4x2 blocks), top-left cells 0-based: [(3, 2), (12, 2), (12, 5), (3, 8), (12, 8), (3, 11), (12, 11)]",
+  "sheet": {
+    "file": "wine_barrels.png",
+    "frame_size": [
+      64,
+      52
+    ],
+    "variants": 3,
+    "variant_notes": [
+      "5 barrels (3 + 2 stacked)",
+      "4 barrels + one standing cask on top",
+      "broken barrel, wine stain, cobweb"
+    ]
+  },
+  "footprint_tiles": [
+    4,
+    2
+  ],
+  "anchor": {
+    "px": [
+      32,
+      50
+    ],
+    "desc": "bottom-centre of each 4x2 block: world (bx*16 + 32, (by+2)*16); the frame's bottom 32px covers the block, 20px headroom for the stacked barrels"
+  },
+  "placement": {
+    "3,2": 0,
+    "12,2": 1,
+    "12,5": 2,
+    "3,8": 0,
+    "12,8": 1,
+    "3,11": 2,
+    "12,11": 0
+  },
+  "blocking": "all block cells (as now)",
+  "depth_sort_y": "(by+2)*16 per block",
+  "shadow_baked": true,
+  "notes": "draw instead of the procedural '@' table in room 68 only; dark damp oak + iron hoops (dungeon palette); FILL 'The Barrels are empty.' unchanged"
+}

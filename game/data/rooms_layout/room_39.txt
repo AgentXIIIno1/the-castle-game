@@ -1,0 +1,25 @@
+Room 39 
+You are in the Purple room. It is Decorated all in purple. There is 1 bed left.
+Exits: {'south': 35, 'east': 34}
++------------------------+
+|                        |
+|                        |
+|                        |
+|   ##################   |
+|   #                #   |
+|   #]PPPP[          #   |
+|   #]PPPP[          #   |
+|   #                ####|
+|   #                    |
+|   #                    |
+|   #                ####|
+|   #                #   |
+|   #                #   |
+|   #                #   |
+|   ########  ########   |
+|          #  #          |
+|          #  #          |
+|          #  #          |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

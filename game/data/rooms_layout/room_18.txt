@@ -1,0 +1,25 @@
+Room 18 GARDEN_SOUTH
+You are in The South end of The Castle garden. In the center is a fountain.
+Exits: {'north': 17, 'west': 6}
++------------------------+
+|  #                   # |
+|  #+              +   # |
+|  #        *          # |
+|  #                   # |
+|###    +              # |
+|                 +    # |
+|                      # |
+|                      # |
+|          ,-.         # |
+|          |?|         # |
+|          `-'     *   # |
+|       +              # |
+|                      # |
+|###      *            # |
+|  #            +      # |
+|  #                   # |
+|  ##################### |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Large Gem', 10, 12)]
+Monsters(M): []

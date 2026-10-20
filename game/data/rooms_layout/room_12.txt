@@ -1,0 +1,25 @@
+Room 12 MUSEUM
+You are in The Castle Museum. This room was once decorated with many artifacts.
+Exits: {'south': 6, 'east': 17}
++------------------------+
+|                        |
+|       ###############  |
+|       #             #  |
+|       #             #  |
+|       #             ###|
+|       #                |
+|       #                |
+|       #                |
+|       #                |
+|       #                |
+|       #                |
+|       #                |
+|       #                |
+|       #             ###|
+|       #             #  |
+|       #             #  |
+|       ###    ########  |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Sword', 5, 11)]
+Monsters(M): []

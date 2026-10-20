@@ -1,0 +1,25 @@
+Room 61 
+You are Below the West Tower. there is a large staircase leading up the tower.
+Exits: {'north': 48, 'south': 60, 'up': 62}
++------------------------+
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+|##      ##              |
+|#        #              |
+|#   UU   #              |
+|#   UU   #              |
+|#        #              |
+|##      ##              |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

@@ -1,0 +1,25 @@
+Room 19 UPPER_HALL_CENTER
+You are in the center of The upper Hall. There is a statue of the King in the middle.
+Exits: {'north': 23, 'east': 21, 'west': 20}
++------------------------+
+|         #    #         |
+|##########    ##########|
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|          ,-.           |
+|          |$|           |
+|          `-'           |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|########################|
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Necklace', 9, 12)]
+Monsters(M): []

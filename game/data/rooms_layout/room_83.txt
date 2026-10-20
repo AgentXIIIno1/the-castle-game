@@ -1,0 +1,25 @@
+Room 83 SECRET_ROOM
+You are in the King's Secret room. The walls are many colors.
+Exits: {'north': 77}
++------------------------+
+|          #  #          |
+|          #  #          |
+|          #  #          |
+|    ;:;:;:;  :;:;:;:    |
+|    :              ;    |
+|    ;              :    |
+|    :              ;    |
+|    ;              :    |
+|    :              ;    |
+|    ;              :    |
+|    :              ;    |
+|    ;              :    |
+|    :              ;    |
+|    ;:;:;:;:;:;:;:;:    |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Scepter', 10, 12)]
+Monsters(M): []

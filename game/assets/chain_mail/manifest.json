@@ -1,0 +1,239 @@
+{
+ "issue": 28,
+ "mode": "Modern only",
+ "item": {
+  "floor": "chainmail.png",
+  "small": "chainmail_small.png",
+  "floor_frame": [
+   16,
+   16
+  ],
+  "floor_anchor": [
+   8,
+   15
+  ],
+  "shadow_baked": true,
+  "small_frame": [
+   12,
+   12
+  ],
+  "small_anchor": [
+   6,
+   11
+  ],
+  "small_shadow_baked": false,
+  "treasure": false,
+  "name": "Chain Mail",
+  "content": "folded knight's hauberk: dithered steel ring mesh, sleeves folded across, leather-lined collar and hem binding, rim light, two rust spots"
+ },
+ "item_cell": [
+  15,
+  2
+ ],
+ "stand": {
+  "file": "armour_stand_empty.png",
+  "topleft": [
+   237,
+   15
+  ],
+  "sort_y": 48,
+  "blocking": false,
+  "note": "setpiece.mail_stand() reads this. It is the EMPTY stand so it is right with today's code: the Chain Mail item (on item_cell, the same cell) is drawn in front of it while it lies there, and the stand stays empty after GET"
+ },
+ "stand_full": {
+  "file": "armour_stand.png",
+  "topleft": [
+   237,
+   15
+  ],
+  "sort_y": 48,
+  "state_switch": "draw stand_full INSTEAD of stand while a Chain Mail item is in room 24's items on item_cell, and skip that item's floor sprite (like the statue necklace); after GET (or if it is dropped elsewhere) draw the empty stand. Dropping it back on item_cell may restore the full stand"
+ },
+ "stand_frame": [
+  22,
+  34
+ ],
+ "stand_anchor": [
+  11,
+  33
+ ],
+ "stand_world_anchor": [
+  248,
+  48
+ ],
+ "placement_check": {
+  "cell": [
+   15,
+   2
+  ],
+  "wall_above": [
+   15,
+   1
+  ],
+  "post_cells_room24": [
+   [
+    3,
+    0
+   ],
+   [
+    6,
+    0
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    6,
+    1
+   ],
+   [
+    7,
+    1
+   ],
+   [
+    12,
+    1
+   ],
+   [
+    17,
+    1
+   ],
+   [
+    22,
+    1
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    22,
+    2
+   ],
+   [
+    22,
+    6
+   ],
+   [
+    23,
+    6
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    22,
+    11
+   ],
+   [
+    23,
+    11
+   ],
+   [
+    1,
+    12
+   ],
+   [
+    22,
+    12
+   ],
+   [
+    1,
+    16
+   ],
+   [
+    2,
+    16
+   ],
+   [
+    7,
+    16
+   ],
+   [
+    9,
+    16
+   ],
+   [
+    14,
+    16
+   ],
+   [
+    17,
+    16
+   ],
+   [
+    22,
+    16
+   ],
+   [
+    9,
+    17
+   ],
+   [
+    14,
+    17
+   ]
+  ],
+  "bfs": "blocking the cell would remove only that cell from the reachable set: every exit (N x4-5, S x10-13, E y7-10), the Magic Wand (3,8) and the demon (5,9) stay connected",
+  "manhattan_to_demon": 17,
+  "get_reach": "GET works from any adjacent cell (main.touching_prop / 1-cell rule), so the stand cell may be made blocking"
+ },
+ "hero_overlay": {
+  "frame_size": [
+   36,
+   36
+  ],
+  "anchor": {
+   "px": [
+    12,
+    33
+   ],
+   "px_left": [
+    24,
+    33
+   ]
+  },
+  "same_as": "art/hero strips (right native, left = mirror)",
+  "files_master": {
+   "idle": [
+    "art/hero/hero_chainmail_idle_right.png",
+    "art/hero/hero_chainmail_idle_left.png"
+   ],
+   "walk": [
+    "art/hero/hero_chainmail_walk_right.png",
+    "art/hero/hero_chainmail_walk_left.png"
+   ]
+  },
+  "loader_copies": "game/assets/hero_overlays/chainmail/<idle|walk>_<right|left>.png (byte-identical to the art/hero masters, see tools/check_assets.py GENERATED)",
+  "states": {
+   "idle": {
+    "frames": 2,
+    "frame_durations_ms": [
+     400,
+     400
+    ]
+   },
+   "walk": {
+    "frames": 4,
+    "frame_durations_ms": [
+     140,
+     140,
+     140,
+     140
+    ]
+   }
+  },
+  "draw_order": "body -> chainmail -> backpack front straps -> necklace -> sword -> helmet (backpack back layer stays behind the body). main.hero_overlays() already returns ['chainmail', 'backpack', 'necklace'] in that order",
+  "sword_helmet_overlap_pixels": 0
+ }
+}

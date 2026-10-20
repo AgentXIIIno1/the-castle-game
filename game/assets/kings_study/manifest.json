@@ -1,0 +1,109 @@
+{
+  "room": 56,
+  "room_name": "King's Study (interior x4-19, y4-13 0-based; desk '@' x9-14,y5-7; exits W y8-9, S x11-12)",
+  "props": {
+    "ornate_desk_scrolls_*.png": {
+      "same_as": "drawers/kings_study_desk_* (desk piled with scrolls, quill, inkwell)",
+      "anchor": [
+        50,
+        54
+      ],
+      "footprint_tiles": [
+        6,
+        3
+      ],
+      "blocking": true,
+      "depth_sort_y": "(5+3)*16",
+      "shadow_baked": true
+    },
+    "bookshelf.png": {
+      "frame_size": [
+        32,
+        40
+      ],
+      "variants": 2,
+      "anchor": "bottom-centre (16,39)",
+      "footprint_tiles": [
+        2,
+        1
+      ],
+      "blocking": true,
+      "layer": "object, depth-sorted at cell bottom",
+      "shadow_baked": true,
+      "placement": "against the north wall, floor row y4: cells x5-6 and x16-17 (keep x11-12 clear)"
+    },
+    "candelabra.png": {
+      "frame_size": [
+        16,
+        28
+      ],
+      "frames": 4,
+      "fps": 6,
+      "loop": true,
+      "anchor": "bottom-centre (8,27)",
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "blocking": true,
+      "shadow_baked": true,
+      "light": "warm point light at (8,5) in the sprite (centre flame), radius ~48px; flicker intensity 0.85-1.0 synced to frame",
+      "placement": "beside the desk: (15,6) and optionally (8,6)"
+    },
+    "rug_royal.png": {
+      "frame_size": [
+        64,
+        48
+      ],
+      "anchor": "top-left of cell",
+      "footprint_tiles": [
+        4,
+        3
+      ],
+      "blocking": false,
+      "layer": "floor decal under everything",
+      "placement": "in front of the desk, cells x10-13, y9-11 (top-left (10,9)); club-suit motif echoes the courtyard rug"
+    },
+    "banner_royal.png": {
+      "frame_size": [
+        16,
+        32
+      ],
+      "variants": 2,
+      "anchor": "top-left of the north wall FACE at the cell",
+      "blocking": false,
+      "layer": "wall decal",
+      "placement": "north wall faces above x8 and x15 (purple, red); was x7 (wall post) and x16 (behind the right bookshelf), moved in #39",
+      "cells": {
+        "purple": [
+          8,
+          3
+        ],
+        "red": [
+          15,
+          3
+        ]
+      },
+      "wall_post_cells_north_row3": [
+        3,
+        7,
+        12,
+        17,
+        20
+      ],
+      "keep_clear_x": "posts and shelf columns x5-6, x16-17"
+    },
+    "study_floor_parquet.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 4,
+      "use": "optional floor for room 56 instead of plain planks: tile (x+y)%4 or thash"
+    },
+    "wall_tint": {
+      "note": "optional: multiply room 56 wall stones by (1.05, 0.96, 0.9) for a warmer, royal feel; no extra sheet needed"
+    }
+  },
+  "shadow_baked": true
+}

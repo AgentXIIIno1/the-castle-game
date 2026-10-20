@@ -1,0 +1,51 @@
+The Castle - artwork license
+
+Copyright (C) 2026 AgentXIIIno1
+
+The original artwork made for this project is licensed under the Creative
+Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0).
+Full legal code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+Summary:         https://creativecommons.org/licenses/by-nc/4.0/
+
+SPDX-License-Identifier: CC-BY-NC-4.0
+
+Covered: the image files (PNG/GIF) in game/assets/ that were drawn
+for The Castle: sprites, animation strips, tiles, set pieces, decals,
+overlays and item art.
+
+Not covered:
+- The scripts that generate the art (game/assets/**/*.py). They are source code under GPL-2.0-or-later (see LICENSE).
+- Manifests and other data files (*.json): GPL-2.0-or-later, like the code.
+- Kevin Bales' Castle Adventure content that some images depict, such as room
+  layouts in previews, renders and screenshots (docs/), the
+  "Kevin Bales was here" / KB maze inscription, and the game's name. That
+  content is his and is not licensed by anyone here (see NOTICE).
+
+Summary of CC BY-NC 4.0 (not a substitute for the legal code):
+
+You are free to:
+- Share: copy and redistribute the material in any medium or format.
+- Adapt: remix, transform, and build upon the material.
+The licensor cannot revoke these freedoms as long as you follow the license
+terms.
+
+Under the following terms:
+- Attribution: You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your
+  use. Credit line: "Art from The Castle by AgentXIIIno1, CC BY-NC 4.0".
+- NonCommercial: You may not use the material for commercial purposes.
+- No additional restrictions: You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license
+  permits.
+
+Notices: You do not have to comply with the license for elements of the
+material in the public domain or where your use is permitted by an applicable
+exception or limitation. No warranties are given. The license may not give you
+all of the permissions necessary for your intended use. For example, other
+rights such as publicity, privacy, or moral rights may limit how you use the
+material.
+
+The artwork is separate from the program: the game loads it as data files at
+run time. It is distributed alongside the GPL code as an aggregate and is not
+licensed under the GPL.

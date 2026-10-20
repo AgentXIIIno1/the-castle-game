@@ -1,0 +1,25 @@
+Room 1 COURTYARD
+You are in the Castle Courtyard. To the north is a large Doorway.To the south is a large gate.
+Exits: {'north': 2, 'south': 84}
++------------------------+
+|##########    ##########|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|##########====##########|
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

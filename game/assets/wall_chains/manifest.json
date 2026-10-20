@@ -1,0 +1,75 @@
+{
+  "room": 79,
+  "room_name": "Torture Room (interior x3-20, y3-14; table '@' x5-6 y5-7; chain glyphs '{' at (20,7) and (20,10), remapped to '%' today)",
+  "sheets": {
+    "wall_chains.png": {
+      "frame_size": [
+        16,
+        44
+      ],
+      "variants": 2,
+      "layer": "east-wall side-face decal (baked into the room after the wall pass, in the wall-decal step of its row)",
+      "anchor": "top-left px = ((wall_x-1)*16, wall_y*16 + TOP - 8): the frame's right 8 px cover the wall's 8px inner side face (X-8, raised top), the left half and the lower 16 px lie on the floor at the wall foot",
+      "content": "v0: two bolted plates + rings, a long chain to an open shackle lying on the floor and a short chain with a dangling open cuff; v1: high ring, long chain to a pair of manacles on a spreader bar, an open neck collar on a second ring; rust streaks and a dark stain below",
+      "blocking": false,
+      "shadow_baked": false,
+      "rows_drawn": "wall_y and the floor below it (to wall_y*16+TOP+36)"
+    },
+    "chain_bones.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "layer": "floor decal (baked, under everything)",
+      "anchor": "top-left of cell",
+      "blocking": false,
+      "content": "v0: femur and knuckle bits; v1: cracked skull with jaw and a rib; faint dark stain"
+    }
+  },
+  "wall_post_cells_east_x21": [
+    2,
+    7,
+    12,
+    15
+  ],
+  "placements_room79": {
+    "WALL": [
+      [
+        "wall_chains/wall_chains.png",
+        16,
+        0,
+        21,
+        8,
+        "east"
+      ],
+      [
+        "wall_chains/wall_chains.png",
+        16,
+        1,
+        21,
+        10,
+        "east"
+      ]
+    ],
+    "FLOOR": [
+      [
+        "wall_chains/chain_bones.png",
+        16,
+        0,
+        19,
+        9
+      ],
+      [
+        "wall_chains/chain_bones.png",
+        16,
+        1,
+        19,
+        11
+      ]
+    ],
+    "setpiece_py": "CHAIN_WALL = [(\"wall_chains/wall_chains.png\", 16, 0, 21, 8, \"east\"), (\"wall_chains/wall_chains.png\", 16, 1, 21, 10, \"east\")]\nCHAIN_FLOOR = [(\"wall_chains/chain_bones.png\", 16, 0, 19, 9), (\"wall_chains/chain_bones.png\", 16, 1, 19, 11)]",
+    "moved": "glyph (20,7) sits against the east-wall post (21,7) -> that chain set is mounted on wall cell (21,8) (decal over floor cell (20,8)); glyph (20,10) kept (wall cell (21,10), not a post)",
+    "glyph_cells": "the '{' cells (20,7) and (20,10) should stop being tables/solid: drop the '{'->'%' FURN remap for room 79 and treat them as plain floor (walkable). The chains are wall decals, the hero walks in front of them"
+  }
+}

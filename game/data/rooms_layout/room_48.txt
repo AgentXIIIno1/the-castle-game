@@ -1,0 +1,25 @@
+Room 48 
+You are on the Castle wall. There is a stair case leading down in one corner.
+Exits: {'south': 61, 'east': 49, 'down': 45}
++------------------------+
+| #######################|
+| #                      |
+| #  DD                  |
+| #                      |
+| #      ################|
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

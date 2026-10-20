@@ -1,0 +1,25 @@
+Room 37 RED_ROOM
+You are in The Red Room. This is decorated all in red. It is mostly empty now except for 2 beds.
+Exits: {'north': 35}
++------------------------+
+|          #  #          |
+|          #  #          |
+|          #  #          |
+|   ########  ########   |
+|   #                #   |
+|   #                #   |
+|   #                #   |
+|   #  __        __  #   |
+|   #  RR        RR  #   |
+|   #  RR        RR  #   |
+|   #  RR        RR  #   |
+|   #  RR        RR  #   |
+|   #  ^^        ^^  #   |
+|   #                #   |
+|   ##################   |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Holy Cross', 13, 15)]
+Monsters(M): []

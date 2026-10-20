@@ -1,0 +1,25 @@
+Room 31 
+You are In the Kings room . It was once Furnished but is now empty. There is a staircase in one corner.
+Exits: {'east': 32, 'down': 15}
++------------------------+
+|                        |
+|                        |
+|                        |
+|                        |
+|     ################## |
+|     #                # |
+|     #              D # |
+|     #                ##|
+|     #                  |
+|     #                  |
+|     #                ##|
+|     #                # |
+|     #                # |
+|     #                # |
+|     ################## |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

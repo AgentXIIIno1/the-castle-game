@@ -1,0 +1,1254 @@
+{
+  "set": "battlements",
+  "rooms": [
+    25,
+    26,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    51,
+    60
+  ],
+  "sheets": {
+    "batt_wall_tops.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "cols": 6,
+      "layout": "same as room83_wall_tops.png / red_wall_tops.png",
+      "content": "crenellated parapet top: crenel surface + one merlon per tile (cap, south face, cast shadow), so any random tile keeps a 16px merlon beat in horizontal and vertical runs; v2 chipped, v3 lichen, v4 arrow loop, v5 grass tuft"
+    },
+    "batt_wall_fronts.png": {
+      "cell": [
+        16,
+        14
+      ],
+      "cols": 6,
+      "layout": "same as room83_wall_fronts.png",
+      "content": "inner parapet face, rain streaks, lichen at the foot; v5 drain hole"
+    },
+    "batt_side_walls.png": {
+      "cell": [
+        8,
+        30
+      ],
+      "cols": 4,
+      "layout": "same as room83_side_walls.png: cols 0-1 left (west wall, lit), 2-3 right (east wall, shadowed)"
+    },
+    "batt_floor.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "variants": 6,
+      "rule": "variant = thash(x,y) % 6 (existing floor_tiles hook)",
+      "content": "weathered flagstone walkway, two slabs per tile, lichen, hairline cracks; v4 rain puddle reflecting the dusk sky, v5 grass in a crack"
+    },
+    "batt_post.png": {
+      "frame_size": [
+        18,
+        38
+      ],
+      "frames": 2,
+      "frame_use": "0 = show_face (post above floor), 1 = no face (wall below; bottom 14px transparent)",
+      "anchor": "top-left at art3.pillar's (X, Y) = (x*16-1, y*16+TOP-RAISE-8): same 18px width, T top block and 8(+FACE) face as pillar()",
+      "content": "squat turret merlon with a 3-merlon crenellated cap, arrow loop on the face, lichen"
+    },
+    "stairs_{up,down}_battlement_{1x1,2x1,1x2,2x2}.png": {
+      "layout": "identical to art/stairs (same drawers, sizes and tiling; the 2x2 tiling rule of art3.draw_stairs applies)",
+      "palette": "weathered outdoor stone + lichen"
+    },
+    "underlay_<rid>.png": {
+      "size": [
+        384,
+        312
+      ],
+      "blit_at": [
+        0,
+        0
+      ],
+      "covers_floor_from_col": null,
+      "content": "dusk view far below (fields, hedgerows, woods, a river, a road, hamlets; half resolution + depth haze toward the top like balcony_view), the curtain wall's outer face dropping into the haze under every wall cell that faces the void to the south (starts 6px under the cell below the wall, i.e. under the 14px front face), soft shadow along walls bordering the void",
+      "note": "drawn first in bake_room like balcony_view; walls, floors, posts, stairs go over it. With it, no bake pixel stays magenta, so the outline stencil hides nothing in these rooms (the view replaces the void)"
+    }
+  },
+  "rooms_detail": {
+    "25": {
+      "name": "Lower Battlement",
+      "text": "You are in a lower Battlement. There is a staircase at one end.",
+      "stairs": [
+        {
+          "glyph": "U",
+          "cell": [
+            18,
+            2
+          ],
+          "size": [
+            2,
+            1
+          ],
+          "file": "stairs_up_battlement_2x1.png"
+        }
+      ],
+      "post_cells": [
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          20,
+          15
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          7
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          22,
+          15
+        ]
+      ],
+      "underlay": "battlements/underlay_25.png"
+    },
+    "26": {
+      "name": "Lower Battlement",
+      "text": "You are In a Lower Battlement. There is a staircase at one end.",
+      "stairs": [
+        {
+          "glyph": "U",
+          "cell": [
+            4,
+            2
+          ],
+          "size": [
+            2,
+            1
+          ],
+          "file": "stairs_up_battlement_2x1.png"
+        }
+      ],
+      "post_cells": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          3,
+          17
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          16
+        ]
+      ],
+      "underlay": "battlements/underlay_26.png"
+    },
+    "42": {
+      "name": "Upper Battlement",
+      "text": "You are in An upper Battlement. There is a staircase in one corner.",
+      "stairs": [
+        {
+          "glyph": "D",
+          "cell": [
+            18,
+            2
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "file": "stairs_down_battlement_1x1.png"
+        },
+        {
+          "glyph": "U",
+          "cell": [
+            19,
+            2
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "file": "stairs_up_battlement_1x1.png"
+        }
+      ],
+      "post_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          7
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          22,
+          17
+        ]
+      ],
+      "underlay": "battlements/underlay_42.png"
+    },
+    "43": {
+      "name": "Upper Battlement",
+      "text": "You are In an Upper Battlement. There is a long staircase leading down.",
+      "stairs": [
+        {
+          "glyph": "D",
+          "cell": [
+            22,
+            8
+          ],
+          "size": [
+            1,
+            2
+          ],
+          "file": "stairs_down_battlement_1x2.png"
+        }
+      ],
+      "post_cells": [
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          22,
+          11
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          22,
+          17
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          23,
+          11
+        ]
+      ],
+      "underlay": "battlements/underlay_43.png"
+    },
+    "44": {
+      "name": "Upper Battlement",
+      "text": "You are in an Upper Battlement.",
+      "stairs": [],
+      "post_cells": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          17
+        ]
+      ],
+      "underlay": "battlements/underlay_44.png"
+    },
+    "45": {
+      "name": "Upper Battlement",
+      "text": "You are in an Upper Battlement. There is a staircase in one corner.",
+      "stairs": [
+        {
+          "glyph": "U",
+          "cell": [
+            4,
+            2
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "file": "stairs_up_battlement_1x1.png"
+        },
+        {
+          "glyph": "D",
+          "cell": [
+            5,
+            2
+          ],
+          "size": [
+            1,
+            1
+          ],
+          "file": "stairs_down_battlement_1x1.png"
+        }
+      ],
+      "post_cells": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          22,
+          4
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          23,
+          4
+        ]
+      ],
+      "underlay": "battlements/underlay_45.png"
+    },
+    "46": {
+      "name": "Upper Battlement",
+      "text": "You are in an Upper Battlement.",
+      "stairs": [],
+      "post_cells": [
+        [
+          0,
+          13
+        ],
+        [
+          0,
+          17
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          7
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          22,
+          17
+        ]
+      ],
+      "underlay": "battlements/underlay_46.png"
+    },
+    "47": {
+      "name": "Upper Battlement",
+      "text": "You are in an Upper Battlement.",
+      "stairs": [],
+      "post_cells": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          17,
+          13
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          22,
+          13
+        ],
+        [
+          22,
+          17
+        ],
+        [
+          23,
+          13
+        ],
+        [
+          23,
+          17
+        ]
+      ],
+      "underlay": "battlements/underlay_47.png"
+    },
+    "48": {
+      "name": "Castle Wall",
+      "text": "You are on the Castle wall. There is a staircase leading down in one corner.",
+      "stairs": [
+        {
+          "glyph": "D",
+          "cell": [
+            4,
+            2
+          ],
+          "size": [
+            2,
+            1
+          ],
+          "file": "stairs_down_battlement_2x1.png"
+        }
+      ],
+      "post_cells": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          17
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          22,
+          4
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          23,
+          4
+        ]
+      ],
+      "underlay": "battlements/underlay_48.png"
+    },
+    "49": {
+      "name": "Castle Wall",
+      "text": "You are on the Castle wall. There is a staircase leading down in one corner.",
+      "stairs": [
+        {
+          "glyph": "D",
+          "cell": [
+            18,
+            2
+          ],
+          "size": [
+            2,
+            1
+          ],
+          "file": "stairs_down_battlement_2x1.png"
+        }
+      ],
+      "post_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          7
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          22,
+          17
+        ]
+      ],
+      "underlay": "battlements/underlay_49.png"
+    },
+    "51": {
+      "name": "Castle Wall",
+      "text": "You are on the Castle wall.",
+      "stairs": [],
+      "post_cells": [
+        [
+          0,
+          13
+        ],
+        [
+          0,
+          17
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          15,
+          13
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          7
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          22,
+          17
+        ]
+      ],
+      "underlay": "battlements/underlay_51.png"
+    },
+    "60": {
+      "name": "Castle Wall",
+      "text": "You are on the Castle Wall.",
+      "stairs": [],
+      "post_cells": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          17,
+          13
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          22,
+          13
+        ],
+        [
+          22,
+          17
+        ],
+        [
+          23,
+          13
+        ],
+        [
+          23,
+          17
+        ]
+      ],
+      "underlay": "battlements/underlay_60.png"
+    }
+  },
+  "room_themes_added": {
+    "25": {
+      "name": "Lower Battlement",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "26": {
+      "name": "Lower Battlement",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "42": {
+      "name": "Upper Battlement",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "43": {
+      "name": "Upper Battlement",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "44": {
+      "name": "Upper Battlement",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "45": {
+      "name": "Upper Battlement",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "46": {
+      "name": "Upper Battlement",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "47": {
+      "name": "Upper Battlement",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "48": {
+      "name": "Castle Wall",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "49": {
+      "name": "Castle Wall",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "51": {
+      "name": "Castle Wall",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    },
+    "60": {
+      "name": "Castle Wall",
+      "walls": "battlements/batt_",
+      "floor_tiles": "battlements/batt_floor.png"
+    }
+  },
+  "room_themes_pending_new_keys": {
+    "25": {
+      "underlay": "battlements/underlay_25.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "26": {
+      "underlay": "battlements/underlay_26.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "42": {
+      "underlay": "battlements/underlay_42.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "43": {
+      "underlay": "battlements/underlay_43.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "44": {
+      "underlay": "battlements/underlay_44.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "45": {
+      "underlay": "battlements/underlay_45.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "46": {
+      "underlay": "battlements/underlay_46.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "47": {
+      "underlay": "battlements/underlay_47.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "48": {
+      "underlay": "battlements/underlay_48.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "49": {
+      "underlay": "battlements/underlay_49.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "51": {
+      "underlay": "battlements/underlay_51.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    },
+    "60": {
+      "underlay": "battlements/underlay_60.png",
+      "stairs": "battlement",
+      "posts": "battlements/batt_post.png"
+    }
+  }
+}

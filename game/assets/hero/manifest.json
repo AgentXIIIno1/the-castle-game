@@ -1,0 +1,562 @@
+{
+ "monster": "hero",
+ "frame_size": [
+  36,
+  36
+ ],
+ "anchor": {
+  "px": [
+   12,
+   33
+  ],
+  "px_left": [
+   24,
+   33
+  ],
+  "desc": "bottom-centre ground contact; px for *_right strips, px_left for *_left (mirrored) strips; draw frame at (x - ax, y - ay)"
+ },
+ "layout": "one horizontal strip per state per facing, 1x RGBA, nearest only, dark outline baked, no shadow/glow baked",
+ "facing": "*_right.png is the native facing (game face>=0); *_left.png is the mirror (face<0) - or flip right at runtime as main.py does",
+ "notes": "Cleanup of art3.HERO: eye whites+pupils, brows, nose shading, mouth, cheek; old blocky left cloak replaced with a tapered flowing cloak that sways with the walk; 4-frame walk (legs alternate, body bobs) + 2-frame idle breathe. Sword and helmet are separate overlay layers or use the pre-composited *_swordX_helmetY strips. Side view only, matching main.py (right native; left = mirror). Tint/hurt flash stays game-side.",
+ "states": {
+  "body_idle": {
+   "files": [
+    "hero_body_idle_right.png",
+    "hero_body_idle_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "base layer (no sword/helmet)"
+  },
+  "sword_idle": {
+   "files": [
+    "hero_sword_idle_right.png",
+    "hero_sword_idle_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "overlay layer: draw after body, same anchor"
+  },
+  "helmet_idle": {
+   "files": [
+    "hero_helmet_idle_right.png",
+    "hero_helmet_idle_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "overlay layer: draw after body (and sword), same anchor"
+  },
+  "idle_sword0_helmet0": {
+   "files": [
+    "hero_idle_sword0_helmet0_right.png",
+    "hero_idle_sword0_helmet0_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "pre-composited variant = main.py heroes[(sword, helmet)]"
+  },
+  "idle_sword0_helmet1": {
+   "files": [
+    "hero_idle_sword0_helmet1_right.png",
+    "hero_idle_sword0_helmet1_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "pre-composited variant = main.py heroes[(sword, helmet)]"
+  },
+  "idle_sword1_helmet0": {
+   "files": [
+    "hero_idle_sword1_helmet0_right.png",
+    "hero_idle_sword1_helmet0_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "pre-composited variant = main.py heroes[(sword, helmet)]"
+  },
+  "idle_sword1_helmet1": {
+   "files": [
+    "hero_idle_sword1_helmet1_right.png",
+    "hero_idle_sword1_helmet1_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "pre-composited variant = main.py heroes[(sword, helmet)]"
+  },
+  "body_walk": {
+   "files": [
+    "hero_body_walk_right.png",
+    "hero_body_walk_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.1,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "base layer (no sword/helmet)"
+  },
+  "sword_walk": {
+   "files": [
+    "hero_sword_walk_right.png",
+    "hero_sword_walk_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.1,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "overlay layer: draw after body, same anchor"
+  },
+  "helmet_walk": {
+   "files": [
+    "hero_helmet_walk_right.png",
+    "hero_helmet_walk_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.1,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "overlay layer: draw after body (and sword), same anchor"
+  },
+  "walk_sword0_helmet0": {
+   "files": [
+    "hero_walk_sword0_helmet0_right.png",
+    "hero_walk_sword0_helmet0_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.1,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "pre-composited variant = main.py heroes[(sword, helmet)]"
+  },
+  "walk_sword0_helmet1": {
+   "files": [
+    "hero_walk_sword0_helmet1_right.png",
+    "hero_walk_sword0_helmet1_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.1,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "pre-composited variant = main.py heroes[(sword, helmet)]"
+  },
+  "walk_sword1_helmet0": {
+   "files": [
+    "hero_walk_sword1_helmet0_right.png",
+    "hero_walk_sword1_helmet0_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.1,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "pre-composited variant = main.py heroes[(sword, helmet)]"
+  },
+  "walk_sword1_helmet1": {
+   "files": [
+    "hero_walk_sword1_helmet1_right.png",
+    "hero_walk_sword1_helmet1_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.1,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "pre-composited variant = main.py heroes[(sword, helmet)]"
+  },
+  "necklace_idle": {
+   "files": [
+    "hero_necklace_idle_right.png",
+    "hero_necklace_idle_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "overlay (#27, worn necklace): Necklace item gold + ruby on the jerkin collar, follows the body bob. Draw after body + backpack straps, before sword and helmet; frame index = the hero strip's"
+  },
+  "necklace_walk": {
+   "files": [
+    "hero_necklace_walk_right.png",
+    "hero_necklace_walk_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.14,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "overlay (#27, worn necklace): Necklace item gold + ruby on the jerkin collar, follows the body bob. Draw after body + backpack straps, before sword and helmet; frame index = the hero strip's"
+  },
+  "necklace_glint": {
+   "files": [
+    "hero_necklace_glint_right.png",
+    "hero_necklace_glint_left.png"
+   ],
+   "frames": 4,
+   "frame_durations_ms": [
+    1600,
+    90,
+    110,
+    200
+   ],
+   "loop": true,
+   "optional": true,
+   "note": "optional idle replacement for necklace_idle (bob 0): frame 1 sparkles on the ruby, same timing as the statue necklace glint"
+  },
+  "chainmail_idle": {
+   "files": [
+    "hero_chainmail_idle_right.png",
+    "hero_chainmail_idle_left.png"
+   ],
+   "frames": 2,
+   "fps": 2.5,
+   "frame_durations_ms": [
+    400,
+    400
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "overlay (#28, worn Chain Mail): mail coif at the collar, mail on the near sleeve, 2 rows of hauberk hem below the jerkin; derived per frame from hero_body so it follows the bob. Draw right after the body, before the backpack straps; frame index = the hero strip's"
+  },
+  "chainmail_walk": {
+   "files": [
+    "hero_chainmail_walk_right.png",
+    "hero_chainmail_walk_left.png"
+   ],
+   "frames": 4,
+   "fps": 7.14,
+   "frame_durations_ms": [
+    140,
+    140,
+    140,
+    140
+   ],
+   "loop": true,
+   "frame_anchor_offsets": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "note": "overlay (#28, worn Chain Mail): mail coif at the collar, mail on the near sleeve, 2 rows of hauberk hem below the jerkin; derived per frame from hero_body so it follows the bob. Draw right after the body, before the backpack straps; frame index = the hero strip's"
+  }
+ },
+ "layer_order": "backpack back (art/backpack) -> body (or a pre-composited hero_<state>_swordX_helmetY strip) -> chainmail -> backpack front straps -> necklace -> sword -> helmet. Mail pixels only replace the shirt collar, the near sleeve and the trouser tops: none of them is under a sword or helmet pixel in any frame, so drawing it over a pre-composited strip is also exact"
+}

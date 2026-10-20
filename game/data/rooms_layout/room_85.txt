@@ -1,0 +1,25 @@
+Room 85 CASTLE
+You are  trapped  in a deserted  Castle      Use the cursor keypad  to move your man      just  run  into  them,  but only if you and you must escape. It is rumored that      around the rooms.  To pick up a visible      have a weapon.  There are 83 rooms  and the  castle is  full of treasures.  Can      item,  just run into it.  To pick up an      13 treasures.  To see  the  High Score, you find them all?                           item  not displayed on the screen,  use      look at the wall in the courtyard. the command TAKE.  To  attack  monsters
+Exits: {}
++------------------------+
+|& & & &          & & & &|
+|& & & &          & & & &|
+|&&&&&&&          &&&&&&&|
+|&&&&&&&          &&&&&&&|
+| &&&&&            &&&&& |
+| &&&&&            &&&&& |
+| &&&&&            &&&&& |
+| &&&&&& && && && &&&&&& |
+| &&&&&&&&&&&&&&&&&&&&&& |
+| &&&&&&&&&&&&&&&&&&&&&& |
+|  &&&&&&&&&&&&&&&&&&&&  |
+|  &&&&&&########&&&&&&  |
+|  &&&&&&########&&&&&&  |
+|  &&&&&&##@@@@##&&&&&&  |
+|  &&&&&&##@@@@##&&&&&&  |
+|  &&&&&&##@@@@##&&&&&&  |
+|  &&&&&&##@@@@##&&&&&&  |
+|  &&&&&&##@@@@##&&&&&&  |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

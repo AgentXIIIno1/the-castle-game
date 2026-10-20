@@ -1,0 +1,25 @@
+Room 34 
+You are in a corridor. There is a staircase at on end.
+Exits: {'south': 41, 'east': 40, 'west': 39, 'down': 32}
++------------------------+
+|                        |
+|         ######         |
+|         #    #         |
+|         # DD #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|##########    ##########|
+|                        |
+|                        |
+|##########    ##########|
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

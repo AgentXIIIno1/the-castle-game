@@ -1,0 +1,25 @@
+Room 33 BALCONY
+You are on a Balcony looking over the Castle Gardens.
+Exits: {'west': 22}
++------------------------+
+|                        |
+| ######&-.            + |
+| #       |     *        |
+| #       >              |
+| #       | +            |
+| #       >           +  |
+|##       |              |
+|         |              |
+|         >    ,-.       |
+|         >    |?|       |
+|         |    `-'     * |
+|##       | +            |
+| #       >              |
+| #       |   *          |
+| #       >         +    |
+| #       |              |
+| ######&-'              |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

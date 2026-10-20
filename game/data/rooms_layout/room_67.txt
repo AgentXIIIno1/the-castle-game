@@ -1,0 +1,25 @@
+Room 67 SORCERERS_QUARTERS
+You are in the Sorcerers Quarters. Two Beds and a large mirror are all that is left.
+Exits: {'east': 66, 'west': 62}
++------------------------+
+|                        |
+|                        |
+|                        |
+|     ###############    |
+|     #             #    |
+|     #]WWWW[       #    |
+|     #]WWWW[      ,#    |
+|######            |#    |
+|                  |#    |
+|                  |#    |
+|######            |#    |
+|     #]WWWW[      `#    |
+|     #]WWWW[       #    |
+|     #             #    |
+|     ###############    |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

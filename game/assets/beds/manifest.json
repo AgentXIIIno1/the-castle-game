@@ -1,0 +1,142 @@
+{
+  "issue": 34,
+  "bed_single_h.png": {
+    "frame_size": [
+      96,
+      48
+    ],
+    "variants": {
+      "0": "faded madder red",
+      "1": "dusty violet",
+      "2": "dusty ochre"
+    },
+    "glyphs": "']' head (west) + 'W' x4 + '[' foot (east), 2 rows = 6x2 block",
+    "anchor": {
+      "px": [
+        48,
+        47
+      ],
+      "desc": "bottom-centre of the 6x2 block: world ((x0+3)*16, (y0+2)*16), x0 = column of ']', y0 = top row"
+    },
+    "body_cells_in_frame": [
+      16,
+      16,
+      64,
+      32
+    ],
+    "footprint_tiles": [
+      6,
+      2
+    ],
+    "blocking": "all block cells (as now)",
+    "depth_sort_y": "(y0+2)*16",
+    "shadow_baked": true
+  },
+  "bed_frame_h.png": {
+    "frame_size": [
+      96,
+      48
+    ],
+    "same_anchor_as": "bed_single_h.png",
+    "desc": "plain frame with a bare ticking mattress; the themed covers (64x32, rooms 39/40) sit exactly on the body cells (frame px 16,16), drawn after the frame"
+  },
+  "bed_single_v.png": {
+    "frame_size": [
+      32,
+      112
+    ],
+    "variants": {
+      "0": "faded red",
+      "1": "dusty violet"
+    },
+    "glyphs": "'_' head (north) + 'W' x4 rows + '^' foot (south), 2 cells wide = 2x6 block",
+    "anchor": {
+      "px": [
+        16,
+        111
+      ],
+      "desc": "bottom-centre of the 2x6 block: world ((x0+1)*16, (y0+6)*16), x0 = left column, y0 = row of '_'"
+    },
+    "body_cells_in_frame": [
+      0,
+      32,
+      32,
+      64
+    ],
+    "footprint_tiles": [
+      2,
+      6
+    ],
+    "blocking": "all block cells",
+    "depth_sort_y": "(y0+6)*16",
+    "shadow_baked": true,
+    "note": "headboard rises 16 px above the '_' row"
+  },
+  "bed_frame_v.png": {
+    "frame_size": [
+      32,
+      112
+    ],
+    "same_anchor_as": "bed_single_v.png",
+    "desc": "plain frame for the 32x64 vertical covers (rooms 37/38) at frame px (0,32)"
+  },
+  "placements": {
+    "room 10 (Chef's Quarters)": {
+      "file": "bed_single_h.png",
+      "variant": 2,
+      "block": "x6-11, y1-2",
+      "world_anchor": [
+        144,
+        48
+      ]
+    },
+    "room 67 (Sorcerer's Quarters)": [
+      {
+        "file": "bed_single_h.png",
+        "variant": 1,
+        "block": "x6-11, y5-6",
+        "world_anchor": [
+          144,
+          112
+        ]
+      },
+      {
+        "file": "bed_single_h.png",
+        "variant": 1,
+        "block": "x6-11, y11-12",
+        "world_anchor": [
+          144,
+          208
+        ]
+      }
+    ],
+    "rooms 39/40": {
+      "file": "bed_frame_h.png",
+      "block": "x4-9, y5-6",
+      "world_anchor": [
+        112,
+        112
+      ],
+      "then": "existing bed_cover at (5*16, 5*16)"
+    },
+    "rooms 37/38": [
+      {
+        "file": "bed_frame_v.png",
+        "block": "x6-7, y7-12",
+        "world_anchor": [
+          112,
+          208
+        ]
+      },
+      {
+        "file": "bed_frame_v.png",
+        "block": "x16-17, y7-12",
+        "world_anchor": [
+          272,
+          208
+        ]
+      }
+    ],
+    "anywhere else": "any ']W..W[' 6x2 block -> bed_single_h (pick variant by room colour); any '_ W W ^' 2x6 block -> bed_single_v"
+  }
+}

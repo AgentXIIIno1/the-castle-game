@@ -1,0 +1,25 @@
+Room 65 EAST_TOWER_TOP
+You are at the top of the East Tower.
+Exits: {'down': 63}
++------------------------+
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|               ##----## |
+|              ##      ##|
+|              #        #|
+|              |   DD   ||
+|              |   DD   ||
+|              #        #|
+|              ##      ##|
+|               ##----## |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Harp', 8, 16)]
+Monsters(M): []

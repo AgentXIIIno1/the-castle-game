@@ -1,0 +1,92 @@
+{
+  "sheets": [
+    {
+      "file": "fountain_garden_base.png",
+      "frame_size": [
+        48,
+        60
+      ],
+      "frames": 1,
+      "layer": "base (static stone)"
+    },
+    {
+      "file": "fountain_garden_water.png",
+      "frame_size": [
+        48,
+        60
+      ],
+      "frames": 8,
+      "layer": "water+spout overlay, loop"
+    },
+    {
+      "file": "fountain_garden_full.png",
+      "frame_size": [
+        48,
+        60
+      ],
+      "frames": 8,
+      "layer": "base+water composited, loop"
+    },
+    {
+      "file": "fountain_balcony_base.png",
+      "frame_size": [
+        48,
+        60
+      ],
+      "frames": 1,
+      "layer": "base (static stone)"
+    },
+    {
+      "file": "fountain_balcony_water.png",
+      "frame_size": [
+        48,
+        60
+      ],
+      "frames": 8,
+      "layer": "water+spout overlay, loop"
+    },
+    {
+      "file": "fountain_balcony_full.png",
+      "frame_size": [
+        48,
+        60
+      ],
+      "frames": 8,
+      "layer": "base+water composited, loop"
+    }
+  ],
+  "footprint_tiles": [
+    3,
+    3
+  ],
+  "glyphs": ",-. |?| `-'",
+  "rooms": {
+    "18": "GARDEN_SOUTH (rows 11-13, cols 11-13, 1-based) -> theme garden",
+    "33": "BALCONY (rows 13-15, cols 15-17) -> theme balcony"
+  },
+  "anchor": {
+    "px": [
+      24,
+      59
+    ],
+    "desc": "bottom-centre of the 3x3 footprint: world (fx*16 + 24, (fy+3)*16) where (fx,fy) = 0-based cell of ','. Frame extends 12px above the footprint for the spout."
+  },
+  "layering": "object layer, depth-sort at y = (fy+3)*16 (same as now). Draw base, then water strip on top (same anchor). Or use the pre-composited *_full strip.",
+  "blocking": "all 9 footprint cells block (unchanged: main.py FOUNTAIN glyphs). '?' is the centre.",
+  "animation": {
+    "frames": 8,
+    "fps": 8,
+    "frame_durations_ms": [
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125,
+      125
+    ],
+    "loop": true
+  },
+  "no_glow_baked": true
+}

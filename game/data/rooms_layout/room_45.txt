@@ -1,0 +1,25 @@
+Room 45 
+You are in an Upper Battlement. There is a staircase in one corner.
+Exits: {'south': 44, 'east': 42, 'up': 48, 'down': 26}
++------------------------+
+| #######################|
+| #                      |
+| #  UD                  |
+| #                      |
+| #      ################|
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

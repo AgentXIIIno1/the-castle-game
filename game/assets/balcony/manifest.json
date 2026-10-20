@@ -1,0 +1,42 @@
+{
+  "room": 33,
+  "room_name": "Balcony Looking Over The Castle Gardens",
+  "balcony_view.png": {
+    "size": [
+      224,
+      312
+    ],
+    "layer": "underlay (baked, before anything else)",
+    "placement": "blit at bake-surface px (160, 0) = cells x10-23, rows 0-17 plus the 24 px TOP strip; replaces the magenta void AND the floor patches currently baked under the fountain/bush cells there",
+    "content": "garden seen from above: lawn, gravel plaza centred on the fountain cell (15,9), cross paths, clipped hedges, faded flower beds, treetops at the far edges; drawn at half resolution + depth haze toward the east, darker than the balcony; shadow band from the balcony along its west edge",
+    "shadow_baked": true
+  },
+  "balcony_rail.png": {
+    "frame_size": [
+      16,
+      24
+    ],
+    "frames": [
+      "|",
+      ">",
+      ".",
+      "'",
+      "-"
+    ],
+    "anchor": "frame top-left = (x*16, y*16 + TOP - 8): rises 8 px like the wall tops; bottom of the frame = bottom of the cell",
+    "mapping": {
+      "'|' (x9)": 0,
+      "'>' (x9, currently remapped to the '%' table)": 1,
+      "'.' (9,1) north end": 2,
+      "\"'\" (9,16) south end": 3,
+      "'-' (8,1) and (8,16)": 4
+    },
+    "blocking": "unchanged (rail cells stay solid)",
+    "depth_sort_y": "(y+1)*16",
+    "shadow_baked": false
+  },
+  "recommendations": {
+    "fountain_and_bushes": "keep drawing them on top of the view; optionally multiply them by (200,206,218) so they sit in the haze",
+    "lighting": "no extra light needed; the view is pre-darkened"
+  }
+}

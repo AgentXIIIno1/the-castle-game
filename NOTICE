@@ -1,0 +1,46 @@
+The Castle
+An unofficial, free, non-commercial fan remake of Castle Adventure (1984).
+Copyright (C) 2026 AgentXIIIno1.
+
+ORIGINAL GAME
+Castle Adventure (1984) was written and designed by Kevin Bales. He wrote the
+original room descriptions and game text, and designed the puzzles, the map
+layout, the item and monster placements and the game itself. The name "Castle
+Adventure" is his. All of that is his work and remains his. It is NOT covered
+by this project's code license (LICENSE) or art license (LICENSE-ART), and no
+one here grants any rights to it.
+
+This remake is not affiliated with, authorized or endorsed by Kevin Bales. It
+is free and non-commercial. It will be taken down on request from the rights
+holder.
+
+DATA SOURCE: SEED7
+The room data comes from Thomas Mertes' Seed7 rewrite of Castle Adventure
+(castle.sd7 and castle.dat, https://github.com/ThomasMertes/seed7, prg/).
+src/castle.sd7 and src/castle.dat are included unmodified with their original
+notice, which is preserved here:
+
+    castle.sd7    Castle Adventure
+    Copyright (C) 2006 - 2008, 2010, 2012, 2013  Thomas Mertes
+                  2020 - 2022, 2024, 2025  Thomas Mertes
+
+    This program is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License as
+    published by the Free Software Foundation; either version 2 of
+    the License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+src/gen.py extracts game/data/rooms.json and game/data/rooms_layout/ from
+them. Because those files are derived from the
+GPL-licensed Seed7 files, this project's code and data are distributed under
+GPL-2.0-or-later (see LICENSE). The game code (game/*.py) is an independent
+Python implementation and contains no code translated from castle.sd7.
+
+THIS PROJECT
+Code, tools and generated data: GPL-2.0-or-later (LICENSE).
+Original artwork in game/assets/: CC BY-NC 4.0 (LICENSE-ART).
+Made by AgentXIIIno1 with AI-assisted code and art.

@@ -1,0 +1,415 @@
+{
+  "tile_px": 16,
+  "scale_note": "authored 1x, game scales 2x nearest",
+  "palette_source": "art.py STONE (indoor), art3.py 'cave' floor pal (dungeon)",
+  "sheets": [
+    {
+      "file": "stairs_up_indoor_1x1.png",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "U",
+      "rooms": "rooms 04,05,11,15,16,20,21,30,31,68",
+      "variant": "indoor",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_up_indoor_2x1.png",
+      "frame_size": [
+        32,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        2,
+        1
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "U",
+      "rooms": "rooms 25,26,32,34,41,48,49,53 (and mixed 42,45: one tile each -> use 1x1)",
+      "variant": "indoor",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_up_indoor_1x2.png",
+      "frame_size": [
+        16,
+        32
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        1,
+        2
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "U",
+      "rooms": "rooms 43,82 (vertical pair at east wall)",
+      "variant": "indoor",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_up_indoor_2x2.png",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        2,
+        2
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "U",
+      "rooms": "rooms 07,23,50,61,64,65 (62,63 mixed: use 1x2 per column)",
+      "variant": "indoor",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_up_dungeon_1x1.png",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "U",
+      "rooms": "rooms 04,05,11,15,16,20,21,30,31,68",
+      "variant": "dungeon",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_up_dungeon_2x1.png",
+      "frame_size": [
+        32,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        2,
+        1
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "U",
+      "rooms": "rooms 25,26,32,34,41,48,49,53 (and mixed 42,45: one tile each -> use 1x1)",
+      "variant": "dungeon",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_up_dungeon_1x2.png",
+      "frame_size": [
+        16,
+        32
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        1,
+        2
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "U",
+      "rooms": "rooms 43,82 (vertical pair at east wall)",
+      "variant": "dungeon",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_up_dungeon_2x2.png",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        2,
+        2
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "U",
+      "rooms": "rooms 07,23,50,61,64,65 (62,63 mixed: use 1x2 per column)",
+      "variant": "dungeon",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_up_indoor_1x1_dust_strip.png",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 4,
+      "fps": 4,
+      "frame_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor": "top-left of tile cell",
+      "glyph": "U",
+      "variant": "indoor",
+      "optional": true,
+      "layering": "optional animated replacement for 1x1 up tile"
+    },
+    {
+      "file": "stairs_up_dungeon_1x1_dust_strip.png",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 4,
+      "fps": 4,
+      "frame_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor": "top-left of tile cell",
+      "glyph": "U",
+      "variant": "dungeon",
+      "optional": true,
+      "layering": "optional animated replacement for 1x1 up tile"
+    },
+    {
+      "file": "stairs_down_indoor_1x1.png",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "D",
+      "rooms": "rooms 04,05,11,15,16,20,21,30,31,68",
+      "variant": "indoor",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_down_indoor_2x1.png",
+      "frame_size": [
+        32,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        2,
+        1
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "D",
+      "rooms": "rooms 25,26,32,34,41,48,49,53 (and mixed 42,45: one tile each -> use 1x1)",
+      "variant": "indoor",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_down_indoor_1x2.png",
+      "frame_size": [
+        16,
+        32
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        1,
+        2
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "D",
+      "rooms": "rooms 43,82 (vertical pair at east wall)",
+      "variant": "indoor",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_down_indoor_2x2.png",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        2,
+        2
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "D",
+      "rooms": "rooms 07,23,50,61,64,65 (62,63 mixed: use 1x2 per column)",
+      "variant": "indoor",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_down_dungeon_1x1.png",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "D",
+      "rooms": "rooms 04,05,11,15,16,20,21,30,31,68",
+      "variant": "dungeon",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_down_dungeon_2x1.png",
+      "frame_size": [
+        32,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        2,
+        1
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "D",
+      "rooms": "rooms 25,26,32,34,41,48,49,53 (and mixed 42,45: one tile each -> use 1x1)",
+      "variant": "dungeon",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_down_dungeon_1x2.png",
+      "frame_size": [
+        16,
+        32
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        1,
+        2
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "D",
+      "rooms": "rooms 43,82 (vertical pair at east wall)",
+      "variant": "dungeon",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    },
+    {
+      "file": "stairs_down_dungeon_2x2.png",
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 1,
+      "fps": 0,
+      "footprint_tiles": [
+        2,
+        2
+      ],
+      "anchor": "top-left = top-left cell of the glyph block (draw at col*16,row*16, 0-based)",
+      "glyph": "D",
+      "rooms": "rooms 07,23,50,61,64,65 (62,63 mixed: use 1x2 per column)",
+      "variant": "dungeon",
+      "tile_pieces": "slice into 16x16 cells row-major if per-cell drawing is needed",
+      "use_variant_when": "dungeon if art3.floor_kind(rid)=='cave' (68-83) or dark cellar; else indoor",
+      "orientation": "3/4 view, steps run across (horizontal); UP rises toward top of screen, DOWN descends toward bottom",
+      "layering": "floor layer: blit over baked floor in place of the striped U, beneath items/monsters/hero. Fully opaque RGBA; no drop shadow baked; no glow baked."
+    }
+  ]
+}

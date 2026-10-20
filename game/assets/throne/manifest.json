@@ -1,0 +1,61 @@
+{
+  "room": 14,
+  "room_name": "Throne Room",
+  "glyphs": "'%' x10,x13 y3-4 and '-' x11-12 y4 (0-based) = 4x2 block",
+  "pieces": {
+    "throne.png": {
+      "frame_size": [
+        72,
+        80
+      ],
+      "footprint_tiles": [
+        4,
+        2
+      ],
+      "anchor": {
+        "px": [
+          36,
+          79
+        ],
+        "desc": "bottom-centre of the 4x2 block: world (10*16 + 32, (3+2)*16) = (192, 80); frame top-left (156, 1)"
+      },
+      "blocking": "all 8 block cells ('%' and the '-' between)",
+      "depth_sort_y": "(3+2)*16 = 80",
+      "shadow_baked": true,
+      "replaces": "procedural '%' furniture in room 14",
+      "design": "v2 (more ornate, issue #2 comment): pointed carved gilt back with crown finial, inset rubies/sapphires/emeralds catching left rim light, damask velvet back, club crest, orb-finial posts, roaring lion arms, scrolled jewelled apron, gold-trimmed dais steps with rosettes, hanging club banners, dust/cobweb/chipped step"
+    },
+    "throne_glint.png": {
+      "frame_size": [
+        72,
+        80
+      ],
+      "frames": 4,
+      "anchor": {
+        "px": [
+          36,
+          79
+        ]
+      },
+      "optional": true,
+      "layer": "drawn over throne.png at the same position, additive or alpha",
+      "fps": 3,
+      "desc": "small gem sparkles cycling over a quarter of the gems per frame; no bloom"
+    },
+    "throne_carpet.png": {
+      "frame_size": [
+        32,
+        160
+      ],
+      "anchor": "top-left of cell (11, 5)",
+      "footprint_tiles": [
+        2,
+        10
+      ],
+      "blocking": false,
+      "layer": "floor decal",
+      "placement": "runner from the dais to the south door: cells x11-12, y5-14",
+      "optional": true
+    }
+  }
+}

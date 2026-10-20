@@ -1,0 +1,25 @@
+Room 53 
+You are in a corridor. there is a Stairway going down.
+Exits: {'north': 52, 'east': 55, 'west': 54, 'down': 41}
++------------------------+
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|##########    ##########|
+|                        |
+|                        |
+|##########    ##########|
+|         # DD #         |
+|         #    #         |
+|         ######         |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

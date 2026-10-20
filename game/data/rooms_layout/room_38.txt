@@ -1,0 +1,25 @@
+Room 38 
+You are in the Blue room. This room is decorated all in blue. It is now empty except for 2 beds.
+Exits: {'north': 36}
++------------------------+
+|          #  #          |
+|          #  #          |
+|          #  #          |
+|   ########  ########   |
+|   #                #   |
+|   #                #   |
+|   #                #   |
+|   #  __        __  #   |
+|   #  NN        NN  #   |
+|   #  NN        NN  #   |
+|   #  NN        NN  #   |
+|   #  NN        NN  #   |
+|   #  ^^        ^^  #   |
+|   #                #   |
+|   ##################   |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

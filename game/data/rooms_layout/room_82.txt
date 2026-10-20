@@ -1,0 +1,25 @@
+Room 82 DUNGEON_ENTRANCE
+You are in the Dungeon entrace hall. There is a long staircase leading up.
+Exits: {'west': 81, 'up': 43}
++------------------------+
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|             ###########|
+|##############         #|
+|             M        U#|
+|             M        U#|
+|##############         #|
+|             ###########|
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): [('Door', 9, 14), ('', 10, 14)]

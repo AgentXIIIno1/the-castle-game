@@ -1,0 +1,170 @@
+{
+  "replaces": "art.make_item() orb placeholder (main.Game.item_sprite fallback). Lamp, Sword, Helmet and Fancy Goblet already have dedicated art and are not included.",
+  "floor": {
+    "frame_size": [
+      16,
+      16
+    ],
+    "anchor": [
+      8,
+      15
+    ],
+    "shadow_baked": true,
+    "note": "anchor bottom-centre at the item's floor contact; game's bob can stay"
+  },
+  "small": {
+    "frame_size": [
+      12,
+      12
+    ],
+    "anchor": [
+      6,
+      11
+    ],
+    "shadow_baked": false,
+    "use": "on desk/shelf/statue tops, in drawers, inventory/HUD"
+  },
+  "glint": {
+    "frame_size": [
+      16,
+      16
+    ],
+    "frames": 4,
+    "fps": 6,
+    "loop": true,
+    "frame_durations_ms": [
+      160,
+      160,
+      160,
+      600
+    ],
+    "anchor": [
+      8,
+      15
+    ],
+    "shadow_baked": true,
+    "note": "treasures only; frame 3 = rest"
+  },
+  "items": {
+    "BOOK": {
+      "name": "Book",
+      "treasure": false,
+      "floor": "book.png",
+      "small": "book_small.png"
+    },
+    "CROWN": {
+      "name": "Crown",
+      "treasure": true,
+      "floor": "crown.png",
+      "small": "crown_small.png",
+      "glint": "crown_glint.png"
+    },
+    "CRYSTAL_BALL": {
+      "name": "Crystal Ball",
+      "treasure": false,
+      "floor": "crystal_ball.png",
+      "small": "crystal_ball_small.png"
+    },
+    "DIAMOND": {
+      "name": "Diamond",
+      "treasure": true,
+      "floor": "diamond.png",
+      "small": "diamond_small.png",
+      "glint": "diamond_glint.png"
+    },
+    "GLASSES": {
+      "name": "Eye Glasses",
+      "treasure": false,
+      "floor": "glasses.png",
+      "small": "glasses_small.png"
+    },
+    "GOLDBAR": {
+      "name": "Goldbar",
+      "treasure": true,
+      "floor": "goldbar.png",
+      "small": "goldbar_small.png",
+      "glint": "goldbar_glint.png"
+    },
+    "HARP": {
+      "name": "Harp",
+      "treasure": true,
+      "floor": "harp.png",
+      "small": "harp_small.png",
+      "glint": "harp_glint.png"
+    },
+    "HOLY_CROSS": {
+      "name": "Holy Cross",
+      "treasure": true,
+      "floor": "holy_cross.png",
+      "small": "holy_cross_small.png",
+      "glint": "holy_cross_glint.png"
+    },
+    "HOURGLASS": {
+      "name": "Hourglass",
+      "treasure": true,
+      "floor": "hourglass.png",
+      "small": "hourglass_small.png",
+      "glint": "hourglass_glint.png"
+    },
+    "JADE_FIGURINE": {
+      "name": "Jade Figurine",
+      "treasure": true,
+      "floor": "jade_figurine.png",
+      "small": "jade_figurine_small.png",
+      "glint": "jade_figurine_glint.png"
+    },
+    "KEY": {
+      "name": "Key",
+      "treasure": false,
+      "floor": "key.png",
+      "small": "key_small.png"
+    },
+    "LARGE_GEM": {
+      "name": "Large Gem",
+      "treasure": true,
+      "floor": "large_gem.png",
+      "small": "large_gem_small.png",
+      "glint": "large_gem_glint.png"
+    },
+    "MAGIC_WAND": {
+      "name": "Magic Wand",
+      "treasure": false,
+      "floor": "magic_wand.png",
+      "small": "magic_wand_small.png"
+    },
+    "NECKLACE": {
+      "name": "Necklace",
+      "treasure": true,
+      "floor": "necklace.png",
+      "small": "necklace_small.png",
+      "glint": "necklace_glint.png"
+    },
+    "RUBYS": {
+      "name": "Ruby",
+      "treasure": true,
+      "floor": "rubys.png",
+      "small": "rubys_small.png",
+      "glint": "rubys_glint.png"
+    },
+    "SCEPTER": {
+      "name": "Scepter",
+      "treasure": true,
+      "floor": "scepter.png",
+      "small": "scepter_small.png",
+      "glint": "scepter_glint.png"
+    },
+    "SILVER_BARS": {
+      "name": "Silver Bars",
+      "treasure": true,
+      "floor": "silver_bars.png",
+      "small": "silver_bars_small.png",
+      "glint": "silver_bars_glint.png"
+    },
+    "WINE_FLASK": {
+      "name": "Wine Flask",
+      "treasure": false,
+      "floor": "wine_flask.png",
+      "small": "wine_flask_small.png"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Room 16 
+You are in the Queen's Dressing room. It was once filled with clothes. There is a Staircase in one corner.
+Exits: {'west': 14, 'up': 30}
++------------------------+
+| #################      |
+| #               #      |
+| #               #      |
+|##               #      |
+|                 #      |
+|##               #      |
+| # U             #      |
+| #               #      |
+| #################      |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

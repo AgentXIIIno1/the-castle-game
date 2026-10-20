@@ -1,0 +1,1672 @@
+{
+ "legend": "exits use room ids; 0/absent = none. rows/cols 1-based on 18x24 grid. 84=ESCAPED (win), 85=CASTLE pseudo-room.",
+ "rooms": [
+  {
+   "id": 1,
+   "name": "Castle Courtyard",
+   "const": "COURTYARD",
+   "description": "You are in the Castle Courtyard. To the north is a large Doorway.To the south is a large gate.",
+   "exits": {
+    "north": 2,
+    "south": 84
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "gate"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 2,
+   "name": "Entrance Room",
+   "const": null,
+   "description": "You are in the Entrance room. Exits are to the north & south.",
+   "exits": {
+    "north": 3,
+    "south": 1
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 3,
+   "name": "Welcome Hall",
+   "const": null,
+   "description": "You are in The Welcome Hall. This room was used to welcome guests. There are large archways in all four walls.",
+   "exits": {
+    "north": 7,
+    "south": 2,
+    "east": 5,
+    "west": 4
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 4,
+   "name": "West Ballroom",
+   "const": "WEST_BALLROOM",
+   "description": "You are in The West Ballroom. There are arch ways to the north & east; a spiral staircase in one corner.",
+   "exits": {
+    "north": 8,
+    "east": 3,
+    "up": 20
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "UGLY_OGRE1",
+     "name": "Ugly Ogre",
+     "row": 9,
+     "col": 13,
+     "attack": 4,
+     "strength": 80
+    }
+   ],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 5,
+   "name": "East Ballroom",
+   "const": null,
+   "description": "You are in The East Ballroom. There are arch ways to the north & west; a spiral staircase in one corner.",
+   "exits": {
+    "north": 6,
+    "west": 3,
+    "up": 21
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 6,
+   "name": "East Dining Room",
+   "const": null,
+   "description": "You are in the East Dining room. The large opening to the east leads to the garden patio.",
+   "exits": {
+    "north": 12,
+    "south": 5,
+    "east": 18,
+    "west": 7
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 7,
+   "name": "Central Hall",
+   "const": null,
+   "description": "You are in The Central Hall. Exits are in all directions. There is a large spiral staircase in the middle.",
+   "exits": {
+    "north": 13,
+    "south": 3,
+    "east": 6,
+    "west": 8,
+    "up": 23
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 8,
+   "name": "West Dining Room",
+   "const": "WEST_DINING_ROOM",
+   "description": "You are in the West Dining room. There 2 door ways to the north, & arch ways to the east & south.",
+   "exits": {
+    "north": 9,
+    "south": 4,
+    "east": 7
+   },
+   "items": [
+    {
+     "item": "FANCY_GOBLET",
+     "name": "Fancy Goblet",
+     "row": 14,
+     "col": 6,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 9,
+   "name": "Kitchen",
+   "const": "KITCHEN",
+   "description": "You are in The Kitchen. In the Center is a large stone table.",
+   "exits": {
+    "north": 11,
+    "south": 8,
+    "east": 10
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stone table/throne"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 10,
+   "name": "Chef'S Quarters",
+   "const": "CHEFS_QUARTERS",
+   "description": "You are in The Chef's Quarters. There is a small desk & a Bed here.",
+   "exits": {
+    "west": 9
+   },
+   "items": [
+    {
+     "item": "WINE_FLASK",
+     "name": "Wine Flask",
+     "row": 11,
+     "col": 8,
+     "treasure": false,
+     "hidden": "on desk; look/take desk"
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "bed",
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 11,
+   "name": "Storage Room",
+   "const": "STORAGE_ROOM",
+   "description": "You are in the Storage room. There are Two large shelves in the middle,and a Small Staircase in one corner.",
+   "exits": {
+    "south": 9,
+    "down": 68
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down",
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 12,
+   "name": "Castle Museum",
+   "const": "MUSEUM",
+   "description": "You are in The Castle Museum. This room was once decorated with many artifacts.",
+   "exits": {
+    "south": 6,
+    "east": 17
+   },
+   "items": [
+    {
+     "item": "SWORD",
+     "name": "Sword",
+     "row": 5,
+     "col": 11,
+     "treasure": false
+    }
+   ],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 13,
+   "name": "Ante Room",
+   "const": null,
+   "description": "You are in the Ante Room. Here People waited for an audience with the King It was once lined with benches.",
+   "exits": {
+    "north": 14,
+    "south": 7
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 14,
+   "name": "Throne Room",
+   "const": "THRONE_ROOM",
+   "description": "You are in the Throne Room. There is a Large Throne at one end of the room.",
+   "exits": {
+    "south": 13,
+    "east": 16,
+    "west": 15
+   },
+   "items": [
+    {
+     "item": "CROWN",
+     "name": "Crown",
+     "row": 5,
+     "col": 9,
+     "treasure": true
+    }
+   ],
+   "monsters": [
+    {
+     "monster": "ANGRY_DEMON1",
+     "name": "Angry Demon",
+     "row": 7,
+     "col": 13,
+     "attack": 5,
+     "strength": 160
+    }
+   ],
+   "features": [
+    "stone table/throne"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 15,
+   "name": "Kings Dressing Room",
+   "const": null,
+   "description": "You are In the Kings Dressing room. It was Once Filled with clothes. There is a Staircase in one corner.",
+   "exits": {
+    "east": 14,
+    "up": 31
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 16,
+   "name": "Queen'S Dressing Room",
+   "const": null,
+   "description": "You are in the Queen's Dressing room. It was once filled with clothes. There is a Staircase in one corner.",
+   "exits": {
+    "west": 14,
+    "up": 30
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 17,
+   "name": "North End Of The Castle Garden",
+   "const": "GARDEN_NORTH",
+   "description": "You are In The North end of the Castle Garden. It is overgrown with bushes.",
+   "exits": {
+    "south": 18,
+    "west": 12
+   },
+   "items": [
+    {
+     "item": "LAMP",
+     "name": "Lamp",
+     "row": 14,
+     "col": 19,
+     "treasure": false
+    }
+   ],
+   "monsters": [
+    {
+     "monster": "SNAKE",
+     "name": "Snake",
+     "row": 14,
+     "col": 17,
+     "attack": 3,
+     "strength": 60
+    }
+   ],
+   "features": [
+    "big bush",
+    "small bush"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 18,
+   "name": "South End Of The Castle Garden",
+   "const": "GARDEN_SOUTH",
+   "description": "You are in The South end of The Castle garden. In the center is a fountain.",
+   "exits": {
+    "north": 17,
+    "west": 6
+   },
+   "items": [
+    {
+     "item": "LARGE_GEM",
+     "name": "Large Gem",
+     "row": 10,
+     "col": 12,
+     "treasure": true,
+     "hidden": "in fountain; take fountain (hint: look fountain from Balcony)"
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "big bush",
+    "fountain",
+    "mirror/balcony edge",
+    "small bush"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 19,
+   "name": "Center Of The Upper Hall",
+   "const": "UPPER_HALL_CENTER",
+   "description": "You are in the center of The upper Hall. There is a statue of the King in the middle.",
+   "exits": {
+    "north": 23,
+    "east": 21,
+    "west": 20
+   },
+   "items": [
+    {
+     "item": "NECKLACE",
+     "name": "Necklace",
+     "row": 9,
+     "col": 12,
+     "treasure": true,
+     "hidden": "worn by statue ($); take statue"
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "mirror/balcony edge",
+    "statue"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 20,
+   "name": "West End Of The Upper Hall",
+   "const": "UPPER_HALL_WEST",
+   "description": "You are in the west end of the Upper hall. There is a staircase leading down.",
+   "exits": {
+    "north": 24,
+    "east": 19,
+    "down": 4
+   },
+   "items": [
+    {
+     "item": "HOURGLASS",
+     "name": "Hourglass",
+     "row": 14,
+     "col": 6,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 21,
+   "name": "East End Of The Upper Hall",
+   "const": "UPPER_HALL_EAST",
+   "description": "You are in the east end of the Upper Hall. There is a Staircase leading down.",
+   "exits": {
+    "north": 22,
+    "west": 19,
+    "down": 5
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "UGLY_OGRE2",
+     "name": "Ugly Ogre",
+     "row": 12,
+     "col": 12,
+     "attack": 4,
+     "strength": 80
+    }
+   ],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 22,
+   "name": "Guards Hall",
+   "const": "GUARDS_HALL",
+   "description": "You are in The Guards Hall. This room was once used to honor Members of the Royal Guard.",
+   "exits": {
+    "north": 25,
+    "south": 21,
+    "east": 33,
+    "west": 23
+   },
+   "items": [
+    {
+     "item": "HELMET",
+     "name": "Helmet",
+     "row": 5,
+     "col": 12,
+     "treasure": false
+    }
+   ],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 23,
+   "name": "Anex Hall",
+   "const": null,
+   "description": "You are in the Anex Hall. There is a large spiral staircase in the middle.",
+   "exits": {
+    "north": 28,
+    "south": 19,
+    "east": 22,
+    "west": 24,
+    "down": 7
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 24,
+   "name": "Knights Hall",
+   "const": "KNIGHTS_HALL",
+   "description": "You are in The Knights Hall. This room was once used to Honor The King's Knights.",
+   "exits": {
+    "north": 26,
+    "south": 20,
+    "east": 23
+   },
+   "items": [
+    {
+     "item": "MAGIC_WAND",
+     "name": "Magic Wand",
+     "row": 9,
+     "col": 4,
+     "treasure": false
+    }
+   ],
+   "monsters": [
+    {
+     "monster": "ANGRY_DEMON2",
+     "name": "Angry Demon",
+     "row": 10,
+     "col": 6,
+     "attack": 5,
+     "strength": 160
+    }
+   ],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 25,
+   "name": "Lower Battlement",
+   "const": null,
+   "description": "You are in a lower Battlement. There is a staircase at one end.",
+   "exits": {
+    "south": 22,
+    "up": 42
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 26,
+   "name": "Lower Battlement",
+   "const": "LOWER_BATTLEMENT",
+   "description": "You are In a Lower Battlement. There is a staircase at one end.",
+   "exits": {
+    "south": 24,
+    "up": 45
+   },
+   "items": [
+    {
+     "item": "SILVER_BARS",
+     "name": "Silver Bars",
+     "row": 8,
+     "col": 7,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 27,
+   "name": "Guest Room",
+   "const": null,
+   "description": "You are In a Guest room.",
+   "exits": {
+    "east": 28
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 28,
+   "name": "Corridor",
+   "const": "CORRIDOR28",
+   "description": "You are in a corridor.",
+   "exits": {
+    "north": 32,
+    "south": 23,
+    "east": 29,
+    "west": 27
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "VAMPIRE",
+     "name": "Vampire",
+     "row": 10,
+     "col": 24,
+     "attack": 0,
+     "strength": 0
+    }
+   ],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 29,
+   "name": "Guest Room",
+   "const": "GUEST_ROOM",
+   "description": "You are In a Guest Room.",
+   "exits": {
+    "west": 28
+   },
+   "items": [
+    {
+     "item": "JADE_FIGURINE",
+     "name": "Jade Figurine",
+     "row": 10,
+     "col": 13,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 30,
+   "name": "Queen'S Bed Room",
+   "const": null,
+   "description": "You are in the Queen's Bed room. It was once furnished but is now empty. there is a stair case in one corner.",
+   "exits": {
+    "west": 32,
+    "down": 16
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 31,
+   "name": "Kings Room",
+   "const": null,
+   "description": "You are In the Kings room . It was once Furnished but is now empty. There is a staircase in one corner.",
+   "exits": {
+    "east": 32,
+    "down": 15
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 32,
+   "name": "Corridor",
+   "const": null,
+   "description": "You are in a corridor. There is a staircase at one end.",
+   "exits": {
+    "south": 28,
+    "east": 30,
+    "west": 31,
+    "up": 34
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 33,
+   "name": "Balcony Looking Over The Castle Gardens",
+   "const": "BALCONY",
+   "description": "You are on a Balcony looking over the Castle Gardens.",
+   "exits": {
+    "west": 22
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "big bush",
+    "fountain",
+    "mirror/balcony edge",
+    "railing",
+    "small bush"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 34,
+   "name": "Corridor",
+   "const": null,
+   "description": "You are in a corridor. There is a staircase at on end.",
+   "exits": {
+    "south": 41,
+    "east": 40,
+    "west": 39,
+    "down": 32
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 35,
+   "name": "Corridor",
+   "const": null,
+   "description": "You are in a corridor.",
+   "exits": {
+    "north": 39,
+    "south": 37,
+    "east": 41
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 36,
+   "name": "Corridor",
+   "const": null,
+   "description": "You are in a corridor.",
+   "exits": {
+    "north": 40,
+    "south": 38,
+    "west": 41
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 37,
+   "name": "Red Room",
+   "const": "RED_ROOM",
+   "description": "You are in The Red Room. This is decorated all in red. It is mostly empty now except for 2 beds.",
+   "exits": {
+    "north": 35
+   },
+   "items": [
+    {
+     "item": "HOLY_CROSS",
+     "name": "Holy Cross",
+     "row": 13,
+     "col": 15,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "bed"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 38,
+   "name": "Blue Room",
+   "const": null,
+   "description": "You are in the Blue room. This room is decorated all in blue. It is now empty except for 2 beds.",
+   "exits": {
+    "north": 36
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "bed"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 39,
+   "name": "Purple Room",
+   "const": null,
+   "description": "You are in the Purple room. It is Decorated all in purple. There is 1 bed left.",
+   "exits": {
+    "south": 35,
+    "east": 34
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "bed"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 40,
+   "name": "Yellow Room",
+   "const": "YELLOW_ROOM",
+   "description": "You are in the Yellow room. It is decorated all in Yellow.Now it is empty except for a desk & bed.",
+   "exits": {
+    "south": 36,
+    "west": 34
+   },
+   "items": [
+    {
+     "item": "GLASSES",
+     "name": "Eye Glasses",
+     "row": 12,
+     "col": 18,
+     "treasure": false,
+     "hidden": "on desk; look/take desk"
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "bed",
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 41,
+   "name": "Corridor",
+   "const": null,
+   "description": "You are in a corridor. There is a staircase at one end.",
+   "exits": {
+    "north": 34,
+    "east": 36,
+    "west": 35,
+    "up": 53
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 42,
+   "name": "Upper Battlement",
+   "const": null,
+   "description": "You are in An upper Battlement. There is a staircase in one corner.",
+   "exits": {
+    "south": 43,
+    "west": 45,
+    "up": 49,
+    "down": 25
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down",
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 43,
+   "name": "Upper Battlement",
+   "const": null,
+   "description": "You are In an Upper Battlement. There is a long staircase leading down.",
+   "exits": {
+    "north": 42,
+    "south": 46,
+    "down": 82
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 44,
+   "name": "Upper Batlement",
+   "const": null,
+   "description": "You are in an Upper Batlement.",
+   "exits": {
+    "north": 45,
+    "south": 47
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 45,
+   "name": "Upper Battlement",
+   "const": null,
+   "description": "You are in an Upper Battlement. There is a staircase in one corner.",
+   "exits": {
+    "south": 44,
+    "east": 42,
+    "up": 48,
+    "down": 26
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down",
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 46,
+   "name": "Upper Battlement",
+   "const": null,
+   "description": "You are in an Upper Battlement.",
+   "exits": {
+    "north": 43,
+    "west": 47
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 47,
+   "name": "Upper Battlement",
+   "const": null,
+   "description": "You are in an Upper Battlement.",
+   "exits": {
+    "north": 44,
+    "east": 46
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 48,
+   "name": "Castle Wall",
+   "const": null,
+   "description": "You are on the Castle wall. There is a stair case leading down in one corner.",
+   "exits": {
+    "south": 61,
+    "east": 49,
+    "down": 45
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 49,
+   "name": "Castle Wall",
+   "const": null,
+   "description": "You are on the Castle wall. There is a stair case leading down in one corner.",
+   "exits": {
+    "south": 50,
+    "west": 48,
+    "down": 42
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 50,
+   "name": "Bottom Of The East Tower",
+   "const": null,
+   "description": "You are at the Bottom of the East Tower.",
+   "exits": {
+    "north": 49,
+    "south": 51,
+    "up": 63
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 51,
+   "name": "Castle Wall",
+   "const": null,
+   "description": "You are on the Castle wall.",
+   "exits": {
+    "north": 50,
+    "west": 60
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 52,
+   "name": "Corridor",
+   "const": "CORRIDOR52",
+   "description": "You are in a corridor.",
+   "exits": {
+    "south": 53,
+    "east": 56,
+    "west": 57
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "FAIRY1",
+     "name": "Fairy",
+     "row": 10,
+     "col": 1,
+     "attack": 0,
+     "strength": 0
+    }
+   ],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 53,
+   "name": "Corridor",
+   "const": null,
+   "description": "You are in a corridor. there is a Stairway going down.",
+   "exits": {
+    "north": 52,
+    "east": 55,
+    "west": 54,
+    "down": 41
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 54,
+   "name": "Corridor",
+   "const": "CORRIDOR54",
+   "description": "You are in a corridor.",
+   "exits": {
+    "north": 57,
+    "south": 58,
+    "east": 53
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "FAIRY2",
+     "name": "Fairy",
+     "row": 1,
+     "col": 12,
+     "attack": 0,
+     "strength": 0
+    }
+   ],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 55,
+   "name": "Corridor",
+   "const": null,
+   "description": "You are in a corridor.",
+   "exits": {
+    "north": 56,
+    "south": 59,
+    "west": 53
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 56,
+   "name": "King'S Study",
+   "const": "KINGS_STUDY",
+   "description": "You are in the King's Study. A large Wooden Desk is all that is left.",
+   "exits": {
+    "south": 55,
+    "west": 52
+   },
+   "items": [
+    {
+     "item": "KEY",
+     "name": "Key",
+     "row": 7,
+     "col": 12,
+     "treasure": false,
+     "hidden": "on desk; look/take desk"
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 57,
+   "name": "Totally Empty Room",
+   "const": "EMPTY_ROOM",
+   "description": "You are in a totally Empty room.",
+   "exits": {
+    "south": 54,
+    "east": 52
+   },
+   "items": [
+    {
+     "item": "DIAMOND",
+     "name": "Diamond",
+     "row": 10,
+     "col": 13,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 58,
+   "name": "West End Of The King'S Library",
+   "const": "LIBRARY_WEST_END",
+   "description": "You are in the west end of The King's Library. It is full of shelves.",
+   "exits": {
+    "north": 54,
+    "east": 59
+   },
+   "items": [
+    {
+     "item": "BOOK",
+     "name": "Book",
+     "row": 11,
+     "col": 11,
+     "treasure": false,
+     "hidden": "on shelves; revealed by look/take shelves"
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 59,
+   "name": "East End Of The King'S Library",
+   "const": "LIBRARY_EAST_END",
+   "description": "You are in the East end of the King's Library. It is full of shelves.",
+   "exits": {
+    "north": 55,
+    "west": 58
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 60,
+   "name": "Castle Wall",
+   "const": "CASTLE_WALL",
+   "description": "You are on the Castle Wall.",
+   "exits": {
+    "north": 61,
+    "east": 51
+   },
+   "items": [
+    {
+     "item": "RUBYS",
+     "name": "Ruby",
+     "row": 16,
+     "col": 4,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 61,
+   "name": "Below The West Tower",
+   "const": null,
+   "description": "You are Below the West Tower. there is a large staircase leading up the tower.",
+   "exits": {
+    "north": 48,
+    "south": 60,
+    "up": 62
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 62,
+   "name": "West Tower",
+   "const": "WEST_TOWER_MIDDLE",
+   "description": "You are in the West Tower .There is a Passage to the East.",
+   "exits": {
+    "east": 67,
+    "up": 64,
+    "down": 61
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down",
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 63,
+   "name": "East Tower",
+   "const": null,
+   "description": "You are in The East Tower . There are Stairs Going both up & down.",
+   "exits": {
+    "up": 65,
+    "down": 50
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "stairs down",
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 64,
+   "name": "Top Of The West Tower",
+   "const": null,
+   "description": "You are at the top of the West tower.",
+   "exits": {
+    "down": 62
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "mirror/balcony edge",
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 65,
+   "name": "Top Of The East Tower",
+   "const": "EAST_TOWER_TOP",
+   "description": "You are at the top of the East Tower.",
+   "exits": {
+    "down": 63
+   },
+   "items": [
+    {
+     "item": "HARP",
+     "name": "Harp",
+     "row": 8,
+     "col": 16,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "mirror/balcony edge",
+    "stairs down"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 66,
+   "name": "Sorcerers Secret Laboratory",
+   "const": "LABORATORY",
+   "description": "You are in the Sorcerers secret laboratory.",
+   "exits": {
+    "west": 67
+   },
+   "items": [
+    {
+     "item": "CRYSTAL_BALL",
+     "name": "Crystal Ball",
+     "row": 13,
+     "col": 10,
+     "treasure": false
+    }
+   ],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 67,
+   "name": "Sorcerers Quarters",
+   "const": "SORCERERS_QUARTERS",
+   "description": "You are in the Sorcerers Quarters. Two Beds and a large mirror are all that is left.",
+   "exits": {
+    "east": 66,
+    "west": 62
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "bed",
+    "mirror/balcony edge"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 68,
+   "name": "Royal Wine Cellar",
+   "const": "WINE_CELLAR",
+   "description": "You are in the Royal Wine Cellar. It is filled with many Barrels. At one end is a Large metal Door.",
+   "exits": {
+    "south": 69,
+    "up": 11
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "BAT",
+     "name": "Bat",
+     "row": 7,
+     "col": 18,
+     "attack": 2,
+     "strength": 40
+    },
+    {
+     "monster": "DOOR1",
+     "name": "Door",
+     "row": 15,
+     "col": 9,
+     "attack": 0,
+     "strength": 0
+    },
+    {
+     "monster": "DOOR2",
+     "name": "",
+     "row": 15,
+     "col": 10,
+     "attack": 0,
+     "strength": 0
+    }
+   ],
+   "features": [
+    "stairs up",
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 69,
+   "name": "Long Passageway",
+   "const": null,
+   "description": "You are in a long Passageway.",
+   "exits": {
+    "north": 68,
+    "south": 70
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 70,
+   "name": "Maze",
+   "const": "MAZE70",
+   "description": "You are in a Maze.",
+   "exits": {
+    "north": 69,
+    "south": 72,
+    "east": 71
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "SMALL_SPIDER",
+     "name": "Small Spider",
+     "row": 5,
+     "col": 17,
+     "attack": 1,
+     "strength": 60
+    }
+   ],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 71,
+   "name": "Maze",
+   "const": null,
+   "description": "You are in a Maze.",
+   "exits": {
+    "west": 70
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 72,
+   "name": "Maze",
+   "const": null,
+   "description": "You are in a Maze.",
+   "exits": {
+    "north": 70,
+    "south": 74,
+    "east": 73
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 73,
+   "name": "Maze",
+   "const": "MAZE73",
+   "description": "You are in a Maze.",
+   "exits": {
+    "south": 75,
+    "west": 72
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "BIG_SPIDER",
+     "name": "Big Spider",
+     "row": 14,
+     "col": 18,
+     "attack": 3,
+     "strength": 80
+    }
+   ],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 74,
+   "name": "Maze",
+   "const": "MAZE74",
+   "description": "You are in a Maze.",
+   "exits": {
+    "north": 72,
+    "east": 75
+   },
+   "items": [
+    {
+     "item": "GOLDBAR",
+     "name": "Goldbar",
+     "row": 14,
+     "col": 23,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "B wall letter",
+    "K wall letter"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 75,
+   "name": "Maze",
+   "const": null,
+   "description": "You are in a Maze.",
+   "exits": {
+    "north": 73,
+    "south": 76,
+    "west": 74
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 76,
+   "name": "Winding Passage",
+   "const": "WINDING_PASSAGE1",
+   "description": "You are in a Winding Passage.",
+   "exits": {
+    "north": 75,
+    "east": 77
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 77,
+   "name": "Winding Passage",
+   "const": "WINDING_PASSAGE2",
+   "description": "You are in a Winding Passage.",
+   "exits": {
+    "north": 78,
+    "south": 83,
+    "west": 76
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 78,
+   "name": "Winding Passage",
+   "const": "WINDING_PASSAGE3",
+   "description": "You are in a Winding passage.",
+   "exits": {
+    "south": 77,
+    "east": 81
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 79,
+   "name": "Toture Room",
+   "const": "TORTURE_ROOM",
+   "description": "You are in the Toture room. There are chains on one wall, and a Large Table.",
+   "exits": {
+    "north": 81
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "chains",
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 80,
+   "name": "Dungeon",
+   "const": null,
+   "description": "You are in the Dungeon.",
+   "exits": {
+    "south": 81
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 81,
+   "name": "Dungeon Annex",
+   "const": null,
+   "description": "You are in the Dungeon Annex.",
+   "exits": {
+    "north": 80,
+    "south": 79,
+    "east": 82,
+    "west": 78
+   },
+   "items": [],
+   "monsters": [],
+   "features": [],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 82,
+   "name": "Dungeon Entrace Hall",
+   "const": "DUNGEON_ENTRANCE",
+   "description": "You are in the Dungeon entrace hall. There is a long staircase leading up.",
+   "exits": {
+    "west": 81,
+    "up": 43
+   },
+   "items": [],
+   "monsters": [
+    {
+     "monster": "DOOR3",
+     "name": "Door",
+     "row": 9,
+     "col": 14,
+     "attack": 0,
+     "strength": 0
+    },
+    {
+     "monster": "DOOR4",
+     "name": "",
+     "row": 10,
+     "col": 14,
+     "attack": 0,
+     "strength": 0
+    }
+   ],
+   "features": [
+    "stairs up"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 83,
+   "name": "King'S Secret Room",
+   "const": "SECRET_ROOM",
+   "description": "You are in the King's Secret room. The walls are many colors.",
+   "exits": {
+    "north": 77
+   },
+   "items": [
+    {
+     "item": "SCEPTER",
+     "name": "Scepter",
+     "row": 10,
+     "col": 12,
+     "treasure": true
+    }
+   ],
+   "monsters": [],
+   "features": [
+    "colored wall"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 84,
+   "name": "Escaped (win state)",
+   "const": "ESCAPED",
+   "description": "You've Escaped the Castle!",
+   "exits": {
+    "north": 84,
+    "south": 84,
+    "east": 84,
+    "west": 84
+   },
+   "items": [],
+   "monsters": [],
+   "features": [
+    "big bush",
+    "small bush"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  },
+  {
+   "id": 85,
+   "name": "Title/intro screen (pseudo-room)",
+   "const": "CASTLE",
+   "description": "You are  trapped  in a deserted  Castle      Use the cursor keypad  to move your man      just  run  into  them,  but only if you and you must escape. It is rumored that      around the rooms.  To pick up a visible      have a weapon.  There are 83 rooms  and the  castle is  full of treasures.  Can      item,  just run into it.  To pick up an      13 treasures.  To see  the  High Score, you find them all?                           item  not displayed on the screen,  use      look at the wall in the courtyard. the command TAKE.  To  attack  monsters",
+   "exits": {},
+   "items": [],
+   "monsters": [],
+   "features": [
+    "wood furniture (desk/shelves/barrels/table)"
+   ],
+   "source": "Seed7 castle.dat + castle.sd7 (github.com/ThomasMertes/seed7/prg)"
+  }
+ ]
+}

@@ -1,0 +1,724 @@
+{
+  "set": "towers",
+  "issues": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "rooms": [
+    50,
+    61,
+    62,
+    63
+  ],
+  "sheets": {
+    "tower_wall_tops.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "cols": 6,
+      "layout": "same as batt_wall_tops / room83_wall_tops",
+      "content": "thick round-tower wall top, rubble core, bowed coping joint along the inner edge; v3 lichen, v5 loose rubble"
+    },
+    "tower_wall_fronts.png": {
+      "cell": [
+        16,
+        14
+      ],
+      "cols": 6,
+      "layout": "same as room83_wall_fronts",
+      "content": "big ashlar blocks with cylindrical shading per block (curved tower wall), damp streaks; v4 iron ring, v5 putlog hole"
+    },
+    "tower_side_walls.png": {
+      "cell": [
+        8,
+        30
+      ],
+      "cols": 4,
+      "layout": "cols 0-1 west wall (lit), 2-3 east wall (shadowed)"
+    },
+    "tower_post.png": {
+      "frame_size": [
+        18,
+        38
+      ],
+      "frames": 2,
+      "frame_use": "0 show_face, 1 no face (as batt_post)",
+      "anchor": "art3.pillar (X, Y)",
+      "content": "round pilaster: disc cap with ring course, cylinder-shaded shaft"
+    },
+    "tower_floor_in.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "variants": 6,
+      "rule": "thash(x,y) % 6 (floor_tiles hook)",
+      "content": "tower flagstones on curved (ring) joints, straw; v4 worn hollow, v5 iron drain grate"
+    },
+    "tower_slit.png": {
+      "frame_size": [
+        16,
+        14
+      ],
+      "mount": "face (setpiece.wall_xy, bottom-aligned on the north wall face)",
+      "content": "splayed arrow slit with daylight"
+    },
+    "tower_slit_side.png": {
+      "frame_size": [
+        16,
+        30
+      ],
+      "frames": 2,
+      "frame_use": "0 = east mount at ((x-1)*16, y*16+TOP-8) (existing 'east'); 1 = west mount at ((x+1)*16, y*16+TOP-8) (NEW mount, needs code)"
+    },
+    "tower_slit_light.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 3,
+      "frame_use": "0 below a north slit, 1 west of an east slit, 2 east of a west slit",
+      "layer": "floor decal, alpha (draw after the floor tiles, before stairs/objects)"
+    },
+    "underlay_<rid>.png": {
+      "size": [
+        384,
+        312
+      ],
+      "blit_at": [
+        0,
+        0
+      ],
+      "content": "the #10/#11 dusk view far below (same landscape) with the tower's outer wall dropping into the haze; 62/63 hazier (higher up)"
+    },
+    "../tower_top/stairs_{up,down}_tower_1x2.png, stairs_up_tower_2x2.png": {
+      "layout": "art/stairs drawers, tower palette",
+      "note": "theme stairs 'tower' loads from assets/tower_top/; the existing stairs_down_tower_2x2 (roof trapdoor) is untouched"
+    },
+    "../spiral_stairs (rooms 50, 61)": {
+      "file": "spiral_up_large.png",
+      "note": "entries added to make_spiral.py PLACE: block (18,8) room 50, (4,8) room 61, world_anchor (304,160)/(80,160), depth-sorted; the existing data-driven spiral hook draws them"
+    }
+  },
+  "rooms_detail": {
+    "50": {
+      "name": "Bottom Of The East Tower",
+      "text": "You are at the Bottom of the East Tower.",
+      "stairs": [
+        {
+          "glyph": "U",
+          "cell": [
+            18,
+            8
+          ],
+          "size": [
+            2,
+            2
+          ]
+        }
+      ],
+      "post_cells": [
+        [
+          15,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          22,
+          11
+        ],
+        [
+          23,
+          11
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          22,
+          17
+        ]
+      ],
+      "wall_decals": [
+        [
+          "towers/tower_slit_side.png",
+          16,
+          0,
+          23,
+          8,
+          "east"
+        ],
+        [
+          "towers/tower_slit_side.png",
+          16,
+          1,
+          14,
+          8,
+          "west"
+        ]
+      ],
+      "floor_decals": [
+        [
+          "towers/tower_slit_light.png",
+          16,
+          1,
+          22,
+          8
+        ],
+        [
+          "towers/tower_slit_light.png",
+          16,
+          2,
+          15,
+          8
+        ]
+      ],
+      "blocking_added": [],
+      "bfs_all_walkable_connected": true
+    },
+    "61": {
+      "name": "Below The West Tower",
+      "text": "You are Below the West Tower. There is a large staircase leading up the tower.",
+      "stairs": [
+        {
+          "glyph": "U",
+          "cell": [
+            4,
+            8
+          ],
+          "size": [
+            2,
+            2
+          ]
+        }
+      ],
+      "post_cells": [
+        [
+          1,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          1,
+          17
+        ],
+        [
+          8,
+          17
+        ]
+      ],
+      "wall_decals": [
+        [
+          "towers/tower_slit_side.png",
+          16,
+          0,
+          9,
+          8,
+          "east"
+        ],
+        [
+          "towers/tower_slit_side.png",
+          16,
+          1,
+          0,
+          8,
+          "west"
+        ]
+      ],
+      "floor_decals": [
+        [
+          "towers/tower_slit_light.png",
+          16,
+          1,
+          8,
+          8
+        ],
+        [
+          "towers/tower_slit_light.png",
+          16,
+          2,
+          1,
+          8
+        ]
+      ],
+      "blocking_added": [],
+      "bfs_all_walkable_connected": true
+    },
+    "62": {
+      "name": "West Tower",
+      "text": "You are in the West Tower.There is a Passage to the East.",
+      "stairs": [
+        {
+          "glyph": "D",
+          "cell": [
+            4,
+            8
+          ],
+          "size": [
+            1,
+            2
+          ]
+        },
+        {
+          "glyph": "U",
+          "cell": [
+            5,
+            8
+          ],
+          "size": [
+            1,
+            2
+          ]
+        }
+      ],
+      "post_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          22,
+          7
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          22,
+          10
+        ],
+        [
+          23,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ]
+      ],
+      "wall_decals": [
+        [
+          "towers/tower_slit.png",
+          16,
+          0,
+          3,
+          5
+        ],
+        [
+          "towers/tower_slit.png",
+          16,
+          0,
+          6,
+          5
+        ],
+        [
+          "towers/tower_slit_side.png",
+          16,
+          1,
+          0,
+          8,
+          "west"
+        ]
+      ],
+      "floor_decals": [
+        [
+          "towers/tower_slit_light.png",
+          16,
+          0,
+          3,
+          6
+        ],
+        [
+          "towers/tower_slit_light.png",
+          16,
+          0,
+          6,
+          6
+        ],
+        [
+          "towers/tower_slit_light.png",
+          16,
+          2,
+          1,
+          8
+        ]
+      ],
+      "blocking_added": [],
+      "bfs_all_walkable_connected": true
+    },
+    "63": {
+      "name": "East Tower",
+      "text": "You are in The East Tower. There are Stairs Going both up & down.",
+      "stairs": [
+        {
+          "glyph": "U",
+          "cell": [
+            18,
+            8
+          ],
+          "size": [
+            1,
+            2
+          ]
+        },
+        {
+          "glyph": "D",
+          "cell": [
+            19,
+            8
+          ],
+          "size": [
+            1,
+            2
+          ]
+        }
+      ],
+      "post_cells": [
+        [
+          15,
+          5
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          22,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          15,
+          11
+        ],
+        [
+          22,
+          11
+        ],
+        [
+          23,
+          11
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          22,
+          12
+        ]
+      ],
+      "wall_decals": [
+        [
+          "towers/tower_slit.png",
+          16,
+          0,
+          18,
+          5
+        ],
+        [
+          "towers/tower_slit.png",
+          16,
+          0,
+          21,
+          5
+        ],
+        [
+          "towers/tower_slit_side.png",
+          16,
+          0,
+          23,
+          8,
+          "east"
+        ]
+      ],
+      "floor_decals": [
+        [
+          "towers/tower_slit_light.png",
+          16,
+          0,
+          18,
+          6
+        ],
+        [
+          "towers/tower_slit_light.png",
+          16,
+          0,
+          21,
+          6
+        ],
+        [
+          "towers/tower_slit_light.png",
+          16,
+          1,
+          22,
+          8
+        ]
+      ],
+      "blocking_added": [],
+      "bfs_all_walkable_connected": true
+    }
+  },
+  "room_themes_added": {
+    "50": {
+      "name": "Bottom Of The East Tower",
+      "walls": "towers/tower_",
+      "floor_tiles": "towers/tower_floor_in.png",
+      "underlay": "towers/underlay_50.png",
+      "posts": "towers/tower_post.png"
+    },
+    "61": {
+      "name": "Below The West Tower",
+      "walls": "towers/tower_",
+      "floor_tiles": "towers/tower_floor_in.png",
+      "underlay": "towers/underlay_61.png",
+      "posts": "towers/tower_post.png"
+    },
+    "62": {
+      "name": "West Tower",
+      "walls": "towers/tower_",
+      "floor_tiles": "towers/tower_floor_in.png",
+      "underlay": "towers/underlay_62.png",
+      "posts": "towers/tower_post.png",
+      "stairs": "tower"
+    },
+    "63": {
+      "name": "East Tower",
+      "walls": "towers/tower_",
+      "floor_tiles": "towers/tower_floor_in.png",
+      "underlay": "towers/underlay_63.png",
+      "posts": "towers/tower_post.png",
+      "stairs": "tower"
+    }
+  }
+}

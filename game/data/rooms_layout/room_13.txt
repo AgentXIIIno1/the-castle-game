@@ -1,0 +1,25 @@
+Room 13 
+You are in the Ante Room. Here People waited for an audience with the King It was once lined with benches.
+Exits: {'north': 14, 'south': 7}
++------------------------+
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|      ####    ####      |
+|      #          #      |
+|      #          #      |
+|      #          #      |
+|      #          #      |
+|      #          #      |
+|      #          #      |
+|      ####    ####      |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

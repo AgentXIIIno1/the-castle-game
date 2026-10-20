@@ -1,0 +1,548 @@
+{
+  "set": "honours",
+  "issues": [
+    18,
+    19
+  ],
+  "rooms": [
+    22,
+    24
+  ],
+  "sheets": {
+    "guard_trophy.png": {
+      "frame_size": [
+        16,
+        20
+      ],
+      "variants": 2,
+      "mount": "face (bottom on the wall face, top 6px over the wall top)",
+      "content": "Royal Guard shield (v0 gules / v1 sable, gold crown) over crossed halberds"
+    },
+    "knight_shields.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 4,
+      "mount": "face",
+      "content": "knights' heater shields: v0 azure lion, v1 gules chevron, v2 sable cross, v3 vert tower"
+    },
+    "honour_banner.png": {
+      "frame_size": [
+        16,
+        28
+      ],
+      "variants": 3,
+      "mount": "hang",
+      "content": "v0 Royal Guard crimson + gold crown, v1 knights azure + silver star, v2 knights vert + sword; gold fringe, swallowtail"
+    },
+    "honour_plaque.png": {
+      "frame_size": [
+        16,
+        14
+      ],
+      "mount": "face",
+      "content": "oak honour board, gilt crown and name lines"
+    },
+    "guard_armour_stand.png": {
+      "frame_size": [
+        20,
+        34
+      ],
+      "anchor": [
+        10,
+        33
+      ],
+      "layer": "sorted object (object tuple, w 1)",
+      "shadow_baked": true,
+      "blocking": true,
+      "content": "Royal Guard plate armour on a stand, crimson tabard, plumed helm"
+    },
+    "armour_rack.png": {
+      "frame_size": [
+        32,
+        28
+      ],
+      "anchor": [
+        16,
+        27
+      ],
+      "layer": "sorted object (object tuple, w 2)",
+      "shadow_baked": true,
+      "blocking": true,
+      "content": "empty oak armour rack with pegs, dust outlines of the missing pieces, one gauntlet left"
+    }
+  },
+  "rooms_detail": {
+    "22": {
+      "name": "Guards Hall",
+      "wall_decals": [
+        [
+          "honours/honour_banner.png",
+          16,
+          0,
+          3,
+          1,
+          "hang"
+        ],
+        [
+          "honours/guard_trophy.png",
+          16,
+          0,
+          5,
+          1
+        ],
+        [
+          "honours/guard_trophy.png",
+          16,
+          1,
+          9,
+          1
+        ],
+        [
+          "honours/honour_plaque.png",
+          16,
+          0,
+          11,
+          1
+        ],
+        [
+          "honours/guard_trophy.png",
+          16,
+          1,
+          13,
+          1
+        ],
+        [
+          "honours/guard_trophy.png",
+          16,
+          0,
+          15,
+          1
+        ],
+        [
+          "honours/honour_banner.png",
+          16,
+          0,
+          21,
+          1,
+          "hang"
+        ]
+      ],
+      "objects": [
+        [
+          "honours/guard_armour_stand.png",
+          20,
+          null,
+          2,
+          3,
+          1,
+          0,
+          null
+        ],
+        [
+          "honours/guard_armour_stand.png",
+          20,
+          null,
+          21,
+          3,
+          1,
+          0,
+          null
+        ],
+        [
+          "honours/guard_armour_stand.png",
+          20,
+          null,
+          2,
+          14,
+          1,
+          0,
+          null
+        ],
+        [
+          "honours/guard_armour_stand.png",
+          20,
+          null,
+          21,
+          14,
+          1,
+          0,
+          null
+        ]
+      ],
+      "blocking_added": [
+        [
+          2,
+          3
+        ],
+        [
+          21,
+          3
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          21,
+          14
+        ]
+      ],
+      "post_cells": [
+        [
+          17,
+          0
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          22,
+          11
+        ],
+        [
+          23,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          17,
+          16
+        ],
+        [
+          22,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          14,
+          17
+        ]
+      ],
+      "bfs_all_walkable_connected_with_blocking": true,
+      "exits_reachable": 14
+    },
+    "24": {
+      "name": "Knights Hall",
+      "wall_decals": [
+        [
+          "honours/knight_shields.png",
+          16,
+          0,
+          8,
+          1
+        ],
+        [
+          "honours/honour_banner.png",
+          16,
+          1,
+          10,
+          1,
+          "hang"
+        ],
+        [
+          "honours/knight_shields.png",
+          16,
+          1,
+          11,
+          1
+        ],
+        [
+          "honours/honour_plaque.png",
+          16,
+          0,
+          13,
+          1
+        ],
+        [
+          "honours/knight_shields.png",
+          16,
+          2,
+          18,
+          1
+        ],
+        [
+          "honours/honour_banner.png",
+          16,
+          2,
+          20,
+          1,
+          "hang"
+        ],
+        [
+          "honours/knight_shields.png",
+          16,
+          3,
+          21,
+          1
+        ]
+      ],
+      "objects": [
+        [
+          "honours/armour_rack.png",
+          32,
+          null,
+          18,
+          2,
+          2,
+          0,
+          null
+        ]
+      ],
+      "blocking_added": [
+        [
+          18,
+          2
+        ],
+        [
+          19,
+          2
+        ]
+      ],
+      "post_cells": [
+        [
+          3,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          22,
+          2
+        ],
+        [
+          22,
+          6
+        ],
+        [
+          23,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          22,
+          11
+        ],
+        [
+          23,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          22,
+          12
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          17,
+          16
+        ],
+        [
+          22,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          14,
+          17
+        ]
+      ],
+      "bfs_all_walkable_connected_with_blocking": true,
+      "exits_reachable": 10,
+      "kept_clear": [
+        [
+          14,
+          2
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          16,
+          3
+        ]
+      ]
+    }
+  },
+  "room_themes_pending": {
+    "22": {
+      "name": "Guards Hall",
+      "setpiece": true
+    },
+    "24": {
+      "name": "Knights Hall",
+      "setpiece": true
+    }
+  }
+}

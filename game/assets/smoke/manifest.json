@@ -1,0 +1,62 @@
+{
+  "issue": 31,
+  "room": 67,
+  "smoke_puff.png": {
+    "frame_size": [
+      48,
+      72
+    ],
+    "frames": 8,
+    "frame_durations_ms": [
+      60,
+      80,
+      110,
+      140,
+      160,
+      170,
+      180,
+      200
+    ],
+    "total_ms": 1100,
+    "fps_equivalent": 7.27,
+    "loop": false,
+    "play": "once, then remove",
+    "anchor": {
+      "px": [
+        24,
+        71
+      ],
+      "desc": "bottom-centre. The burst core sits at frame (24,46), 25 px above the anchor: for puff(X, Y) put the anchor at room px (X, Y + 25). Mirror (open_mirror): X = 296, Y = 144, so the anchor goes at (296, 169)"
+    },
+    "use": "WAVE WAND on the mirror; keep the mirror sprite fading out underneath over ~0.45 s as now"
+  },
+  "smoke_puff_small.png": {
+    "frame_size": [
+      32,
+      40
+    ],
+    "frames": 6,
+    "frame_durations_ms": [
+      60,
+      90,
+      120,
+      140,
+      160,
+      180
+    ],
+    "total_ms": 750,
+    "loop": false,
+    "play": "once",
+    "anchor": {
+      "px": [
+        16,
+        39
+      ],
+      "desc": "bottom-centre = the hero's feet: (hx*16 + 8, (hy+1)*16), i.e. the core sits at (hx*16+8, hy*16+4), the current puff() centre"
+    },
+    "use": "arrival back from room 66 at MIRROR_ARRIVE; or use the big puff here too if you prefer one effect"
+  },
+  "layering": "draw after the sprite pass (above the hero and the mirror), before the additive light pass and the darkness overlay. That is the same spot as the current procedural puff. Real alpha (normal blend), no additive blend needed",
+  "style": "chunky outlined violet-grey billows, gold core echoing the wand tip, lilac/gold arcane motes; burst, then rise, then Bayer-eroded dissipation; no baked glow",
+  "optional": "screen shake 0.3 as now; a brief small warm light at the core for frames 0-1 if you like (colour [255,240,170], radius ~24)"
+}

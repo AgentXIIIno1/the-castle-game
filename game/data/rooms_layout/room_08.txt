@@ -1,0 +1,25 @@
+Room 8 WEST_DINING_ROOM
+You are in the West Dining room. There 2 door ways to the north, & arch ways to the east & south.
+Exits: {'north': 9, 'south': 4, 'east': 7}
++------------------------+
+|    #  #        #  #    |
+| ####  ##########  #### |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    ##|
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                    ##|
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #########    ######### |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Fancy Goblet', 14, 6)]
+Monsters(M): []

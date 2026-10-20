@@ -1,0 +1,25 @@
+Room 56 KINGS_STUDY
+You are in the King's Study. A large Wooden Desk is all that is left.
+Exits: {'south': 55, 'west': 52}
++------------------------+
+|                        |
+|                        |
+|                        |
+|   ##################   |
+|   #                #   |
+|   #     @@@@@@     #   |
+|   #     @@@@@@     #   |
+|####     @@@@@@     #   |
+|                    #   |
+|                    #   |
+|####                #   |
+|   #                #   |
+|   #                #   |
+|   #                #   |
+|   ########  ########   |
+|          #  #          |
+|          #  #          |
+|          #  #          |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Key', 7, 12)]
+Monsters(M): []

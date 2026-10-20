@@ -1,0 +1,320 @@
+{
+  "set": "museum",
+  "issues": [
+    16
+  ],
+  "rooms": [
+    12
+  ],
+  "sheets": {
+    "museum_plinth.png": {
+      "frame_size": [
+        16,
+        28
+      ],
+      "variants": 3,
+      "anchor": [
+        8,
+        27
+      ],
+      "layer": "sorted object, blocking",
+      "shadow_baked": true,
+      "content": "empty marble plinths: v0 clean square where a piece stood, v1 empty velvet cushion, v2 chipped + cracked; worn brass label"
+    },
+    "museum_case.png": {
+      "frame_size": [
+        32,
+        30
+      ],
+      "anchor": [
+        16,
+        29
+      ],
+      "layer": "sorted object (w 2), blocking",
+      "shadow_baked": true,
+      "content": "empty glass display case, smashed pane, outlines on the velvet, shards on the floor"
+    },
+    "museum_dust.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal (alpha)",
+      "content": "dust outlines where artifacts stood: square, round, long chest"
+    },
+    "museum_wall_ghost.png": {
+      "frame_size": [
+        16,
+        14
+      ],
+      "variants": 3,
+      "mount": "face",
+      "content": "v0 pale rectangle + nail of a missing painting, v1 empty weapon bracket, v2 oval frame ghost"
+    }
+  },
+  "rooms_detail": {
+    "12": {
+      "name": "Castle Museum",
+      "wall_decals": [
+        [
+          "museum/museum_wall_ghost.png",
+          16,
+          0,
+          9,
+          1
+        ],
+        [
+          "museum/museum_wall_ghost.png",
+          16,
+          1,
+          11,
+          1
+        ],
+        [
+          "museum/museum_wall_ghost.png",
+          16,
+          2,
+          14,
+          1
+        ],
+        [
+          "museum/museum_wall_ghost.png",
+          16,
+          0,
+          16,
+          1
+        ],
+        [
+          "museum/museum_wall_ghost.png",
+          16,
+          0,
+          19,
+          1
+        ]
+      ],
+      "floor_decals": [
+        [
+          "museum/museum_dust.png",
+          16,
+          1,
+          12,
+          7
+        ],
+        [
+          "museum/museum_dust.png",
+          16,
+          0,
+          18,
+          7
+        ],
+        [
+          "museum/museum_dust.png",
+          16,
+          2,
+          13,
+          13
+        ],
+        [
+          "museum/museum_dust.png",
+          16,
+          0,
+          17,
+          12
+        ],
+        [
+          "museum/museum_dust.png",
+          16,
+          1,
+          9,
+          5
+        ]
+      ],
+      "objects": [
+        [
+          "museum/museum_plinth.png",
+          16,
+          0,
+          13,
+          3,
+          1,
+          0,
+          null
+        ],
+        [
+          "museum/museum_plinth.png",
+          16,
+          1,
+          16,
+          3,
+          1,
+          0,
+          null
+        ],
+        [
+          "museum/museum_plinth.png",
+          16,
+          0,
+          19,
+          3,
+          1,
+          0,
+          null
+        ],
+        [
+          "museum/museum_plinth.png",
+          16,
+          2,
+          9,
+          9,
+          1,
+          0,
+          null
+        ],
+        [
+          "museum/museum_plinth.png",
+          16,
+          1,
+          9,
+          13,
+          1,
+          0,
+          null
+        ],
+        [
+          "museum/museum_case.png",
+          32,
+          null,
+          14,
+          10,
+          2,
+          0,
+          null
+        ]
+      ],
+      "blocking_added": [
+        [
+          13,
+          3
+        ],
+        [
+          16,
+          3
+        ],
+        [
+          19,
+          3
+        ],
+        [
+          9,
+          9
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          15,
+          10
+        ]
+      ],
+      "post_cells": [
+        [
+          7,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          21,
+          2
+        ],
+        [
+          21,
+          4
+        ],
+        [
+          22,
+          4
+        ],
+        [
+          23,
+          4
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          21,
+          13
+        ],
+        [
+          22,
+          13
+        ],
+        [
+          23,
+          13
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          17,
+          16
+        ],
+        [
+          21,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          14,
+          17
+        ]
+      ],
+      "bfs_all_walkable_connected_with_blocking": true
+    }
+  },
+  "room_themes_pending": {
+    "12": {
+      "name": "Castle Museum",
+      "setpiece": true
+    }
+  }
+}

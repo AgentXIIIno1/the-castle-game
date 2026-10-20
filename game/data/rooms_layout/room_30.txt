@@ -1,0 +1,25 @@
+Room 30 
+You are in the Queen's Bed room. It was once furnished but is now empty. there is a stair case in one corner.
+Exits: {'west': 32, 'down': 16}
++------------------------+
+|                        |
+|                        |
+|                        |
+| #################      |
+| #               #      |
+| #               #      |
+| # D             #      |
+|##               #      |
+|                 #      |
+|                 #      |
+|##               #      |
+| #               #      |
+| #               #      |
+| #               #      |
+| #################      |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

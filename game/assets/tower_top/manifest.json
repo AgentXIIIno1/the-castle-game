@@ -1,0 +1,427 @@
+{
+  "set": "tower_top",
+  "rooms": [
+    64,
+    65
+  ],
+  "uses": "battlements/batt_wall_tops.png, batt_wall_fronts.png, batt_side_walls.png, batt_post.png (same parapet as the battlements)",
+  "sheets": {
+    "tower_floor.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "variants": 6,
+      "rule": "thash(x,y) % 6 (floor_tiles hook)",
+      "content": "sun-bleached silvered oak roof planks, butt joints and nails, lichen; v4 rain puddle, v5 rotten board end"
+    },
+    "embrasure.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 2,
+      "frame_use": "0 = '-' cells (sill runs E-W), 1 = '|' cells (sill runs N-S)",
+      "anchor": "top-left at (x*16, y*16+TOP-8): over the raised wall top of that cell",
+      "content": "wide crenel: no merlon, lit stone sill, lichen",
+      "placements": {
+        "64": [
+          {
+            "cell": [
+              3,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              4,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              5,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              6,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              0,
+              8
+            ],
+            "frame": 1
+          },
+          {
+            "cell": [
+              9,
+              8
+            ],
+            "frame": 1
+          },
+          {
+            "cell": [
+              0,
+              9
+            ],
+            "frame": 1
+          },
+          {
+            "cell": [
+              9,
+              9
+            ],
+            "frame": 1
+          },
+          {
+            "cell": [
+              3,
+              12
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              4,
+              12
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              5,
+              12
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              6,
+              12
+            ],
+            "frame": 0
+          }
+        ],
+        "65": [
+          {
+            "cell": [
+              17,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              18,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              19,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              20,
+              5
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              14,
+              8
+            ],
+            "frame": 1
+          },
+          {
+            "cell": [
+              23,
+              8
+            ],
+            "frame": 1
+          },
+          {
+            "cell": [
+              14,
+              9
+            ],
+            "frame": 1
+          },
+          {
+            "cell": [
+              23,
+              9
+            ],
+            "frame": 1
+          },
+          {
+            "cell": [
+              17,
+              12
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              18,
+              12
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              19,
+              12
+            ],
+            "frame": 0
+          },
+          {
+            "cell": [
+              20,
+              12
+            ],
+            "frame": 0
+          }
+        ]
+      }
+    },
+    "stairs_down_tower_2x2.png": {
+      "size": [
+        32,
+        32
+      ],
+      "anchor": "top-left of the 2x2 'D' block",
+      "cells": {
+        "64": [
+          4,
+          8
+        ],
+        "65": [
+          18,
+          8
+        ]
+      },
+      "content": "open roof hatch: oak frame with iron corners, ladder fading into the dark, lid raised on its hinges",
+      "trigger": "unchanged (the D cells stay the way down)"
+    },
+    "harp_plinth.png": {
+      "size": [
+        24,
+        16
+      ],
+      "layer": "depth-sorted sprite drawn just before the item (sort y = 8*16 - 0.5), NOT a floor decal: the west wall's 8px side face covers the left half of cell (15,7) in the bake",
+      "room": 65,
+      "cell": [
+        15,
+        7
+      ],
+      "anchor": {
+        "px": [
+          12,
+          13
+        ],
+        "world": [
+          248,
+          127
+        ],
+        "note": "top-left = (236, 114) room px; the harp (anchored at its cell bottom, raised ~3px, bobbing 1px) stands on the disc"
+      },
+      "blocking": false,
+      "shadow_baked": true,
+      "why": "the Harp item is gold (#d8a030-ish) and the roof planks are pale silver-brown: the dark slate disc gives it a cool, dark backdrop; the harp keeps its cell and stays pickable"
+    },
+    "underlay_<rid>.png": {
+      "size": [
+        384,
+        312
+      ],
+      "blit_at": [
+        0,
+        0
+      ],
+      "content": "the same dusk view below as the battlements, hazier (higher up), with the tower's outer wall dropping away under the south half of the ring (the '-' cells count as wall)"
+    }
+  },
+  "post_cells_if_ring_glyphs_count_as_wall": {
+    "64": [
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        1,
+        12
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        9,
+        6
+      ],
+      [
+        9,
+        7
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    "65": [
+      [
+        14,
+        6
+      ],
+      [
+        14,
+        7
+      ],
+      [
+        14,
+        11
+      ],
+      [
+        15,
+        5
+      ],
+      [
+        15,
+        6
+      ],
+      [
+        15,
+        11
+      ],
+      [
+        15,
+        12
+      ],
+      [
+        17,
+        5
+      ],
+      [
+        17,
+        12
+      ],
+      [
+        22,
+        5
+      ],
+      [
+        22,
+        6
+      ],
+      [
+        22,
+        11
+      ],
+      [
+        22,
+        12
+      ],
+      [
+        23,
+        6
+      ],
+      [
+        23,
+        7
+      ],
+      [
+        23,
+        11
+      ]
+    ]
+  },
+  "room_themes_added": {
+    "64": {
+      "name": "Top Of The West Tower",
+      "walls": "battlements/batt_",
+      "floor_tiles": "tower_top/tower_floor.png"
+    },
+    "65": {
+      "name": "Top Of The East Tower",
+      "walls": "battlements/batt_",
+      "floor_tiles": "tower_top/tower_floor.png"
+    }
+  },
+  "room_themes_pending_new_keys": {
+    "64": {
+      "underlay": "tower_top/underlay_64.png",
+      "stairs": "tower",
+      "posts": "battlements/batt_post.png",
+      "ring_glyphs": "-|"
+    },
+    "65": {
+      "underlay": "tower_top/underlay_65.png",
+      "stairs": "tower",
+      "posts": "battlements/batt_post.png",
+      "ring_glyphs": "-|"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Room 21 UPPER_HALL_EAST
+You are in the east end of the Upper Hall. There is a Staircase leading down.
+Exits: {'north': 22, 'west': 19, 'down': 5}
++------------------------+
+|         #    #         |
+|##########    ######### |
+|                      # |
+|   D                  # |
+|                      # |
+|                      # |
+|                      # |
+|                      # |
+|                      # |
+|                      # |
+|                      # |
+|           M          # |
+|                      # |
+|                      # |
+|                      # |
+|                      # |
+|####################### |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): [('Ugly Ogre', 12, 12)]

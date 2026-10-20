@@ -1,0 +1,28 @@
+{
+  "room": 67,
+  "room_name": "Sorcerers Quarters",
+  "glyphs": "',' (x18,y6), '|' (x18,y7-10), '`' (x18,y11) - a 1x6 column against the east wall (issue says 1x5; the layout has 6 cells)",
+  "pieces": {
+    "wall_mirror.png": {
+      "frame_size": [
+        16,
+        108
+      ],
+      "footprint_tiles": [
+        1,
+        6
+      ],
+      "anchor": {
+        "px": [
+          8,
+          107
+        ],
+        "desc": "bottom-centre of the column: world (18*16 + 8, (6+6)*16) = (296, 192); frame top-left (288, 85)"
+      },
+      "blocking": "all 6 column cells (as now)",
+      "depth_sort_y": "(6+6)*16 = 192, or draw on the wall layer since it touches the east wall",
+      "shadow_baked": false,
+      "design": "tall gilt mirror seen edge-on, leaning on the east wall; tarnished glass with sheen bands, a crack, silvering loss toward the bottom, red-jewel crest"
+    }
+  }
+}

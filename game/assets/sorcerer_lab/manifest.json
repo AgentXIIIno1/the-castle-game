@@ -1,0 +1,599 @@
+{
+  "room": 66,
+  "room_name": "Sorcerers Secret Laboratory",
+  "style": "abandoned: cobwebs, dust, spills, broken glass; muted potion colours, no baked glow",
+  "sheets": {
+    "lab_shelf_jars.png": {
+      "frame_size": [
+        32,
+        44
+      ],
+      "variants": 2,
+      "footprint_tiles": [
+        2,
+        1
+      ],
+      "anchor": {
+        "px": [
+          16,
+          43
+        ]
+      },
+      "blocking": true,
+      "shadow_baked": true,
+      "note": "against the north wall; v1 has fallen jars + shards"
+    },
+    "alchemy_bench.png": {
+      "frame_size": [
+        64,
+        48
+      ],
+      "variants": 1,
+      "footprint_tiles": [
+        4,
+        1
+      ],
+      "anchor": {
+        "px": [
+          32,
+          47
+        ]
+      },
+      "blocking": true,
+      "shadow_baked": true,
+      "note": "alembic (flask, swan neck, receiver), tall/round flasks, mortar and pestle"
+    },
+    "cauldron.png": {
+      "frame_size": [
+        32,
+        40
+      ],
+      "frames": 6,
+      "fps": 6,
+      "loop": true,
+      "footprint_tiles": [
+        2,
+        1
+      ],
+      "anchor": {
+        "px": [
+          16,
+          39
+        ]
+      },
+      "blocking": true,
+      "shadow_baked": true,
+      "light_point": {
+        "px": [
+          16,
+          16
+        ],
+        "color": [
+          120,
+          220,
+          110
+        ],
+        "radius_hint": 40,
+        "flicker": "slow"
+      },
+      "ember_light": {
+        "px": [
+          16,
+          35
+        ],
+        "color": [
+          255,
+          130,
+          50
+        ],
+        "radius_hint": 24
+      }
+    },
+    "rune_circle.png": {
+      "frame_size": [
+        64,
+        64
+      ],
+      "variants": 1,
+      "footprint_tiles": [
+        4,
+        4
+      ],
+      "anchor": "top-left of the top-left cell",
+      "layer": "floor decal (baked)",
+      "blocking": false
+    },
+    "rune_circle_glow.png": {
+      "frame_size": [
+        64,
+        64
+      ],
+      "frames": 4,
+      "fps": 2,
+      "loop": true,
+      "optional": true,
+      "anchor": "same as rune_circle.png",
+      "layer": "additive overlay above the floor, below sprites",
+      "note": "faint violet pulse; no bloom"
+    },
+    "lectern_grimoire.png": {
+      "frame_size": [
+        16,
+        32
+      ],
+      "variants": 1,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor": {
+        "px": [
+          8,
+          31
+        ]
+      },
+      "blocking": true,
+      "shadow_baked": true
+    },
+    "grimoire_open.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "anchor": "top-left of the cell",
+      "layer": "floor decal",
+      "blocking": false
+    },
+    "candles.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "anchor": {
+        "px": [
+          8,
+          15
+        ]
+      },
+      "blocking": false,
+      "shadow_baked": true,
+      "note": "v0 cluster of 3, v1 single"
+    },
+    "candle_flame_cluster.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 4,
+      "fps": 8,
+      "overlay_for": "candles v0, same position",
+      "light_points_px": [
+        [
+          5,
+          4
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "light": {
+        "color": [
+          255,
+          190,
+          110
+        ],
+        "radius_hint": 28
+      }
+    },
+    "candle_flame_single.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 4,
+      "fps": 8,
+      "overlay_for": "candles v1, same position",
+      "light_points_px": [
+        [
+          8,
+          2
+        ]
+      ],
+      "light": {
+        "color": [
+          255,
+          190,
+          110
+        ],
+        "radius_hint": 22
+      }
+    },
+    "spill_potion.png": {
+      "frame_size": [
+        32,
+        16
+      ],
+      "variants": 2,
+      "anchor": "top-left of the first cell",
+      "layer": "floor decal",
+      "blocking": false,
+      "note": "v0 green, v1 violet, with an empty toppled flask"
+    },
+    "broken_glass.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "anchor": "top-left of the cell",
+      "layer": "floor decal",
+      "blocking": false
+    },
+    "cobweb.png": {
+      "same_as": "decor/cobweb.png",
+      "placement": "wall-top-corner"
+    }
+  },
+  "placements_room66": [
+    {
+      "name": "shelf_jars",
+      "file": "lab_shelf_jars.png",
+      "frame": 0,
+      "cell": [
+        6,
+        3
+      ],
+      "footprint": [
+        2,
+        1
+      ],
+      "blocking": true,
+      "layer": "sprite",
+      "world_anchor": [
+        112,
+        64
+      ],
+      "depth_sort_y": 64
+    },
+    {
+      "name": "shelf_jars",
+      "file": "lab_shelf_jars.png",
+      "frame": 1,
+      "cell": [
+        20,
+        3
+      ],
+      "footprint": [
+        2,
+        1
+      ],
+      "blocking": true,
+      "layer": "sprite",
+      "world_anchor": [
+        336,
+        64
+      ],
+      "depth_sort_y": 64
+    },
+    {
+      "name": "alchemy_bench",
+      "file": "alchemy_bench.png",
+      "frame": 0,
+      "cell": [
+        10,
+        3
+      ],
+      "footprint": [
+        4,
+        1
+      ],
+      "blocking": true,
+      "layer": "sprite",
+      "world_anchor": [
+        192,
+        64
+      ],
+      "depth_sort_y": 64
+    },
+    {
+      "name": "cauldron",
+      "file": "cauldron.png",
+      "frame": "anim",
+      "cell": [
+        18,
+        12
+      ],
+      "footprint": [
+        2,
+        1
+      ],
+      "blocking": true,
+      "layer": "sprite",
+      "world_anchor": [
+        304,
+        208
+      ],
+      "depth_sort_y": 208
+    },
+    {
+      "name": "lectern_grimoire",
+      "file": "lectern_grimoire.png",
+      "frame": 0,
+      "cell": [
+        16,
+        3
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": true,
+      "layer": "sprite",
+      "world_anchor": [
+        264,
+        64
+      ],
+      "depth_sort_y": 64
+    },
+    {
+      "name": "rune_circle",
+      "file": "rune_circle.png",
+      "frame": 0,
+      "cell": [
+        13,
+        7
+      ],
+      "footprint": [
+        4,
+        4
+      ],
+      "blocking": false,
+      "layer": "floor decal",
+      "world_topleft": [
+        208,
+        112
+      ]
+    },
+    {
+      "name": "grimoire_open",
+      "file": "grimoire_open.png",
+      "frame": 0,
+      "cell": [
+        21,
+        8
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "floor decal",
+      "world_topleft": [
+        336,
+        128
+      ]
+    },
+    {
+      "name": "grimoire_open",
+      "file": "grimoire_open.png",
+      "frame": 1,
+      "cell": [
+        7,
+        13
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "floor decal",
+      "world_topleft": [
+        112,
+        208
+      ]
+    },
+    {
+      "name": "candles",
+      "file": "candles.png",
+      "frame": 0,
+      "cell": [
+        12,
+        6
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "sprite",
+      "world_anchor": [
+        200,
+        112
+      ],
+      "depth_sort_y": 112
+    },
+    {
+      "name": "candles",
+      "file": "candles.png",
+      "frame": 1,
+      "cell": [
+        17,
+        6
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "sprite",
+      "world_anchor": [
+        280,
+        112
+      ],
+      "depth_sort_y": 112
+    },
+    {
+      "name": "candles",
+      "file": "candles.png",
+      "frame": 1,
+      "cell": [
+        12,
+        11
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "sprite",
+      "world_anchor": [
+        200,
+        192
+      ],
+      "depth_sort_y": 192
+    },
+    {
+      "name": "candles",
+      "file": "candles.png",
+      "frame": 0,
+      "cell": [
+        17,
+        11
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "sprite",
+      "world_anchor": [
+        280,
+        192
+      ],
+      "depth_sort_y": 192
+    },
+    {
+      "name": "spill_potion",
+      "file": "spill_potion.png",
+      "frame": 0,
+      "cell": [
+        14,
+        4
+      ],
+      "footprint": [
+        2,
+        1
+      ],
+      "blocking": false,
+      "layer": "floor decal",
+      "world_topleft": [
+        224,
+        64
+      ]
+    },
+    {
+      "name": "spill_potion",
+      "file": "spill_potion.png",
+      "frame": 1,
+      "cell": [
+        19,
+        9
+      ],
+      "footprint": [
+        2,
+        1
+      ],
+      "blocking": false,
+      "layer": "floor decal",
+      "world_topleft": [
+        304,
+        144
+      ]
+    },
+    {
+      "name": "broken_glass",
+      "file": "broken_glass.png",
+      "frame": 0,
+      "cell": [
+        21,
+        4
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "floor decal",
+      "world_topleft": [
+        336,
+        64
+      ]
+    },
+    {
+      "name": "broken_glass",
+      "file": "broken_glass.png",
+      "frame": 1,
+      "cell": [
+        8,
+        5
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "floor decal",
+      "world_topleft": [
+        128,
+        80
+      ]
+    },
+    {
+      "name": "cobweb",
+      "file": "cobweb.png",
+      "frame": 0,
+      "cell": [
+        5,
+        3
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "wall-top-corner",
+      "world_topleft": [
+        80,
+        48
+      ]
+    },
+    {
+      "name": "cobweb",
+      "file": "cobweb.png",
+      "frame": "flip",
+      "cell": [
+        22,
+        3
+      ],
+      "footprint": [
+        1,
+        1
+      ],
+      "blocking": false,
+      "layer": "wall-top-corner",
+      "world_topleft": [
+        352,
+        48
+      ]
+    }
+  ],
+  "bfs_check": "all 215 walkable cells stay reachable from the west door (0,8); Crystal Ball cell (9,12) clear and reachable",
+  "lights_room66": "cauldron light_point + embers, one light per candle flame tip (cell origin + light_points_px), all from the manifest"
+}

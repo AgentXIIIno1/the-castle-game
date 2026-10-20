@@ -1,0 +1,25 @@
+Room 6 
+You are in the East Dining room. The large opening to the east leads to the garden patio.
+Exits: {'north': 12, 'south': 5, 'east': 18, 'west': 7}
++------------------------+
+|         #    #         |
+| #########    ########  |
+| #                   #  |
+| #                   #  |
+| #                   ###|
+| #                      |
+|##                      |
+|                        |
+|                        |
+|                        |
+|                        |
+|##                      |
+| #                      |
+| #                   ###|
+| #                   #  |
+| #                   #  |
+| #########    ########  |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

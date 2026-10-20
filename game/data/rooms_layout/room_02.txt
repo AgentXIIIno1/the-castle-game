@@ -1,0 +1,25 @@
+Room 2 
+You are in the Entrance room. Exits are to the north & south.
+Exits: {'north': 3, 'south': 1}
++------------------------+
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|##########    ##########|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|#                      #|
+|##########    ##########|
+|         #    #         |
+|         #    #         |
+|         #    #         |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

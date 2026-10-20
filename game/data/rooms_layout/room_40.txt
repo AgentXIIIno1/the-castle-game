@@ -1,0 +1,25 @@
+Room 40 YELLOW_ROOM
+You are in the Yellow room. It is decorated all in Yellow.Now it is empty except for a desk & bed.
+Exits: {'south': 36, 'west': 34}
++------------------------+
+|                        |
+|                        |
+|                        |
+|   ##################   |
+|   #                #   |
+|   #]YYYY[          #   |
+|   #]YYYY[          #   |
+|####                #   |
+|                    #   |
+|                    #   |
+|####                #   |
+|   #           @@@@ #   |
+|   #           @@@@ #   |
+|   #                #   |
+|   ########  ########   |
+|          #  #          |
+|          #  #          |
+|          #  #          |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Eye Glasses', 12, 18)]
+Monsters(M): []

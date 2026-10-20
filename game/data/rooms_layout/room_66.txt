@@ -1,0 +1,25 @@
+Room 66 LABORATORY
+You are in the Sorcerers secret laboratory.
+Exits: {'west': 67}
++------------------------+
+|                        |
+|                        |
+|    ####################|
+|    #                  #|
+|    #                  #|
+|    #                  #|
+|    #                  #|
+|#####                  #|
+|                       #|
+|                       #|
+|#####                  #|
+|    #                  #|
+|    #                  #|
+|    #                  #|
+|    #                  #|
+|    ####################|
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Crystal Ball', 13, 10)]
+Monsters(M): []

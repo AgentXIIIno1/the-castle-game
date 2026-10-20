@@ -1,0 +1,25 @@
+Room 14 THRONE_ROOM
+You are in the Throne Room. There is a Large Throne at one end of the room.
+Exits: {'south': 13, 'east': 16, 'west': 15}
++------------------------+
+|                        |
+|                        |
+| ###################### |
+|##        %  %        ##|
+|          %--%          |
+|##                    ##|
+| #          M         # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #########    ######### |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Crown', 5, 9)]
+Monsters(M): [('Angry Demon', 7, 13)]

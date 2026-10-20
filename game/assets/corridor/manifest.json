@@ -1,0 +1,69 @@
+{
+  "issue": 33,
+  "tiles": {
+    "corridor_floor_h.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "variants": 6,
+      "use": "horizontal corridor cells (walls N and S)",
+      "rule": "variant = thash(x,y) % 6 (4 = moss in a joint, 5 = dust drift: use sparingly)"
+    },
+    "corridor_floor_v.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "variants": 6,
+      "use": "vertical corridor cells (walls W and E) and junctions",
+      "rule": "variant = thash(x,y) % 6"
+    }
+  },
+  "edge_pieces": {
+    "corridor_lip_n.png": {
+      "size": [
+        16,
+        8
+      ],
+      "use": "wall cell directly NORTH of a horizontal corridor cell: draw this INSTEAD of the 14 px front face, at the face position (X, Y_raised + 16). With the raised top it fills down to the wall cell's bottom edge, so the corridor's full 16 px stays visible"
+    },
+    "corridor_rim_s.png": {
+      "size": [
+        16,
+        3
+      ],
+      "use": "wall cell directly SOUTH of a horizontal corridor cell: draw that wall top WITHOUT the 8 px raise (it otherwise covers half the corridor), then this rim at its top edge (X, y*16 + TOP)"
+    },
+    "corridor_rim_w.png": {
+      "size": [
+        3,
+        16
+      ],
+      "use": "west wall of a vertical corridor: replaces the 8 px side face; draw at the corridor cell's left edge (x*16, y*16 + TOP)"
+    },
+    "corridor_rim_e.png": {
+      "size": [
+        3,
+        16
+      ],
+      "use": "east wall of a vertical corridor: replaces the 8 px side face; draw at the corridor cell's right edge (x*16 + 13, y*16 + TOP)"
+    },
+    "corridor_ao.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": [
+        "N",
+        "S",
+        "W",
+        "E"
+      ],
+      "use": "optional contact shadow inside the corridor cell on each side that touches a wall (replaces the bake's generic AO there)"
+    }
+  },
+  "why": "a 1-wide corridor is currently covered by the north wall's 14 px face (6 px into the cell) plus the south wall's 8 px raised top, leaving about 2 px of floor. In vertical corridors the 8 px side faces from both walls cover the cell. The pieces above shrink those overlaps to a 3 px rim",
+  "detection": "corridor cells (computed once per room, after FURN remaps):\n  W(x,y) = grid cell is a wall ('#' or '='); outside the grid counts as NOT wall (it is an exit), so the void between corridor walls at the grid edge is not picked up; F(x,y) = room['walk'][y][x]\n  horizontal corridor cell: F(x,y) and W(x,y-1) and W(x,y+1)                                  (1 wide)\n                         or F(x,y) and W(x,y-1) and F(x,y+1) and W(x,y+2)   (+ the cell below)  (2 wide)\n  vertical corridor cell:   F(x,y) and W(x-1,y) and W(x+1,y)                                  (1 wide)\n                         or F(x,y) and W(x-1,y) and F(x+1,y) and W(x+2,y)   (+ the cell right)  (2 wide)\n  plus: extend each run by one cell into the room (the doorway mouth) so the runner meets the room floor; skip cells holding stairs/doors/props.\n  a cell that is both (corner/junction): use the _v sheet.",
+  "lighting": "no emissive or baked light; darkness/lamp rules apply unchanged (the runner is only a lighter and warmer albedo)"
+}

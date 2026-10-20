@@ -1,0 +1,25 @@
+Room 4 WEST_BALLROOM
+You are in The West Ballroom. There are arch ways to the north & east; a spiral staircase in one corner.
+Exits: {'north': 8, 'east': 3, 'up': 20}
++------------------------+
+|         #    #         |
+| #########    ######### |
+| #                    # |
+| #                  U # |
+| #                    # |
+| #                    # |
+| #                    ##|
+| #                      |
+| #          M           |
+| #                      |
+| #                      |
+| #                    ##|
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| ###################### |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): [('Ugly Ogre', 9, 13)]

@@ -1,0 +1,49 @@
+{
+  "issue": 6,
+  "room": 74,
+  "glyph_cells_0based": {
+    "K": [
+      8,
+      10
+    ],
+    "B": [
+      9,
+      10
+    ]
+  },
+  "where": "both cells sit inside the sealed wall block x7-10, y9-11 (the '&' cells become '#'), so only the TOP of the block shows: the letters are carved into the wall-top surface, read from above",
+  "files": {
+    "kb_letter_K.png": {
+      "size": [
+        16,
+        16
+      ],
+      "cell": [
+        8,
+        10
+      ]
+    },
+    "kb_letter_B.png": {
+      "size": [
+        16,
+        16
+      ],
+      "cell": [
+        9,
+        10
+      ]
+    },
+    "kb_word.png": {
+      "size": [
+        32,
+        16
+      ],
+      "cells": "x8-9, y10",
+      "note": "K + B in one image; same as drawing the two letters separately"
+    }
+  },
+  "anchor": "top-left of the cell's raised wall top: (x*16, y*16 + TOP - 8), the same RAISE=8 as the wall-top pass. Whole word: (8*16, 10*16 + TOP - 8) = (128, 152 + TOP)",
+  "layer": "wall-top decal (each letter carries its half of a smoothed, bevelled stone panel so it reads on the brick pattern): blit onto the baked wall top after the wall-top pass and before the front faces of the row below (row 11 is also wall, so nothing overlaps). Alpha overlay: opaque groove pixels, translucent lit lip",
+  "blocking": "not blocking itself; the cells stay solid as wall (unchanged)",
+  "lighting": "no glow; it shows under the lamp like the rest of the wall"
+}

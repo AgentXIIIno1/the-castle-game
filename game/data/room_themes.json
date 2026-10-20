@@ -1,0 +1,342 @@
+{
+ "_note": "per-room theme overrides. floor: art3.floor_kind override (cobble/wood/flag/cave); tint: RGB multiplied over the baked floor; decor: decor.theme override (garden/dungeon/indoor or a new theme name adds to decor/manifest.json themes); tiles: optional tile-sheet prefix for future per-room wall tiles; setpiece: true disables seeded random decor (hand-placed pieces in setpiece.py); underlay: full-room view image under the bake; stairs: stair art variant (battlement/tower); posts: post sprite sheet replacing the procedural pillars; ring_glyphs: glyphs baked as wall (tower-top parapet, #11); ambient: RGB multiplied over the lit scene (outdoor dusk)",
+ "40": {
+  "name": "Yellow Room",
+  "floor": "wood",
+  "decor": "yellow",
+  "tiles": "yellow",
+  "setpiece": true
+ },
+ "56": {
+  "name": "King's Study",
+  "floor": "wood",
+  "decor": "indoor",
+  "tiles": "study",
+  "setpiece": true
+ },
+ "37": {
+  "name": "Red Room",
+  "floor": "wood",
+  "tint": [
+   255,
+   214,
+   206
+  ],
+  "decor": "indoor",
+  "bed_color": [
+   170,
+   36,
+   44
+  ],
+  "bed_cover": "red_room/bed_cover_red.png",
+  "floor_tiles": "red_room/red_floor.png",
+  "walls": "red_room/red_",
+  "setpiece": true
+ },
+ "38": {
+  "name": "Blue Room",
+  "floor": "wood",
+  "tint": [
+   206,
+   216,
+   255
+  ],
+  "decor": "indoor",
+  "bed_color": [
+   46,
+   70,
+   170
+  ],
+  "bed_cover": "blue_room/bed_cover_blue.png",
+  "floor_tiles": "blue_room/blue_floor.png",
+  "walls": "blue_room/blue_",
+  "setpiece": true
+ },
+ "39": {
+  "name": "Purple Room",
+  "floor": "wood",
+  "tint": [
+   226,
+   206,
+   255
+  ],
+  "decor": "indoor",
+  "bed_color": [
+   112,
+   52,
+   150
+  ],
+  "bed_cover": "purple_room/bed_cover_purple.png",
+  "floor_tiles": "purple_room/purple_floor.png",
+  "walls": "purple_room/purple_",
+  "setpiece": true
+ },
+ "66": {
+  "name": "Sorcerer's Laboratory",
+  "setpiece": true
+ },
+ "9": {
+  "name": "Kitchen",
+  "setpiece": true
+ },
+ "79": {
+  "setpiece": true
+ },
+ "25": {
+  "name": "Lower Battlement",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_25.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "26": {
+  "name": "Lower Battlement",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_26.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "42": {
+  "name": "Upper Battlement",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_42.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "43": {
+  "name": "Upper Battlement",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_43.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "44": {
+  "name": "Upper Battlement",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_44.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "45": {
+  "name": "Upper Battlement",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_45.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "46": {
+  "name": "Upper Battlement",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_46.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "47": {
+  "name": "Upper Battlement",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_47.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "48": {
+  "name": "Castle Wall",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_48.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "49": {
+  "name": "Castle Wall",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_49.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "51": {
+  "name": "Castle Wall",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_51.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "60": {
+  "name": "Castle Wall",
+  "walls": "battlements/batt_",
+  "floor_tiles": "battlements/batt_floor.png",
+  "underlay": "battlements/underlay_60.png",
+  "stairs": "battlement",
+  "posts": "battlements/batt_post.png",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "64": {
+  "name": "Top Of The West Tower",
+  "walls": "battlements/batt_",
+  "floor_tiles": "tower_top/tower_floor.png",
+  "underlay": "tower_top/underlay_64.png",
+  "stairs": "tower",
+  "posts": "battlements/batt_post.png",
+  "ring_glyphs": "-|",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "65": {
+  "name": "Top Of The East Tower",
+  "walls": "battlements/batt_",
+  "floor_tiles": "tower_top/tower_floor.png",
+  "underlay": "tower_top/underlay_65.png",
+  "stairs": "tower",
+  "posts": "battlements/batt_post.png",
+  "ring_glyphs": "-|",
+  "decor": "garden",
+  "ambient": [
+   226,
+   210,
+   224
+  ]
+ },
+ "57": {
+  "name": "Totally Empty Room",
+  "setpiece": true,
+  "_note": "#40: no random decor (the original's 'Totally Empty Room'); only the Diamond and the fairy-blocked doors"
+ },
+ "50": {
+  "name": "Bottom Of The East Tower",
+  "walls": "towers/tower_",
+  "floor_tiles": "towers/tower_floor_in.png",
+  "underlay": "towers/underlay_50.png",
+  "posts": "towers/tower_post.png"
+ },
+ "61": {
+  "name": "Below The West Tower",
+  "walls": "towers/tower_",
+  "floor_tiles": "towers/tower_floor_in.png",
+  "underlay": "towers/underlay_61.png",
+  "posts": "towers/tower_post.png"
+ },
+ "62": {
+  "name": "West Tower",
+  "walls": "towers/tower_",
+  "floor_tiles": "towers/tower_floor_in.png",
+  "underlay": "towers/underlay_62.png",
+  "posts": "towers/tower_post.png",
+  "stairs": "tower"
+ },
+ "63": {
+  "name": "East Tower",
+  "walls": "towers/tower_",
+  "floor_tiles": "towers/tower_floor_in.png",
+  "underlay": "towers/underlay_63.png",
+  "posts": "towers/tower_post.png",
+  "stairs": "tower"
+ },
+ "80": {
+  "name": "Dungeon",
+  "setpiece": true
+ },
+ "81": {
+  "name": "Dungeon Annex",
+  "setpiece": true
+ },
+ "22": {
+  "name": "Guards Hall",
+  "setpiece": true
+ },
+ "24": {
+  "name": "Knights Hall",
+  "setpiece": true
+ },
+ "12": {
+  "name": "Castle Museum",
+  "setpiece": true
+ },
+ "13": {
+  "name": "Ante Room",
+  "setpiece": true
+ }
+}

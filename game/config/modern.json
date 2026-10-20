@@ -1,0 +1,533 @@
+{
+  "_doc": "MODERN mode = PROPOSED balance for TJ's approval (see modern_proposal.md). All values src=proposal.",
+  "mode": "modern",
+  "label": "MODERN",
+  "blurb": [
+    "FAIRER ODDS. REFILLS.",
+    "SAME CASTLE, LESS PAIN."
+  ],
+  "player": {
+    "start_strength": {
+      "value": 100,
+      "src": "proposal"
+    },
+    "max_strength": {
+      "value": 100,
+      "src": "proposal"
+    },
+    "death_below": {
+      "value": 1,
+      "src": "proposal"
+    },
+    "regen_per_sec": {
+      "value": 1.0,
+      "src": "proposal",
+      "note": "only out of combat"
+    },
+    "regen_delay": {
+      "value": 6.0,
+      "src": "proposal",
+      "note": "secs since last hit/attack"
+    },
+    "regen_cap_frac": {
+      "value": 0.5,
+      "src": "proposal",
+      "note": "regen stops at 50%"
+    },
+    "hud_bar": {
+      "value": true,
+      "src": "proposal"
+    }
+  },
+  "sword": {
+    "hit_chance": {
+      "value": 0.7,
+      "src": "proposal"
+    },
+    "dmg_min": {
+      "value": 10,
+      "src": "proposal"
+    },
+    "dmg_max": {
+      "value": 22,
+      "src": "proposal"
+    },
+    "silent_miss": {
+      "value": false,
+      "src": "proposal"
+    }
+  },
+  "monster_attack": {
+    "hit_chance": {
+      "value": 0.5,
+      "src": "proposal"
+    },
+    "hit_chance_helmet": {
+      "value": 0.4,
+      "src": "proposal"
+    },
+    "helmet_damage_factor": {
+      "value": 0.6,
+      "src": "proposal"
+    },
+    "use_monster_damage": {
+      "value": true,
+      "src": "proposal"
+    },
+    "dmg_min": {
+      "value": 4,
+      "src": "proposal"
+    },
+    "dmg_max": {
+      "value": 12,
+      "src": "proposal"
+    },
+    "touch_includes_diagonal": {
+      "value": false,
+      "src": "proposal",
+      "note": "only N/S/E/W neighbours bite"
+    },
+    "silent_miss": {
+      "value": false,
+      "src": "proposal"
+    },
+    "helmet_message": {
+      "value": true,
+      "src": "proposal"
+    }
+  },
+  "timing": {
+    "monster_move_interval": {
+      "value": 0.4,
+      "src": "proposal"
+    },
+    "monster_attack_interval": {
+      "value": 0.9,
+      "src": "proposal"
+    },
+    "monster_first_attack_delay": {
+      "value": 0.8,
+      "src": "proposal",
+      "note": "telegraph before first bite"
+    },
+    "player_attack_interval": {
+      "value": 0.45,
+      "src": "proposal",
+      "note": "original: player and monsters each act once per tick, so classic uses equal intervals"
+    },
+    "monster_move_8way": {
+      "value": false,
+      "src": "proposal"
+    },
+    "monster_dies_below": {
+      "value": 1,
+      "src": "proposal"
+    }
+  },
+  "monsters": {
+    "Snake": {
+      "strength": {
+        "value": 50,
+        "src": "proposal"
+      },
+      "dmg_min": {
+        "value": 4,
+        "src": "proposal"
+      },
+      "dmg_max": {
+        "value": 9,
+        "src": "proposal"
+      },
+      "points": {
+        "value": 100,
+        "src": "proposal"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "proposal"
+      },
+      "removed_by": {
+        "value": "",
+        "src": "proposal"
+      }
+    },
+    "Ugly Ogre": {
+      "strength": {
+        "value": 70,
+        "src": "proposal"
+      },
+      "dmg_min": {
+        "value": 6,
+        "src": "proposal"
+      },
+      "dmg_max": {
+        "value": 12,
+        "src": "proposal"
+      },
+      "points": {
+        "value": 100,
+        "src": "proposal"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "proposal"
+      },
+      "removed_by": {
+        "value": "",
+        "src": "proposal"
+      }
+    },
+    "Bat": {
+      "strength": {
+        "value": 15,
+        "src": "proposal"
+      },
+      "dmg_min": {
+        "value": 2,
+        "src": "proposal"
+      },
+      "dmg_max": {
+        "value": 5,
+        "src": "proposal"
+      },
+      "points": {
+        "value": 100,
+        "src": "proposal"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "proposal"
+      },
+      "removed_by": {
+        "value": "",
+        "src": "proposal"
+      }
+    },
+    "Big Spider": {
+      "strength": {
+        "value": 60,
+        "src": "proposal"
+      },
+      "dmg_min": {
+        "value": 4,
+        "src": "proposal"
+      },
+      "dmg_max": {
+        "value": 10,
+        "src": "proposal"
+      },
+      "points": {
+        "value": 100,
+        "src": "proposal"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "proposal"
+      },
+      "removed_by": {
+        "value": "",
+        "src": "proposal"
+      }
+    },
+    "Small Spider": {
+      "strength": {
+        "value": 30,
+        "src": "proposal"
+      },
+      "dmg_min": {
+        "value": 2,
+        "src": "proposal"
+      },
+      "dmg_max": {
+        "value": 6,
+        "src": "proposal"
+      },
+      "points": {
+        "value": 100,
+        "src": "proposal"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "proposal"
+      },
+      "removed_by": {
+        "value": "",
+        "src": "proposal"
+      }
+    },
+    "Angry Demon": {
+      "strength": {
+        "value": 110,
+        "src": "proposal"
+      },
+      "dmg_min": {
+        "value": 8,
+        "src": "proposal"
+      },
+      "dmg_max": {
+        "value": 15,
+        "src": "proposal"
+      },
+      "points": {
+        "value": 100,
+        "src": "proposal"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "proposal"
+      },
+      "removed_by": {
+        "value": "",
+        "src": "proposal"
+      }
+    },
+    "Vampire": {
+      "strength": {
+        "value": 1,
+        "src": "proposal"
+      },
+      "dmg_min": {
+        "value": 0,
+        "src": "proposal"
+      },
+      "dmg_max": {
+        "value": 0,
+        "src": "proposal"
+      },
+      "points": {
+        "value": 0,
+        "src": "proposal"
+      },
+      "can_be_hurt": {
+        "value": false,
+        "src": "proposal"
+      },
+      "removed_by": {
+        "value": "WAVE HOLY CROSS in room 28",
+        "src": "proposal"
+      }
+    },
+    "Fairy": {
+      "strength": {
+        "value": 1,
+        "src": "proposal"
+      },
+      "dmg_min": {
+        "value": 0,
+        "src": "proposal"
+      },
+      "dmg_max": {
+        "value": 0,
+        "src": "proposal"
+      },
+      "points": {
+        "value": 0,
+        "src": "proposal"
+      },
+      "can_be_hurt": {
+        "value": false,
+        "src": "proposal"
+      },
+      "removed_by": {
+        "value": "PLAY HARP",
+        "src": "proposal"
+      }
+    }
+  },
+  "flask": {
+    "fill_room": {
+      "value": 18,
+      "src": "proposal"
+    },
+    "fill_needs_adjacent": {
+      "value": true,
+      "src": "proposal"
+    },
+    "heal": {
+      "value": "amount",
+      "src": "proposal"
+    },
+    "heal_amount": {
+      "value": 50,
+      "src": "proposal"
+    },
+    "heal_uses_per_game": {
+      "value": 0,
+      "src": "proposal",
+      "note": "0 = unlimited"
+    },
+    "refillable": {
+      "value": true,
+      "src": "proposal"
+    },
+    "drink_empties": {
+      "value": true,
+      "src": "proposal"
+    },
+    "fill_edge_chars": {
+      "value": "-|,.`'",
+      "src": "proposal"
+    },
+    "drink_empties_after_used": {
+      "value": true,
+      "src": "proposal"
+    }
+  },
+  "inventory": {
+    "limit": {
+      "value": 6,
+      "src": "proposal"
+    },
+    "get_visible_by_command": {
+      "value": true,
+      "src": "proposal"
+    },
+    "get_hidden_reach": {
+      "value": 2,
+      "src": "proposal"
+    }
+  },
+  "points": {
+    "treasure": {
+      "value": 50,
+      "src": "proposal"
+    },
+    "treasure_room": {
+      "value": 1,
+      "src": "proposal"
+    },
+    "escape": {
+      "value": 100,
+      "src": "proposal"
+    },
+    "kill": {
+      "value": 100,
+      "src": "proposal"
+    },
+    "perfect": {
+      "value": 1550,
+      "src": "proposal"
+    },
+    "score_only_at_end": {
+      "value": false,
+      "src": "proposal"
+    }
+  },
+  "parser": {
+    "kill_alias": {
+      "value": true,
+      "src": "proposal"
+    },
+    "unknown_reply": {
+      "value": "I don't understand that.",
+      "src": "proposal"
+    }
+  },
+  "gate": {
+    "open_with": {
+      "value": "SCEPTER",
+      "src": "proposal"
+    },
+    "room": {
+      "value": 1,
+      "src": "proposal"
+    }
+  },
+  "doors": {
+    "bump_with_key_unlocks": {
+      "value": true,
+      "src": "proposal",
+      "note": "walking into the grating with the KEY also unlocks it (as Seed7 does)"
+    }
+  },
+  "stairs": {
+    "cooldown_s": {
+      "value": 1.0,
+      "src": "remake",
+      "note": "remake default 1.0; TJ suggested 1.5"
+    }
+  },
+  "wear": {
+    "worn_items_free_slots": {
+      "value": true,
+      "src": "proposal",
+      "note": " WEAR/REMOVE; worn items don't use a carry slot"
+    },
+    "wearable": {
+      "value": [
+        "necklace",
+        "helmet",
+        "chain mail"
+      ],
+      "src": "proposal"
+    },
+    "helmet_needs_wearing": {
+      "value": true,
+      "src": "proposal",
+      "note": "helmet protects only when worn"
+    }
+  },
+  "backpack": {
+    "enabled": {
+      "value": true,
+      "src": "proposal",
+      "note": " Ugly Ogre in room 21 drops a Backpack; equips on pickup"
+    },
+    "bonus_slots": {
+      "value": 4,
+      "src": "proposal",
+      "note": "6 -> 10 (issue #26 default; alternative: 6 to double)"
+    },
+    "room": {
+      "value": 21,
+      "src": "proposal",
+      "note": "East End Of The Upper Hall"
+    },
+    "monster": {
+      "value": "Ugly Ogre",
+      "src": "proposal"
+    }
+  },
+  "chainmail": {
+    "enabled": {
+      "value": true,
+      "src": "proposal",
+      "note": " Modern-only Chain Mail in the Knights Hall"
+    },
+    "room": {
+      "value": 24,
+      "src": "proposal",
+      "note": "Knights Hall"
+    },
+    "cell": {
+      "value": [
+        15,
+        2
+      ],
+      "src": "proposal",
+      "note": "on the art set's armour stand (assets/chain_mail/manifest.json item_cell, which wins); demon = row 10 col 6 = cell (5,9)"
+    },
+    "carry_slots": {
+      "value": 2,
+      "src": "proposal",
+      "note": "carried; worn = 0"
+    },
+    "damage_mult": {
+      "value": 0.67,
+      "src": "proposal",
+      "note": "landed monster hits x this while worn, rounded, min 1; stacks with the helmet"
+    },
+    "stand_solid": {
+      "value": true,
+      "src": "proposal",
+      "note": "the stand cell blocks (GET reaches it from an adjacent cell); kept walkable if the BFS says it would cut anything off"
+    }
+  },
+  "drop_treasure": {
+    "enabled": {
+      "value": true,
+      "src": "proposal",
+      "note": " DROP TREASURE: drop spare treasures; Necklace always kept, Scepter/Cross/Harp while needed; asks Y/N outside the Courtyard"
+    }
+  }
+}

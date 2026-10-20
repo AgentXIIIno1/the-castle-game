@@ -1,0 +1,372 @@
+{
+  "set": "patio",
+  "issues": [
+    14
+  ],
+  "rooms": [
+    6
+  ],
+  "sheets": {
+    "patio_flags.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 8,
+      "frame_use": "0-3 threshold column x22 (a little shaded), 4-7 outside x23 (full sun)",
+      "layer": "opaque floor decal",
+      "content": "pale sandstone patio flags, grass and moss in the joints, a daisy (v3)"
+    },
+    "patio_bed.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "frame_use": "0 north edge (y5), 1 south edge (y12)",
+      "layer": "opaque floor decal",
+      "content": "box hedge + flower bed along the opening's side walls, then flags"
+    },
+    "patio_light.png": {
+      "frame_size": [
+        16,
+        16
+      ],
+      "layer": "floor decal (alpha) at x21",
+      "content": "warm daylight spilling in, fading west"
+    }
+  },
+  "rooms_detail": {
+    "6": {
+      "name": "East Dining Room",
+      "wall_decals": [],
+      "floor_decals": [
+        [
+          "patio/patio_light.png",
+          16,
+          0,
+          21,
+          5
+        ],
+        [
+          "patio/patio_bed.png",
+          16,
+          0,
+          22,
+          5
+        ],
+        [
+          "patio/patio_bed.png",
+          16,
+          0,
+          23,
+          5
+        ],
+        [
+          "patio/patio_light.png",
+          16,
+          0,
+          21,
+          6
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          2,
+          22,
+          6
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          7,
+          23,
+          6
+        ],
+        [
+          "patio/patio_light.png",
+          16,
+          0,
+          21,
+          7
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          1,
+          22,
+          7
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          4,
+          23,
+          7
+        ],
+        [
+          "patio/patio_light.png",
+          16,
+          0,
+          21,
+          8
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          0,
+          22,
+          8
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          5,
+          23,
+          8
+        ],
+        [
+          "patio/patio_light.png",
+          16,
+          0,
+          21,
+          9
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          3,
+          22,
+          9
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          6,
+          23,
+          9
+        ],
+        [
+          "patio/patio_light.png",
+          16,
+          0,
+          21,
+          10
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          2,
+          22,
+          10
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          7,
+          23,
+          10
+        ],
+        [
+          "patio/patio_light.png",
+          16,
+          0,
+          21,
+          11
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          1,
+          22,
+          11
+        ],
+        [
+          "patio/patio_flags.png",
+          16,
+          4,
+          23,
+          11
+        ],
+        [
+          "patio/patio_light.png",
+          16,
+          0,
+          21,
+          12
+        ],
+        [
+          "patio/patio_bed.png",
+          16,
+          1,
+          22,
+          12
+        ],
+        [
+          "patio/patio_bed.png",
+          16,
+          1,
+          23,
+          12
+        ]
+      ],
+      "objects": [],
+      "blocking_added": [],
+      "post_cells": [
+        [
+          9,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          21,
+          2
+        ],
+        [
+          21,
+          4
+        ],
+        [
+          22,
+          4
+        ],
+        [
+          23,
+          4
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          12
+        ],
+        [
+          21,
+          13
+        ],
+        [
+          22,
+          13
+        ],
+        [
+          23,
+          13
+        ],
+        [
+          1,
+          16
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          17,
+          16
+        ],
+        [
+          21,
+          16
+        ],
+        [
+          9,
+          17
+        ],
+        [
+          14,
+          17
+        ]
+      ],
+      "bfs_all_walkable_connected_with_blocking": true,
+      "note": "the patio flags/beds are opaque and replace the floor in x22-23 (draw them in draw_floor); all cells stay walkable (the east exit to room 18 is untouched)",
+      "light_suggestion": {
+        "cells": [
+          [
+            22,
+            5
+          ],
+          [
+            22,
+            7
+          ],
+          [
+            22,
+            9
+          ],
+          [
+            22,
+            11
+          ]
+        ],
+        "radius": 28,
+        "colour": [
+          70,
+          64,
+          44
+        ],
+        "note": "warm daylight, like TOWER_LIGHT"
+      }
+    }
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "tile_px": 16,
+  "notes": "Blocking objects have a small contact shadow BAKED IN (shadow_baked: true) - do not add a game shadow for them. Each file is a horizontal strip of variants (or animation frames for sconces). Decals: no outline/shadow, draw on the floor/wall layer after the baked room. Objects: dark outline baked, depth-sorted like other sprites. No glow baked; the game adds sconce light.",
+  "anchors": {
+    "floor decal": "top-left of the cell",
+    "wall decal": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner",
+    "object": "bottom-centre at the bottom edge of the footprint cell (x*16+8, y*16+16)"
+  },
+  "props": [
+    {
+      "file": "crack_indoor.png",
+      "name": "crack",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "wall decal",
+      "placement": "wall-face",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 2,
+      "weight": 3,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "crack_dungeon.png",
+      "name": "crack",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "wall decal",
+      "placement": "wall-face",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 2,
+      "weight": 3,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "missing_stone_indoor.png",
+      "name": "missing_stone",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "layer": "wall decal",
+      "placement": "wall-face",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 2,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "missing_stone_dungeon.png",
+      "name": "missing_stone",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "layer": "wall decal",
+      "placement": "wall-face",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 1,
+      "weight": 2,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "missing_stone_garden.png",
+      "name": "missing_stone",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 2,
+      "layer": "wall decal",
+      "placement": "wall-face",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "garden"
+      ],
+      "max_per_room": 1,
+      "weight": 2,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "moss_vines_garden.png",
+      "name": "moss_vines",
+      "frame_size": [
+        16,
+        24
+      ],
+      "variants": 3,
+      "layer": "wall decal",
+      "placement": "wall-face (top of face, hangs down)",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "garden"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "moss_vines_dungeon.png",
+      "name": "moss_vines",
+      "frame_size": [
+        16,
+        24
+      ],
+      "variants": 3,
+      "layer": "wall decal",
+      "placement": "wall-face (top of face, hangs down)",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "moss_vines_indoor.png",
+      "name": "moss_vines",
+      "frame_size": [
+        16,
+        24
+      ],
+      "variants": 3,
+      "layer": "wall decal",
+      "placement": "wall-face (top of face, hangs down)",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "cobweb.png",
+      "name": "cobweb",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "wall decal",
+      "placement": "wall-top-corner (top-left inner corner; mirror for top-right)",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "indoor",
+        "dungeon"
+      ],
+      "max_per_room": 2,
+      "weight": 3,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "banner_torn.png",
+      "name": "banner_torn",
+      "frame_size": [
+        16,
+        24
+      ],
+      "variants": 3,
+      "layer": "wall decal",
+      "placement": "wall-face",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "tapestry_torn.png",
+      "name": "tapestry_torn",
+      "frame_size": [
+        32,
+        24
+      ],
+      "variants": 2,
+      "layer": "wall decal",
+      "placement": "wall-face (2 cells wide)",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner"
+    },
+    {
+      "file": "rubble_indoor.png",
+      "name": "rubble",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "wall-base or floor-open",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 2,
+      "weight": 3,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "rubble_dungeon.png",
+      "name": "rubble",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "wall-base or floor-open",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 2,
+      "weight": 3,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "rubble_garden.png",
+      "name": "rubble",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "wall-base or floor-open",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "garden"
+      ],
+      "max_per_room": 2,
+      "weight": 3,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "debris_indoor.png",
+      "name": "debris",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or near-doorway",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "debris_dungeon.png",
+      "name": "debris",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or near-doorway",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "puddle_dungeon.png",
+      "name": "puddle",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or wall-base",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 1,
+      "weight": 2,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "puddle_indoor.png",
+      "name": "puddle",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or wall-base",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 2,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "puddle_garden.png",
+      "name": "puddle",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or wall-base",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "garden"
+      ],
+      "max_per_room": 1,
+      "weight": 2,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "bones.png",
+      "name": "bones",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or wall-base",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "broken_furniture.png",
+      "name": "broken_furniture",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or wall-base",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "rug_faded.png",
+      "name": "rug_faded",
+      "frame_size": [
+        32,
+        16
+      ],
+      "variants": 2,
+      "layer": "floor decal",
+      "placement": "floor-open (2x1 cells, centre of room)",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "dust_indoor.png",
+      "name": "dust",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or wall-base",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 3,
+      "weight": 3,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "dust_dungeon.png",
+      "name": "dust",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open or wall-base",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 3,
+      "weight": 3,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "leaves.png",
+      "name": "leaves",
+      "frame_size": [
+        16,
+        16
+      ],
+      "variants": 3,
+      "layer": "floor decal",
+      "placement": "floor-open",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": true,
+      "themes": [
+        "garden"
+      ],
+      "max_per_room": 3,
+      "weight": 3,
+      "anchor": "top-left of the cell"
+    },
+    {
+      "file": "chair_toppled.png",
+      "name": "chair_toppled",
+      "frame_size": [
+        20,
+        16
+      ],
+      "variants": 2,
+      "layer": "object",
+      "placement": "floor-open or wall-base",
+      "blocking": true,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "shadow_baked": true,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "bottom-centre at the bottom edge of the footprint cell (x*16+8, y*16+16)"
+    },
+    {
+      "file": "crate_broken.png",
+      "name": "crate_broken",
+      "frame_size": [
+        16,
+        20
+      ],
+      "variants": 2,
+      "layer": "object",
+      "placement": "wall-base",
+      "blocking": true,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "shadow_baked": true,
+      "themes": [
+        "indoor",
+        "dungeon"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "bottom-centre at the bottom edge of the footprint cell (x*16+8, y*16+16)"
+    },
+    {
+      "file": "rubble_heap_indoor.png",
+      "name": "rubble_heap",
+      "frame_size": [
+        16,
+        18
+      ],
+      "variants": 2,
+      "layer": "object",
+      "placement": "wall-base or floor-open",
+      "blocking": true,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "shadow_baked": true,
+      "themes": [
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "bottom-centre at the bottom edge of the footprint cell (x*16+8, y*16+16)"
+    },
+    {
+      "file": "rubble_heap_dungeon.png",
+      "name": "rubble_heap",
+      "frame_size": [
+        16,
+        18
+      ],
+      "variants": 2,
+      "layer": "object",
+      "placement": "wall-base or floor-open",
+      "blocking": true,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "shadow_baked": true,
+      "themes": [
+        "dungeon"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "bottom-centre at the bottom edge of the footprint cell (x*16+8, y*16+16)"
+    },
+    {
+      "file": "rubble_heap_garden.png",
+      "name": "rubble_heap",
+      "frame_size": [
+        16,
+        18
+      ],
+      "variants": 2,
+      "layer": "object",
+      "placement": "wall-base or floor-open",
+      "blocking": true,
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "shadow_baked": true,
+      "themes": [
+        "garden"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "bottom-centre at the bottom edge of the footprint cell (x*16+8, y*16+16)"
+    },
+    {
+      "file": "sconce_lit.png",
+      "name": "sconce_lit",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "layer": "wall decal",
+      "placement": "wall-face (front face, centred)",
+      "blocking": false,
+      "themes": [
+        "indoor",
+        "dungeon"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner",
+      "light": "lit: game adds a warm point light ~(x+7, y+4)"
+    },
+    {
+      "file": "sconce_unlit.png",
+      "name": "sconce_unlit",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 1,
+      "fps": 0,
+      "loop": false,
+      "layer": "wall decal",
+      "placement": "wall-face (front face, centred)",
+      "blocking": false,
+      "themes": [
+        "indoor",
+        "dungeon"
+      ],
+      "max_per_room": 2,
+      "weight": 2,
+      "anchor": "top-left of the wall FACE (just below the wall top) for wall-face; top-left of the inner corner floor cell for wall-top-corner",
+      "light": "none"
+    }
+  ]
+}

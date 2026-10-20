@@ -1,0 +1,234 @@
+{
+  "room": 40,
+  "room_name": "Yellow Room",
+  "tiles": {
+    "yellow_floor.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "variants": 6,
+      "maps_to": "all walkable floor cells of room 40 (replaces 'wood' floor_kind)",
+      "rule": "variant = thash(x,y) % 6 (4,5 are dusty: weight them lower near the walls is fine)"
+    },
+    "yellow_wall_tops.png": {
+      "cell": [
+        16,
+        16
+      ],
+      "cols": 6,
+      "maps_to": "room 40 '#' wall tops",
+      "layout": "same as room83_wall_tops.png"
+    },
+    "yellow_wall_fronts.png": {
+      "cell": [
+        16,
+        14
+      ],
+      "cols": 6,
+      "maps_to": "room 40 front faces",
+      "layout": "same as room83_wall_fronts.png"
+    },
+    "yellow_side_walls.png": {
+      "cell": [
+        8,
+        30
+      ],
+      "cols": 4,
+      "maps_to": "room 40 side faces: cols 0-1 left, 2-3 right",
+      "layout": "same as room83_side_walls.png"
+    }
+  },
+  "props": [
+    {
+      "file": "wallpaper_peeling.png",
+      "name": "wallpaper_peeling",
+      "frame_size": [
+        16,
+        14
+      ],
+      "variants": 3,
+      "layer": "wall decal",
+      "placement": "wall-face (overlays the front face exactly)",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "yellow"
+      ],
+      "max_per_room": 6,
+      "weight": 4,
+      "anchor": "top-left of the wall FACE"
+    },
+    {
+      "file": "mirror_tarnished.png",
+      "name": "mirror_tarnished",
+      "frame_size": [
+        16,
+        24
+      ],
+      "variants": 2,
+      "layer": "wall decal",
+      "placement": "wall-face",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "yellow",
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "top-left of the wall FACE, may rise 10px above it"
+    },
+    {
+      "file": "frame_gilt.png",
+      "name": "frame_gilt",
+      "frame_size": [
+        16,
+        20
+      ],
+      "variants": 2,
+      "layer": "wall decal",
+      "placement": "wall-face",
+      "blocking": false,
+      "footprint_tiles": null,
+      "shadow_baked": false,
+      "themes": [
+        "yellow",
+        "indoor"
+      ],
+      "max_per_room": 1,
+      "weight": 1,
+      "anchor": "top-left of the wall FACE, may rise 6px above it"
+    },
+    {
+      "file": "bed_cover_yellow.png",
+      "name": "bed_cover_yellow",
+      "frame_size": [
+        64,
+        32
+      ],
+      "variants": 1,
+      "layer": "furniture overlay",
+      "placement": "over the bed 'Y' cells: top-left = (5*16, 5*16) (cells x5-8, y5-6), drawn after the baked bed, before posts",
+      "blocking": true,
+      "footprint_tiles": [
+        4,
+        2
+      ],
+      "shadow_baked": false,
+      "themes": [
+        "yellow"
+      ],
+      "max_per_room": 1,
+      "weight": 0,
+      "anchor": "top-left of the first Y cell"
+    },
+    {
+      "file": "cobweb.png",
+      "name": "cobweb",
+      "same_as": "decor/cobweb.png",
+      "placement": "wall-top-corner"
+    },
+    {
+      "file": "dust_indoor.png",
+      "name": "dust",
+      "same_as": "decor/dust_indoor.png",
+      "placement": "floor-open"
+    }
+  ],
+  "placements_room40": {
+    "wallpaper_peeling": "north wall faces x5,x8,x18,x16 (variants 0,1,2,0); south faces x6, x15 (variants 1,2)",
+    "mirror_tarnished": "north face x14",
+    "frame_gilt": "north face x10",
+    "wall_decals": [
+      {
+        "name": "wallpaper_peeling",
+        "variant": 0,
+        "cell": [
+          5,
+          3
+        ]
+      },
+      {
+        "name": "wallpaper_peeling",
+        "variant": 1,
+        "cell": [
+          8,
+          3
+        ]
+      },
+      {
+        "name": "wallpaper_peeling",
+        "variant": 2,
+        "cell": [
+          18,
+          3
+        ]
+      },
+      {
+        "name": "wallpaper_peeling",
+        "variant": 0,
+        "cell": [
+          16,
+          3
+        ]
+      },
+      {
+        "name": "wallpaper_peeling",
+        "variant": 1,
+        "cell": [
+          6,
+          14
+        ]
+      },
+      {
+        "name": "wallpaper_peeling",
+        "variant": 2,
+        "cell": [
+          15,
+          14
+        ]
+      },
+      {
+        "name": "mirror_tarnished",
+        "variant": 0,
+        "cell": [
+          14,
+          3
+        ]
+      },
+      {
+        "name": "frame_gilt",
+        "variant": 0,
+        "cell": [
+          10,
+          3
+        ]
+      }
+    ],
+    "wall_post_cells": {
+      "north_row3": [
+        3,
+        7,
+        12,
+        17,
+        20
+      ],
+      "south_row14": [
+        3,
+        7,
+        10,
+        13,
+        17,
+        20
+      ]
+    },
+    "note_39": "issue #39: no hand-placed wall decal on a post cell (posts are drawn after wall decals and cover the cell's face + 1px each side)",
+    "cobweb": "(4,4) and mirrored (19,4)",
+    "dust": "(11,8), (17,13)",
+    "desk": "art/drawers/yellow_room_desk_* at its manifest anchor",
+    "light": "warm amber ambient tint (255,230,170) at ~8% optional"
+  }
+}

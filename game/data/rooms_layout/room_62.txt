@@ -1,0 +1,25 @@
+Room 62 WEST_TOWER_MIDDLE
+You are in the West Tower .There is a Passage to the East.
+Exits: {'east': 67, 'up': 64, 'down': 61}
++------------------------+
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+| ########               |
+|##      ##              |
+|#        ###############|
+|#   DU                  |
+|#   DU                  |
+|#        ###############|
+|##      ##              |
+| ########               |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

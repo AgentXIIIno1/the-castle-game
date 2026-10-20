@@ -1,0 +1,25 @@
+Room 43 
+You are In an Upper Battlement. There is a long staircase leading down.
+Exits: {'north': 42, 'south': 46, 'down': 82}
++------------------------+
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      ##|
+|               #       #|
+|               #      D#|
+|               #      D#|
+|               #       #|
+|               #      ##|
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

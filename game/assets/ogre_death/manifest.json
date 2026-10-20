@@ -1,0 +1,107 @@
+{
+  "sheets": [
+    {
+      "file": "ogre_death_right.png",
+      "facing": "native art3.make_ogre orientation (club on right), game face>=0; topples to the left/back"
+    },
+    {
+      "file": "ogre_death_left.png",
+      "facing": "mirror for face<0 (or flip right strip at runtime)"
+    }
+  ],
+  "frame_size": [
+    64,
+    48
+  ],
+  "frames": 13,
+  "layout": "horizontal strip, 1x, RGBA, nearest only",
+  "fps": 10,
+  "frame_durations_ms": [
+    90,
+    70,
+    90,
+    90,
+    110,
+    70,
+    60,
+    160,
+    180,
+    90,
+    90,
+    100,
+    130
+  ],
+  "total_ms": 1330,
+  "anchor": {
+    "px": [
+      32,
+      44
+    ],
+    "desc": "bottom-centre at ground contact; draw frame at (x - ax, y - ay)"
+  },
+  "frame_anchor_offsets": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "phases": {
+    "0-1": "heavy white hit flash + knockback",
+    "2-4": "stagger back/forward, knees buckle",
+    "5-7": "topple onto back, impact dust",
+    "8": "lying, greying",
+    "9-11": "crumble to dust with puff + sparkles",
+    "12": "sparkles only"
+  },
+  "final_frame": "play once; after frame 12 remove the monster (draw nothing). No loop.",
+  "layering": "monster/sprite layer at ogre position, replaces squash+fade. No shadow/glow baked (flash is baked white tint). Body slides up to +15px right of anchor as it falls (baked into frames, offsets stay 0); fallen body spans roughly x 12-50 of the frame.",
+  "source": "art3.make_ogre() pixels, transformed by make_ogre_death.py"
+}

@@ -1,0 +1,25 @@
+Room 57 EMPTY_ROOM
+You are in a totally Empty room.
+Exits: {'south': 54, 'east': 52}
++------------------------+
+|                        |
+|                        |
+|                        |
+|   ##################   |
+|   #                #   |
+|   #                #   |
+|   #                #   |
+|   #                ####|
+|   #                   #|
+|   #                    |
+|   #                ####|
+|   #                #   |
+|   #                #   |
+|   #                #   |
+|   ########  ########   |
+|          #  #          |
+|          #  #          |
+|          # ##          |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Diamond', 10, 13)]
+Monsters(M): []

@@ -1,0 +1,25 @@
+Room 79 TORTURE_ROOM
+You are in the Toture room. There are chains on one wall, and a Large Table.
+Exits: {'north': 81}
++------------------------+
+|          #  #          |
+|          #  #          |
+|  #########  #########  |
+|  #                  #  |
+|  #                  #  |
+|  #  @@              #  |
+|  #  @@              #  |
+|  #  @@             {#  |
+|  #                  #  |
+|  #                  #  |
+|  #                 {#  |
+|  #                  #  |
+|  #                  #  |
+|  #                  #  |
+|  #                  #  |
+|  ####################  |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

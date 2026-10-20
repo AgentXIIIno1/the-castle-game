@@ -1,0 +1,25 @@
+Room 7 
+You are in The Central Hall. Exits are in all directions. There is a large spiral staircase in the middle.
+Exits: {'north': 13, 'south': 3, 'east': 6, 'west': 8, 'up': 23}
++------------------------+
+|         #    #         |
+| #########    ######### |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+|##                    ##|
+|                        |
+|           UU           |
+|           UU           |
+|                        |
+|##                    ##|
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #########    ######### |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

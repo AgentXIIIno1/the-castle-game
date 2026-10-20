@@ -1,0 +1,131 @@
+{
+  "monster": "ogre",
+  "frame_size": [
+    64,
+    48
+  ],
+  "anchor": {
+    "px": [
+      32,
+      44
+    ],
+    "px_left": [
+      32,
+      44
+    ],
+    "desc": "bottom-centre ground contact; px for *_right strips, px_left for *_left (mirrored) strips; draw frame at (x - ax, y - ay)"
+  },
+  "layout": "one horizontal strip per state per facing, 1x RGBA, nearest only, dark outline baked, no shadow/glow baked",
+  "facing": "*_right.png is the native facing (game face>=0); *_left.png is the mirror (face<0) - or flip right at runtime as main.py does",
+  "notes": "Built from art3.make_ogre() pixels, nearest-only transforms about the feet; same frame/anchor as ogre_death so states swap without jumping.",
+  "states": {
+    "idle": {
+      "files": [
+        "ogre_idle_right.png",
+        "ogre_idle_left.png"
+      ],
+      "frames": 4,
+      "fps": 4.5,
+      "frame_durations_ms": [
+        260,
+        180,
+        260,
+        180
+      ],
+      "loop": true,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "heavy breathing (squash/stretch)"
+    },
+    "move": {
+      "files": [
+        "ogre_move_right.png",
+        "ogre_move_left.png"
+      ],
+      "frames": 4,
+      "fps": 6.7,
+      "frame_durations_ms": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "loop": true,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "lumbering side-to-side sway with bob; translate in game"
+    },
+    "attack": {
+      "files": [
+        "ogre_attack_right.png",
+        "ogre_attack_left.png"
+      ],
+      "frames": 5,
+      "fps": 8.1,
+      "frame_durations_ms": [
+        110,
+        160,
+        70,
+        140,
+        140
+      ],
+      "loop": false,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "lean back with club raised, slam forward; frame 2 = hit frame",
+      "hit_frame": 2
+    }
+  }
+}

@@ -1,0 +1,25 @@
+Room 63 
+You are in The East Tower . There are Stairs Going both up & down.
+Exits: {'up': 65, 'down': 50}
++------------------------+
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|               ######## |
+|              ##      ##|
+|              #        #|
+|              #   UD   #|
+|              #   UD   #|
+|              #        #|
+|              ##      ##|
+|               ######## |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

@@ -1,0 +1,545 @@
+{
+  "_doc": "CLASSIC mode = original CASTLE.EXE behaviour (where it differs from Seed7). src: exe-confirmed | exe-inferred | seed7 | remake (no original equivalent).",
+  "mode": "classic",
+  "label": "CLASSIC",
+  "blurb": [
+    "1984 RULES, REMASTERED.",
+    "ONE HEAL. NO MERCY."
+  ],
+  "player": {
+    "start_strength": {
+      "value": 100,
+      "src": "exe-confirmed",
+      "note": "0x2c80 STR=100; DOSBox SAVE"
+    },
+    "max_strength": {
+      "value": 100,
+      "src": "exe-confirmed",
+      "note": "no max; only DRINK resets to 100"
+    },
+    "death_below": {
+      "value": 0,
+      "src": "exe-confirmed",
+      "note": "dies when STR < 0"
+    },
+    "regen_per_sec": {
+      "value": 0,
+      "src": "exe-confirmed",
+      "note": "no regen code"
+    },
+    "regen_delay": {
+      "value": 0,
+      "src": "remake"
+    },
+    "regen_cap_frac": {
+      "value": 0,
+      "src": "remake"
+    },
+    "hud_bar": {
+      "value": false,
+      "src": "remake",
+      "note": "classic shows the number only"
+    }
+  },
+  "sword": {
+    "hit_chance": {
+      "value": 0.5,
+      "src": "exe-confirmed",
+      "note": "R=INT(RND*100)+1, hit if R>50"
+    },
+    "dmg_min": {
+      "value": -5,
+      "src": "exe-confirmed",
+      "note": "MON_STR -= INT(RND*25)-5: net -5..19; a 'hit' can heal the monster"
+    },
+    "dmg_max": {
+      "value": 19,
+      "src": "exe-confirmed"
+    },
+    "silent_miss": {
+      "value": true,
+      "src": "exe-confirmed",
+      "note": "miss prints nothing"
+    }
+  },
+  "monster_attack": {
+    "hit_chance": {
+      "value": 0.6,
+      "src": "exe-confirmed",
+      "note": "hit if R>40"
+    },
+    "hit_chance_helmet": {
+      "value": 0.5,
+      "src": "exe-confirmed",
+      "note": "carried helmet: R-10"
+    },
+    "helmet_damage_factor": {
+      "value": 1.0,
+      "src": "exe-confirmed",
+      "note": "helmet never reduces damage"
+    },
+    "use_monster_damage": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "one shared formula"
+    },
+    "dmg_min": {
+      "value": -5,
+      "src": "exe-confirmed",
+      "note": "STR = STR - INT(RND*25) + 5: change -19..+5, so a hit can raise STR"
+    },
+    "dmg_max": {
+      "value": 19,
+      "src": "exe-confirmed"
+    },
+    "touch_includes_diagonal": {
+      "value": true,
+      "src": "exe-confirmed",
+      "note": "8-way step; attack if the step lands on the player"
+    },
+    "silent_miss": {
+      "value": true,
+      "src": "exe-confirmed",
+      "note": "R<=40 -> miss, silent"
+    },
+    "helmet_message": {
+      "value": true,
+      "src": "exe-confirmed",
+      "note": "'The Helmet helped.' on every hit while carried"
+    }
+  },
+  "timing": {
+    "monster_move_interval": {
+      "value": 0.32,
+      "src": "remake",
+      "note": "original: one tick per 200 idle INKEY$ polls (speed depends on the CPU); 0.32 s is a guess"
+    },
+    "monster_attack_interval": {
+      "value": 0.32,
+      "src": "remake",
+      "note": "original: attack replaces the move on the same tick, so same interval as moving"
+    },
+    "monster_first_attack_delay": {
+      "value": 0.32,
+      "src": "remake"
+    },
+    "player_attack_interval": {
+      "value": 0.25,
+      "src": "remake",
+      "note": "original: one attack per keypress (no cooldown); 0.25 s caps key-repeat mashing"
+    },
+    "monster_move_8way": {
+      "value": true,
+      "src": "exe-confirmed",
+      "note": "dr=SGN(dRow), dc=SGN(dCol)"
+    },
+    "monster_dies_below": {
+      "value": 0,
+      "src": "exe-confirmed",
+      "note": "dead when MON_STR < 0"
+    }
+  },
+  "monsters": {
+    "Snake": {
+      "strength": {
+        "value": 60,
+        "src": "exe-confirmed"
+      },
+      "dmg_min": {
+        "value": -5,
+        "src": "exe-confirmed"
+      },
+      "dmg_max": {
+        "value": 19,
+        "src": "exe-confirmed"
+      },
+      "points": {
+        "value": 100,
+        "src": "exe-confirmed",
+        "note": "FOR I=1 TO 8: dead -> +100"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "exe-confirmed"
+      }
+    },
+    "Ugly Ogre": {
+      "strength": {
+        "value": 80,
+        "src": "exe-confirmed"
+      },
+      "dmg_min": {
+        "value": -5,
+        "src": "exe-confirmed"
+      },
+      "dmg_max": {
+        "value": 19,
+        "src": "exe-confirmed"
+      },
+      "points": {
+        "value": 100,
+        "src": "exe-confirmed",
+        "note": "FOR I=1 TO 8: dead -> +100"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "exe-confirmed"
+      }
+    },
+    "Bat": {
+      "strength": {
+        "value": 10,
+        "src": "exe-confirmed"
+      },
+      "dmg_min": {
+        "value": -5,
+        "src": "exe-confirmed"
+      },
+      "dmg_max": {
+        "value": 19,
+        "src": "exe-confirmed"
+      },
+      "points": {
+        "value": 100,
+        "src": "exe-confirmed",
+        "note": "FOR I=1 TO 8: dead -> +100"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "exe-confirmed"
+      }
+    },
+    "Big Spider": {
+      "strength": {
+        "value": 80,
+        "src": "exe-confirmed"
+      },
+      "dmg_min": {
+        "value": -5,
+        "src": "exe-confirmed"
+      },
+      "dmg_max": {
+        "value": 19,
+        "src": "exe-confirmed"
+      },
+      "points": {
+        "value": 100,
+        "src": "exe-confirmed",
+        "note": "FOR I=1 TO 8: dead -> +100"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "exe-confirmed"
+      }
+    },
+    "Small Spider": {
+      "strength": {
+        "value": 40,
+        "src": "exe-confirmed"
+      },
+      "dmg_min": {
+        "value": -5,
+        "src": "exe-confirmed"
+      },
+      "dmg_max": {
+        "value": 19,
+        "src": "exe-confirmed"
+      },
+      "points": {
+        "value": 100,
+        "src": "exe-confirmed",
+        "note": "FOR I=1 TO 8: dead -> +100"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "exe-confirmed"
+      }
+    },
+    "Angry Demon": {
+      "strength": {
+        "value": 120,
+        "src": "exe-confirmed"
+      },
+      "dmg_min": {
+        "value": -5,
+        "src": "exe-confirmed"
+      },
+      "dmg_max": {
+        "value": 19,
+        "src": "exe-confirmed"
+      },
+      "points": {
+        "value": 100,
+        "src": "exe-confirmed",
+        "note": "FOR I=1 TO 8: dead -> +100"
+      },
+      "can_be_hurt": {
+        "value": true,
+        "src": "exe-confirmed"
+      }
+    },
+    "Vampire": {
+      "strength": {
+        "value": 1,
+        "src": "exe-confirmed"
+      },
+      "dmg_min": {
+        "value": -5,
+        "src": "exe-confirmed"
+      },
+      "dmg_max": {
+        "value": 19,
+        "src": "exe-confirmed"
+      },
+      "points": {
+        "value": 0,
+        "src": "exe-confirmed",
+        "note": "FOR I=1 TO 8: dead -> +100"
+      },
+      "can_be_hurt": {
+        "value": false,
+        "src": "exe-confirmed"
+      },
+      "removed_by": {
+        "value": "WAVE HOLY CROSS in room 28",
+        "src": "exe-confirmed",
+        "note": "never moves"
+      }
+    },
+    "Fairy": {
+      "strength": {
+        "value": 1,
+        "src": "exe-confirmed"
+      },
+      "dmg_min": {
+        "value": -5,
+        "src": "exe-confirmed"
+      },
+      "dmg_max": {
+        "value": 19,
+        "src": "exe-confirmed"
+      },
+      "points": {
+        "value": 0,
+        "src": "exe-confirmed",
+        "note": "FOR I=1 TO 8: dead -> +100"
+      },
+      "can_be_hurt": {
+        "value": false,
+        "src": "exe-confirmed"
+      },
+      "removed_by": {
+        "value": "PLAY HARP",
+        "src": "exe-confirmed",
+        "note": "never moves"
+      }
+    }
+  },
+  "flask": {
+    "fill_room": {
+      "value": 18,
+      "src": "exe-confirmed",
+      "note": "DOSBox"
+    },
+    "fill_needs_adjacent": {
+      "value": true,
+      "src": "exe-confirmed",
+      "note": "DOSBox"
+    },
+    "fill_edge_chars": {
+      "value": "-|",
+      "src": "exe-confirmed",
+      "note": "only straight edges (179/196) count, not corners"
+    },
+    "heal": {
+      "value": "full",
+      "src": "exe-confirmed",
+      "note": "STR=100; DOSBox 50->100"
+    },
+    "heal_amount": {
+      "value": 0,
+      "src": "remake",
+      "note": "unused when heal=full"
+    },
+    "heal_uses_per_game": {
+      "value": 1,
+      "src": "exe-confirmed",
+      "note": "DRANK flag; DOSBox"
+    },
+    "refillable": {
+      "value": true,
+      "src": "exe-confirmed"
+    },
+    "drink_empties": {
+      "value": true,
+      "src": "exe-confirmed",
+      "note": "first drink empties the flask"
+    },
+    "drink_empties_after_used": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "later drinks: 'That was good.', flask stays full"
+    }
+  },
+  "inventory": {
+    "limit": {
+      "value": 6,
+      "src": "exe-confirmed",
+      "note": "fea counter, 'Can't carry any more!'"
+    },
+    "get_visible_by_command": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "GET on a visible item: 'Get it Yourself!'"
+    },
+    "get_hidden_reach": {
+      "value": 1,
+      "src": "exe-confirmed",
+      "note": "hidden items need you within 1 cell"
+    }
+  },
+  "points": {
+    "treasure": {
+      "value": 50,
+      "src": "exe-confirmed"
+    },
+    "treasure_room": {
+      "value": 0,
+      "src": "exe-confirmed",
+      "note": "0 = carried only (ITEM_LOC=0); Courtyard drops don't count"
+    },
+    "kill": {
+      "value": 100,
+      "src": "exe-confirmed"
+    },
+    "escape": {
+      "value": 100,
+      "src": "exe-confirmed",
+      "note": "DOSBox: scepter-only escape = 150"
+    },
+    "score_only_at_end": {
+      "value": true,
+      "src": "exe-confirmed",
+      "note": "score computed on death/escape/quit"
+    },
+    "perfect": {
+      "value": 1550,
+      "src": "exe-confirmed"
+    }
+  },
+  "parser": {
+    "kill_alias": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "KILL -> 'I can't kill...'; fight by walking into monsters"
+    },
+    "unknown_reply": {
+      "value": "What???",
+      "src": "exe-confirmed"
+    }
+  },
+  "gate": {
+    "open_with": {
+      "value": "SCEPTER",
+      "src": "exe-confirmed",
+      "note": "WAVE SCEPTER in room 1; DOSBox"
+    },
+    "room": {
+      "value": 1,
+      "src": "exe-confirmed"
+    }
+  },
+  "doors": {
+    "bump_with_key_unlocks": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "Door (char 8) bump says 'The Door is locked.'; UNLOCK/OPEN DOOR with KEY carried toggles f26/f2a"
+    }
+  },
+  "stairs": {
+    "cooldown_s": {
+      "value": 1.0,
+      "src": "remake",
+      "note": "remake: anti-bounce after stair arrival (re-arms on stepping off or after this)"
+    }
+  },
+  "wear": {
+    "worn_items_free_slots": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "original WEAR is flavour text only; everything carried counts toward the limit"
+    },
+    "wearable": {
+      "value": [],
+      "src": "exe-confirmed"
+    },
+    "helmet_needs_wearing": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "carrying the helmet is enough"
+    }
+  },
+  "backpack": {
+    "enabled": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "no backpack in the original"
+    },
+    "bonus_slots": {
+      "value": 0,
+      "src": "exe-confirmed",
+      "note": ""
+    },
+    "room": {
+      "value": 21,
+      "src": "exe-confirmed",
+      "note": "East End Of The Upper Hall"
+    },
+    "monster": {
+      "value": "Ugly Ogre",
+      "src": "exe-confirmed"
+    }
+  },
+  "chainmail": {
+    "enabled": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "no chain mail in the original"
+    },
+    "room": {
+      "value": 24,
+      "src": "exe-confirmed",
+      "note": "Knights Hall"
+    },
+    "cell": {
+      "value": [
+        15,
+        2
+      ],
+      "src": "exe-confirmed",
+      "note": "on the art set's armour stand (assets/chain_mail/manifest.json item_cell, which wins); demon = row 10 col 6 = cell (5,9)"
+    },
+    "carry_slots": {
+      "value": 2,
+      "src": "exe-confirmed",
+      "note": "carried; worn = 0"
+    },
+    "damage_mult": {
+      "value": 1.0,
+      "src": "exe-confirmed",
+      "note": "landed monster hits x this while worn, rounded, min 1; stacks with the helmet"
+    },
+    "stand_solid": {
+      "value": false,
+      "src": "exe-confirmed",
+      "note": "the stand cell blocks (GET reaches it from an adjacent cell); kept walkable if the BFS says it would cut anything off"
+    }
+  },
+  "drop_treasure": {
+    "enabled": {
+      "value": false,
+      "src": "proposal",
+      "note": " DROP TREASURE: drop spare treasures; Necklace always kept, Scepter/Cross/Harp while needed; asks Y/N outside the Courtyard"
+    }
+  }
+}

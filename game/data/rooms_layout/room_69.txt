@@ -1,0 +1,25 @@
+Room 69 
+You are in a long Passageway.
+Exits: {'north': 68, 'south': 70}
++------------------------+
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
+|       #  #             |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

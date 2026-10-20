@@ -1,0 +1,84 @@
+{
+  "issue": 26,
+  "mode": "Modern only",
+  "item": {
+    "floor": "backpack.png",
+    "small": "backpack_small.png",
+    "floor_frame": [
+      16,
+      16
+    ],
+    "floor_anchor": [
+      8,
+      15
+    ],
+    "shadow_baked": true,
+    "small_frame": [
+      12,
+      12
+    ],
+    "small_anchor": [
+      6,
+      11
+    ],
+    "small_shadow_baked": false,
+    "treasure": false
+  },
+  "hero_overlay": {
+    "frame_size": [
+      36,
+      36
+    ],
+    "anchor": {
+      "px": [
+        12,
+        33
+      ],
+      "px_left": [
+        24,
+        33
+      ]
+    },
+    "same_as": "art/hero strips (right native, left = mirror)",
+    "states": {
+      "idle": {
+        "frames": 2,
+        "frame_durations_ms": [
+          400,
+          400
+        ],
+        "files": {
+          "back": [
+            "hero_backpack_back_idle_right.png",
+            "hero_backpack_back_idle_left.png"
+          ],
+          "front": [
+            "hero_backpack_front_idle_right.png",
+            "hero_backpack_front_idle_left.png"
+          ]
+        }
+      },
+      "walk": {
+        "frames": 4,
+        "frame_durations_ms": [
+          140,
+          140,
+          140,
+          140
+        ],
+        "files": {
+          "back": [
+            "hero_backpack_back_walk_right.png",
+            "hero_backpack_back_walk_left.png"
+          ],
+          "front": [
+            "hero_backpack_front_walk_right.png",
+            "hero_backpack_front_walk_left.png"
+          ]
+        }
+      }
+    },
+    "draw_order": "hero_backpack_back (pack body + bedroll)  ->  hero body/composited hero  ->  hero_backpack_front (straps)  ->  necklace  ->  sword  ->  helmet. With the pre-composited hero_{state}_swordX_helmetY strips: back BEHIND the composited strip, front ON TOP of it (the straps don't touch the sword hand or the helmet, so drawing them after is fine)",
+    "frame_sync": "use the same frame index k as the hero strip (idle 2 frames / walk 4)"
+  }
+}

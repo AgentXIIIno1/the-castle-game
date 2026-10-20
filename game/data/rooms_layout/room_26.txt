@@ -1,0 +1,25 @@
+Room 26 LOWER_BATTLEMENT
+You are In a Lower Battlement. There is a staircase at one end.
+Exits: {'south': 24, 'up': 45}
++------------------------+
+| ########               |
+| #      #               |
+| #  UU  #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| ###  ###               |
+|   #  #                 |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Silver Bars', 8, 7)]
+Monsters(M): []

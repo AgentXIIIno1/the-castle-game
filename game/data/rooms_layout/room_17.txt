@@ -1,0 +1,25 @@
+Room 17 GARDEN_NORTH
+You are In The North end of the Castle Garden. It is overgrown with bushes.
+Exits: {'south': 18, 'west': 12}
++------------------------+
+|                        |
+|  ##################### |
+|  #                   # |
+|  #     *             # |
+|###               +   # |
+|              *       # |
+|            *         # |
+|       +          +   # |
+|                      # |
+|         *   +        # |
+|                      # |
+|          *      *    # |
+|                      # |
+|###  +       +  M     # |
+|  #                +  # |
+|  #                   # |
+|  #           +       # |
+|  #                   # |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Lamp', 14, 19)]
+Monsters(M): [('Snake', 14, 17)]

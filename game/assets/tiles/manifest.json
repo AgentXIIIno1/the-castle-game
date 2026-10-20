@@ -1,0 +1,89 @@
+{
+  "tile_px": 16,
+  "notes": "1x RGBA, nearest, no baked shadow/glow (wall AO stays game-side). Pick variant per cell with a hash of (x, y) like art3 does.",
+  "sheets": [
+    {
+      "file": "side_walls.png",
+      "cell": [
+        8,
+        30
+      ],
+      "cols": 4,
+      "rows": 2,
+      "row0": "left-wall inner face (wall on left, room on right)",
+      "row1": "right-wall inner face",
+      "maps_to": "art3.bake_room side faces (currently 6px vstones face beside '#' cells)",
+      "anchor": "top-left; left face at (X+T, Y) of the wall cell, right face at (X-SIDE, Y). Height covers cell + FACE so it meets the front-face run.",
+      "change": "8px wide (was 6), lit rim on room edge, dithered falloff into the wall for depth"
+    },
+    {
+      "file": "dirt_floor.png",
+      "cell": [
+        16,
+        16
+      ],
+      "cols": 8,
+      "rows": 1,
+      "maps_to": "garden dirt patches (art3.bake_floor_np garden dirt mask) - fill dirt-mask cells with these instead of palettised noise",
+      "anchor": "top-left of cell",
+      "change": "3-tone tileable ordered-dither dirt, sparse pebbles, occasional grass sprig; no large blotches"
+    },
+    {
+      "file": "dirt_autotile.png",
+      "cell": [
+        16,
+        16
+      ],
+      "cols": 16,
+      "rows": 2,
+      "maps_to": "garden dirt cells (art3 dirt_cells) - REPLACES dirt_floor.png for gardens",
+      "index_rule": "col = N*1 + E*2 + S*4 + W*8 where each bit = that 4-neighbour cell is also a dirt cell; row = variant (thash(cx,cy) % 2)",
+      "blend": "RGBA: interior opaque, sides facing non-dirt fade out with irregular dithered alpha so the game's noise dirt/grass shows through. Blit with normal alpha over the baked noise floor. Isolated cells (col 0) become organic blobs, not squares.",
+      "palette": "same 4 colours as art3 garden noise dirt"
+    },
+    {
+      "file": "room83_wall_tops.png",
+      "cell": [
+        16,
+        16
+      ],
+      "cols": 6,
+      "rows": 1,
+      "maps_to": "room 83 (King's Secret Room, 'walls are many colours') '#' wall tops",
+      "anchor": "top-left of cell (raised by CAP like stone tops)"
+    },
+    {
+      "file": "room83_wall_fronts.png",
+      "cell": [
+        16,
+        14
+      ],
+      "cols": 6,
+      "rows": 1,
+      "maps_to": "room 83 front faces",
+      "anchor": "top-left, directly below the wall top"
+    },
+    {
+      "file": "room83_side_walls.png",
+      "cell": [
+        8,
+        30
+      ],
+      "cols": 4,
+      "rows": 1,
+      "maps_to": "room 83 side faces: cols 0-1 left, 2-3 right",
+      "anchor": "as side_walls.png"
+    },
+    {
+      "file": "room83_*_emissive.png (tops, fronts, side_walls)",
+      "cell": "same as the base sheet",
+      "maps_to": "same cells/positions as each room83 base sheet",
+      "use": "EMISSIVE: draw after the darkness/lighting overlay (dark_full / dark_lit) at the same positions as the base wall tiles, normal alpha blend (or BLEND_ADD). Never darkened. Optional twinkle: modulate alpha by 0.6-1.0 per tile with a slow sine."
+    },
+    {
+      "file": "room83_*_bright.png (tops, fronts, side_walls)",
+      "cell": "same as base",
+      "use": "FALLBACK: drop-in replacement for the base sheets if no emissive pass is added (base lifted ~28% toward white). With the emissive pass, keep the normal base sheets."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+Room 68 WINE_CELLAR
+You are in the Royal Wine Cellar. It is filled with many Barrels. At one end is a Large metal Door.
+Exits: {'south': 69, 'up': 11}
++------------------------+
+|###################     |
+|#                 #     |
+|#  @@@@     @@@@  #     |
+|#  @@@@     @@@@  #     |
+|#                 #     |
+|#           @@@@  #     |
+|# U         @@@@ M#     |
+|#                 #     |
+|#  @@@@     @@@@  #     |
+|#  @@@@     @@@@  #     |
+|#                 #     |
+|#  @@@@     @@@@  #     |
+|#  @@@@     @@@@  #     |
+|#                 #     |
+|########MM#########     |
+|       #  #             |
+|       #  #             |
+|       #  #             |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): [('Bat', 7, 18), ('Door', 15, 9), ('', 15, 10)]

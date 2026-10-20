@@ -1,0 +1,25 @@
+Room 11 STORAGE_ROOM
+You are in the Storage room. There are Two large shelves in the middle,and a Small Staircase in one corner.
+Exits: {'south': 9, 'down': 68}
++------------------------+
+|                        |
+|                        |
+|                        |
+|                        |
+|###################     |
+|#                 #     |
+|# D               #     |
+|#     @@@@@@@@@   #     |
+|#                 #     |
+|#                 #     |
+|#     @@@@@@@@@   #     |
+|#                 #     |
+|#                 #     |
+|#                 #     |
+|###########  ######     |
+|          #  #          |
+|          #  #          |
+|          #  #          |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

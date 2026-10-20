@@ -1,0 +1,25 @@
+Room 20 UPPER_HALL_WEST
+You are in the west end of the Upper hall. There is a staircase leading down.
+Exits: {'north': 24, 'east': 19, 'down': 4}
++------------------------+
+|         #    #         |
+| #########    ##########|
+| #                      |
+| #                  D   |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #                      |
+| #######################|
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Hourglass', 14, 6)]
+Monsters(M): []

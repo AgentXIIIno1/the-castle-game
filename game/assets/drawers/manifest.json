@@ -1,0 +1,96 @@
+{
+  "pieces": {
+    "yellow_room_desk": {
+      "room": 40,
+      "glyph": "@",
+      "footprint_tiles": [
+        4,
+        2
+      ],
+      "footprint_cells_0based": "x 15-18, y 11-12",
+      "item": "GLASSES (Eye Glasses), row 12 col 18 1-based",
+      "states": {
+        "closed": "yellow_room_desk_closed.png",
+        "open_item": "yellow_room_desk_open_item.png",
+        "open_empty": "yellow_room_desk_open_empty.png"
+      },
+      "frame_size": [
+        68,
+        52
+      ],
+      "anchor": {
+        "px": [
+          34,
+          38
+        ],
+        "desc": "bottom-centre of the footprint: world (15*16 + 32, (11+2)*16) in room 40"
+      },
+      "depth_sort_y": "(11+2)*16",
+      "blocking": "all footprint cells (unchanged: '@' is solid)",
+      "shadow_baked": true,
+      "state_rules": "closed until the player LOOKs/searches the desk; then open_item while the item is there; open_empty after GET"
+    },
+    "kings_study_desk": {
+      "room": 56,
+      "glyph": "@",
+      "footprint_tiles": [
+        6,
+        3
+      ],
+      "footprint_cells_0based": "x 9-14, y 5-7",
+      "item": "KEY, row 7 col 12 1-based",
+      "states": {
+        "closed": "kings_study_desk_closed.png",
+        "open_item": "kings_study_desk_open_item.png",
+        "open_empty": "kings_study_desk_open_empty.png"
+      },
+      "frame_size": [
+        100,
+        68
+      ],
+      "anchor": {
+        "px": [
+          50,
+          54
+        ],
+        "desc": "bottom-centre of the footprint: world (9*16 + 48, (5+3)*16) in room 56"
+      },
+      "depth_sort_y": "(5+3)*16",
+      "blocking": "all footprint cells (unchanged: '@' is solid)",
+      "shadow_baked": true,
+      "state_rules": "closed until the player LOOKs/searches the desk; then open_item while the item is there; open_empty after GET"
+    },
+    "chef_desk": {
+      "room": 10,
+      "glyph": "@",
+      "footprint_tiles": [
+        4,
+        2
+      ],
+      "footprint_cells_0based": "x 6-9, y 10-11",
+      "item": "WINE_FLASK (Wine Flask), row 11 col 8 1-based, 'on desk'",
+      "states": {
+        "closed": "chef_desk_closed.png",
+        "open_item": "chef_desk_open_item.png",
+        "open_empty": "chef_desk_open_empty.png"
+      },
+      "frame_size": [
+        68,
+        50
+      ],
+      "anchor": {
+        "px": [
+          34,
+          47
+        ],
+        "desc": "bottom-centre of the footprint: world (6*16 + 32, (10+2)*16) = (128, 192) in room 10"
+      },
+      "depth_sort_y": "(10+2)*16",
+      "blocking": "all footprint cells (unchanged: '@' is solid)",
+      "shadow_baked": true,
+      "state_rules": "closed until the player LOOKs/searches the desk; then open_item while the item is there; open_empty after GET",
+      "issue": 15,
+      "content": "chef's small desk: scrubbed pine with knife scars, sloped recipe lectern with an open recipe book, stone mortar and pestle, ladle, candle stub, a string of garlic; drawer in the apron"
+    }
+  }
+}

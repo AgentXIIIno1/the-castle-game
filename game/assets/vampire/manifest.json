@@ -1,0 +1,189 @@
+{
+  "monster": "vampire",
+  "frame_size": [
+    40,
+    48
+  ],
+  "anchor": {
+    "px": [
+      20,
+      46
+    ],
+    "px_left": [
+      20,
+      46
+    ],
+    "desc": "bottom-centre ground contact; px for *_right strips, px_left for *_left (mirrored) strips; draw frame at (x - ax, y - ay)"
+  },
+  "layout": "one horizontal strip per state per facing, 1x RGBA, nearest only, dark outline baked, no shadow/glow baked",
+  "facing": "*_right.png is the native facing (game face>=0); *_left.png is the mirror (face<0) - or flip right at runtime as main.py does",
+  "notes": "Original: pale count with widow's peak, black suit, high red collar, black cape with red lining.",
+  "states": {
+    "idle": {
+      "files": [
+        "vampire_idle_right.png",
+        "vampire_idle_left.png"
+      ],
+      "frames": 6,
+      "fps": 5.9,
+      "frame_durations_ms": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "loop": true,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "cape sway; vampire never moves in-game (can't be hurt)"
+    },
+    "walk": {
+      "files": [
+        "vampire_walk_right.png",
+        "vampire_walk_left.png"
+      ],
+      "frames": 4,
+      "fps": 6.7,
+      "frame_durations_ms": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "loop": true,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "provided for completeness"
+    },
+    "attack": {
+      "files": [
+        "vampire_attack_right.png",
+        "vampire_attack_left.png"
+      ],
+      "frames": 5,
+      "fps": 8.9,
+      "frame_durations_ms": [
+        100,
+        110,
+        90,
+        140,
+        120
+      ],
+      "loop": false,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "cape flare (red lining), fanged lunge on frame 2"
+    },
+    "death": {
+      "files": [
+        "vampire_death_right.png",
+        "vampire_death_left.png"
+      ],
+      "frames": 7,
+      "fps": 9.0,
+      "frame_durations_ms": [
+        90,
+        90,
+        140,
+        100,
+        100,
+        110,
+        150
+      ],
+      "loop": false,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "'disappears' on the holy cross: flash, cape flare, dissolves upward into purple mist with fleeing bats; remove after last frame"
+    }
+  }
+}

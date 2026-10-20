@@ -1,0 +1,25 @@
+Room 3 
+You are in The Welcome Hall. This room was used to welcome guests. There are large archways in all four walls.
+Exits: {'north': 7, 'south': 2, 'east': 5, 'west': 4}
++------------------------+
+|         #    #         |
+| #########    ######### |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+|##                    ##|
+|                        |
+|                        |
+|                        |
+|                        |
+|##                    ##|
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #########    ######### |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

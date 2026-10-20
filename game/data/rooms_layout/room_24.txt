@@ -1,0 +1,25 @@
+Room 24 KNIGHTS_HALL
+You are in The Knights Hall. This room was once used to Honor The King's Knights.
+Exits: {'north': 26, 'south': 20, 'east': 23}
++------------------------+
+|   #  #                 |
+| ###  ################# |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    ##|
+| #                      |
+| #                      |
+| #   M                  |
+| #                      |
+| #                    ##|
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #########    ######### |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Magic Wand', 9, 4)]
+Monsters(M): [('Angry Demon', 10, 6)]

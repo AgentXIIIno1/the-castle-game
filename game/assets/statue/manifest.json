@@ -1,0 +1,48 @@
+{
+  "room": 19,
+  "room_name": "Center Of The Upper Hall",
+  "glyphs": ",-. |$| `-'",
+  "footprint_tiles": [
+    3,
+    3
+  ],
+  "footprint_cells_0based": "cols 10-12, rows 6-8 ('$' at col 11,row 7)",
+  "frame_size": [
+    48,
+    76
+  ],
+  "anchor": {
+    "px": [
+      24,
+      75
+    ],
+    "desc": "bottom-centre of the 3x3 footprint: world (fx*16 + 24, (fy+3)*16), (fx,fy) = 0-based cell of ','; frame top-left = (fx*16, (fy+3)*16 - 76)"
+  },
+  "depth_sort_y": "(fy+3)*16 (same as the fountain draw it replaces)",
+  "blocking": "all 9 footprint cells (main.py solid glyphs ',-.|$`'')",
+  "shadow_baked": true,
+  "states": {
+    "with_necklace": {
+      "file": "statue_necklace.png",
+      "when": "necklace still hidden on the statue ('$' item not taken)"
+    },
+    "with_necklace_glint": {
+      "file": "statue_necklace_glint.png",
+      "frames": 4,
+      "frame_durations_ms": [
+        1600,
+        90,
+        110,
+        200
+      ],
+      "loop": true,
+      "note": "sparkle ~every 2 s; use instead of the static with_necklace"
+    },
+    "without_necklace": {
+      "file": "statue_plain.png",
+      "when": "after GET NECKLACE"
+    }
+  },
+  "design": "the KING (issue #1): broad-shouldered, full curled beard, tall crown, heavy robe with an ermine fur mantle, sceptre in his right hand, left arm across the robe; weathered limestone with cracks, chips, moss; necklace draped over the mantle in the Necklace item gold + ruby",
+  "backups": "queen original: statue_queen_necklace.png, statue_queen_plain.png, statue_queen_necklace_glint.png, make_statue_queen.py"
+}

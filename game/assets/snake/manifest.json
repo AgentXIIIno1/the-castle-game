@@ -1,0 +1,140 @@
+{
+  "monster": "snake",
+  "frame_size": [
+    64,
+    48
+  ],
+  "anchor": {
+    "px": [
+      32,
+      42
+    ],
+    "px_left": [
+      32,
+      42
+    ],
+    "desc": "bottom-centre ground contact; px for *_right strips, px_left for *_left (mirrored) strips; draw frame at (x - ax, y - ay)"
+  },
+  "layout": "one horizontal strip per state per facing, 1x RGBA, nearest only, dark outline baked, no shadow/glow baked",
+  "facing": "*_right.png is the native facing (game face>=0); *_left.png is the mirror (face<0) - or flip right at runtime as main.py does",
+  "notes": "Cleanup of art3.make_snake: clean ring bands (no noisy ink bands / flecks), bigger head with slit eye, pale jaw, nostril. Same 64x48 frame + anchor as snake_death (death strip regenerated with this drawer).",
+  "states": {
+    "idle": {
+      "files": [
+        "snake_idle_right.png",
+        "snake_idle_left.png"
+      ],
+      "frames": 6,
+      "fps": 6.2,
+      "frame_durations_ms": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160
+      ],
+      "loop": true,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "neck sway + tongue flick on frames 2-3"
+    },
+    "move": {
+      "files": [
+        "snake_move_right.png",
+        "snake_move_left.png"
+      ],
+      "frames": 4,
+      "fps": 8.3,
+      "frame_durations_ms": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "loop": true,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "coils ripple, neck undulates; translate in game"
+    },
+    "attack": {
+      "files": [
+        "snake_attack_right.png",
+        "snake_attack_left.png"
+      ],
+      "frames": 5,
+      "fps": 9.3,
+      "frame_durations_ms": [
+        110,
+        120,
+        70,
+        120,
+        120
+      ],
+      "loop": false,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "coil back, strike on frame 2 = hit frame"
+    }
+  }
+}

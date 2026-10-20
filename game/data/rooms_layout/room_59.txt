@@ -1,0 +1,25 @@
+Room 59 LIBRARY_EAST_END
+You are in the East end of the King's Library. It is full of shelves.
+Exits: {'north': 55, 'west': 58}
++------------------------+
+|          #  #          |
+|###########  #######    |
+|                   #    |
+|                   #    |
+|                   #    |
+|                   #    |
+|                   #    |
+|@@@@@@@   @@@@@@@  #    |
+|                   #    |
+|                   #    |
+|@@@@@@@   @@@@@@@  #    |
+|                   #    |
+|                   #    |
+|@@@@@@@   @@@@@@@  #    |
+|                   #    |
+|                   #    |
+|####################    |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

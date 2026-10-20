@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env/
+# build artifacts
+*.zip
+# screenshots saved in game (F2)
+game/shots/*
+!game/shots/.gitkeep
+# OS/editor
+.DS_Store
+*.swp

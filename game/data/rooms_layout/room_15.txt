@@ -1,0 +1,25 @@
+Room 15 
+You are In the Kings Dressing room. It was Once Filled with clothes. There is a Staircase in one corner.
+Exits: {'east': 14, 'up': 31}
++------------------------+
+|      ################# |
+|      #               # |
+|      #               # |
+|      #               ##|
+|      #                 |
+|      #               ##|
+|      #             U # |
+|      #               # |
+|      ################# |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

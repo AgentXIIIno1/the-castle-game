@@ -1,0 +1,25 @@
+Room 23 
+You are in the Anex Hall. There is a large spiral staircase in the middle.
+Exits: {'north': 28, 'south': 19, 'east': 22, 'west': 24, 'down': 7}
++------------------------+
+|          #  #          |
+| ##########  ########## |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+|##                    ##|
+|                        |
+|           DD           |
+|           DD           |
+|                        |
+|##                    ##|
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #########    ######### |
+|         #    #         |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

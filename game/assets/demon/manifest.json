@@ -1,0 +1,199 @@
+{
+  "monster": "demon",
+  "frame_size": [
+    64,
+    56
+  ],
+  "anchor": {
+    "px": [
+      32,
+      54
+    ],
+    "px_left": [
+      32,
+      54
+    ],
+    "desc": "bottom-centre ground contact; px for *_right strips, px_left for *_left (mirrored) strips; draw frame at (x - ax, y - ay)"
+  },
+  "layout": "one horizontal strip per state per facing, 1x RGBA, nearest only, dark outline baked, no shadow/glow baked",
+  "facing": "*_right.png is the native facing (game face>=0); *_left.png is the mirror (face<0) - or flip right at runtime as main.py does",
+  "notes": "Original design: red horned demon with bat wings, tail, claws (replaces red-tinted ogre). ~hero scale (stands ~44px).",
+  "states": {
+    "idle": {
+      "files": [
+        "demon_idle_right.png",
+        "demon_idle_left.png"
+      ],
+      "frames": 4,
+      "fps": 5.6,
+      "frame_durations_ms": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "breathing + wing flex"
+    },
+    "walk": {
+      "files": [
+        "demon_walk_right.png",
+        "demon_walk_left.png"
+      ],
+      "frames": 4,
+      "fps": 7.7,
+      "frame_durations_ms": [
+        130,
+        130,
+        130,
+        130
+      ],
+      "loop": true,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "hoof step, wings half-raised; move sprite in game"
+    },
+    "attack": {
+      "files": [
+        "demon_attack_right.png",
+        "demon_attack_left.png"
+      ],
+      "frames": 5,
+      "fps": 9.4,
+      "frame_durations_ms": [
+        100,
+        110,
+        80,
+        120,
+        120
+      ],
+      "loop": false,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "wind-up (wings flare), claw lunge on frame 2 = hit frame"
+    },
+    "death": {
+      "files": [
+        "demon_death_right.png",
+        "demon_death_left.png"
+      ],
+      "frames": 11,
+      "fps": 9.5,
+      "frame_durations_ms": [
+        90,
+        70,
+        90,
+        100,
+        70,
+        160,
+        170,
+        90,
+        90,
+        100,
+        130
+      ],
+      "loop": false,
+      "frame_anchor_offsets": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "play once; after last frame remove monster"
+    }
+  }
+}

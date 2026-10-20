@@ -1,0 +1,25 @@
+Room 9 KITCHEN
+You are in The Kitchen. In the Center is a large stone table.
+Exits: {'north': 11, 'south': 8, 'east': 10}
++------------------------+
+|          #  #          |
+|          #  #          |
+|   ########  #########  |
+|   #                 ###|
+|   #                    |
+|   #                 ###|
+|   #                 #  |
+|   #                 #  |
+|   #    %%%%%%%%%    #  |
+|   #    %%%%%%%%%    #  |
+|   #                 #  |
+|   #                 #  |
+|   #                 #  |
+|   #                 #  |
+|   #                 #  |
+|   ##  ##########  ###  |
+|    #  #        #  #    |
+|    #  #        #  #    |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

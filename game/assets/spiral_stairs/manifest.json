@@ -1,0 +1,275 @@
+{
+  "issue": 9,
+  "palette": "same as art/stairs indoor (art.py STONE)",
+  "shadow_baked": true,
+  "files": {
+    "spiral_up_large.png": {
+      "frame_size": [
+        32,
+        60
+      ],
+      "anchor": {
+        "px": [
+          16,
+          59
+        ]
+      },
+      "glyph": "U 2x2",
+      "desc": "helix of 13 wedge steps rising from the front around a central newel, with a handrail; rises 28 px above the block"
+    },
+    "spiral_down_large.png": {
+      "frame_size": [
+        32,
+        40
+      ],
+      "anchor": {
+        "px": [
+          16,
+          39
+        ]
+      },
+      "glyph": "D 2x2",
+      "desc": "stairwell: curb ring, back balustrade, wedge steps winding down into darkness, newel cap"
+    },
+    "spiral_up_corner.png": {
+      "frame_size": [
+        16,
+        30
+      ],
+      "anchor": {
+        "px": [
+          8,
+          29
+        ]
+      },
+      "glyph": "U 1x1",
+      "desc": "small spiral, 8 steps; curls up toward the NE corner"
+    },
+    "spiral_up_corner_mirror.png": {
+      "frame_size": [
+        16,
+        30
+      ],
+      "anchor": {
+        "px": [
+          8,
+          29
+        ]
+      },
+      "glyph": "U 1x1",
+      "desc": "horizontal flip for the NW corner"
+    }
+  },
+  "rooms": {
+    "4": {
+      "file": "spiral_up_corner.png",
+      "block_topleft_cell": [
+        20,
+        3
+      ],
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor_px": [
+        8,
+        29
+      ],
+      "world_anchor": [
+        328,
+        64
+      ],
+      "blocking_trigger_cells": [
+        [
+          20,
+          3
+        ]
+      ],
+      "depth_sort_y": 64,
+      "layer": "depth-sorted sprite (it rises above the block; the hero must pass behind it on the row above)"
+    },
+    "5": {
+      "file": "spiral_up_corner_mirror.png",
+      "block_topleft_cell": [
+        3,
+        3
+      ],
+      "footprint_tiles": [
+        1,
+        1
+      ],
+      "anchor_px": [
+        8,
+        29
+      ],
+      "world_anchor": [
+        56,
+        64
+      ],
+      "blocking_trigger_cells": [
+        [
+          3,
+          3
+        ]
+      ],
+      "depth_sort_y": 64,
+      "layer": "depth-sorted sprite (it rises above the block; the hero must pass behind it on the row above)"
+    },
+    "7": {
+      "file": "spiral_up_large.png",
+      "block_topleft_cell": [
+        11,
+        8
+      ],
+      "footprint_tiles": [
+        2,
+        2
+      ],
+      "anchor_px": [
+        16,
+        59
+      ],
+      "world_anchor": [
+        192,
+        160
+      ],
+      "blocking_trigger_cells": [
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "depth_sort_y": 160,
+      "layer": "depth-sorted sprite (it rises above the block; the hero must pass behind it on the row above)"
+    },
+    "23": {
+      "file": "spiral_down_large.png",
+      "block_topleft_cell": [
+        11,
+        8
+      ],
+      "footprint_tiles": [
+        2,
+        2
+      ],
+      "anchor_px": [
+        16,
+        39
+      ],
+      "world_anchor": [
+        192,
+        160
+      ],
+      "blocking_trigger_cells": [
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          12,
+          9
+        ]
+      ],
+      "depth_sort_y": 160,
+      "layer": "floor layer (draw in place of the straight D tiles); the balustrade only rises 6 px, so depth-sort it at the block bottom if you prefer"
+    },
+    "50": {
+      "file": "spiral_up_large.png",
+      "block_topleft_cell": [
+        18,
+        8
+      ],
+      "footprint_tiles": [
+        2,
+        2
+      ],
+      "anchor_px": [
+        16,
+        59
+      ],
+      "world_anchor": [
+        304,
+        160
+      ],
+      "blocking_trigger_cells": [
+        [
+          18,
+          8
+        ],
+        [
+          19,
+          8
+        ],
+        [
+          18,
+          9
+        ],
+        [
+          19,
+          9
+        ]
+      ],
+      "depth_sort_y": 160,
+      "layer": "depth-sorted sprite (it rises above the block; the hero must pass behind it on the row above)"
+    },
+    "61": {
+      "file": "spiral_up_large.png",
+      "block_topleft_cell": [
+        4,
+        8
+      ],
+      "footprint_tiles": [
+        2,
+        2
+      ],
+      "anchor_px": [
+        16,
+        59
+      ],
+      "world_anchor": [
+        80,
+        160
+      ],
+      "blocking_trigger_cells": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "depth_sort_y": 160,
+      "layer": "depth-sorted sprite (it rises above the block; the hero must pass behind it on the row above)"
+    }
+  }
+}

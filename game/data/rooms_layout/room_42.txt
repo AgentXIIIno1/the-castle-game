@@ -1,0 +1,25 @@
+Room 42 
+You are in An upper Battlement. There is a staircase in one corner.
+Exits: {'south': 43, 'west': 45, 'up': 49, 'down': 25}
++------------------------+
+|####################### |
+|                      # |
+|                  DU  # |
+|                      # |
+|################      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
+|               #      # |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

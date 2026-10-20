@@ -1,0 +1,25 @@
+Room 5 
+You are in The East Ballroom. There are arch ways to the north & west; a spiral staircase in one corner.
+Exits: {'north': 6, 'west': 3, 'up': 21}
++------------------------+
+|         #    #         |
+| #########    ######### |
+| #                    # |
+| # U                  # |
+| #                    # |
+| #                    # |
+|##                    # |
+|                      # |
+|                      # |
+|                      # |
+|                      # |
+|##                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| #                    # |
+| ###################### |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

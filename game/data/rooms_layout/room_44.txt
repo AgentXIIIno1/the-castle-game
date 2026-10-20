@@ -1,0 +1,25 @@
+Room 44 
+You are in an Upper Batlement.
+Exits: {'north': 45, 'south': 47}
++------------------------+
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
+| #      #               |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []

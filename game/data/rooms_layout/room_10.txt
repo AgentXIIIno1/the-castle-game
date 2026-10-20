@@ -1,0 +1,25 @@
+Room 10 CHEFS_QUARTERS
+You are in The Chef's Quarters. There is a small desk & a Bed here.
+Exits: {'west': 9}
++------------------------+
+|  ###########           |
+|  #   ]WWWW[#           |
+|  #   ]WWWW[#           |
+|###         #           |
+|            #           |
+|###         #           |
+|  #         #           |
+|  #         #           |
+|  #         #           |
+|  #         #           |
+|  #   @@@@  #           |
+|  #   @@@@  #           |
+|  #         #           |
+|  ###########           |
+|                        |
+|                        |
+|                        |
+|                        |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): [('Wine Flask', 11, 8)]
+Monsters(M): []

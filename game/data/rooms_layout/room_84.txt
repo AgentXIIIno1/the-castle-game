@@ -1,0 +1,25 @@
+Room 84 ESCAPED
+You've Escaped the Castle!
+Exits: {'north': 84, 'south': 84, 'east': 84, 'west': 84}
++------------------------+
+|                        |
+|  *    +      *    +   *|
+|    +     *      +      |
+|+       *    +     *  + |
+|  *  +          +       |
+|          +   *      *  |
+|    *  *          *    *|
+| +          *   +    +  |
+|     *    +        *    |
+|*      *     *   +     +|
+|   +      *         *   |
+|      *     +  *       *|
+| *      +         +     |
+|    +        *        * |
+|  *       *     +       |
+|       +      *    *    |
+|+    *     +         +  |
+|   +    *    *   +      |
++------------------------+
+Items(lowercase letter a=Book..v=Silver Bars): []
+Monsters(M): []
